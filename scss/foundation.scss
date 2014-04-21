@@ -5,6 +5,9 @@
 // Make sure the charset is set appropriately
 @charset "UTF-8";
 
+// Added normalize
+@import "normalize";
+
 // Your custom settings file to override Foundation defaults
 @import "foundation/settings";
 
