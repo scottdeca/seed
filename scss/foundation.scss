@@ -5,10 +5,12 @@
 // Make sure the charset is set appropriately
 @charset "UTF-8";
 
+// Your custom settings file to override Foundation defaults
+@import "foundation/settings";
+
 // Behold, here are all the Foundation components.
 @import
   "foundation/components/grid",
-  "foundation/components/custom",
   "foundation/components/accordion",
   "foundation/components/alert-boxes",
   "foundation/components/block-grid",
