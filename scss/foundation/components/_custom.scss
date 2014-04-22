@@ -1,0 +1,24 @@
+@mixin box-emboss($opacity, $opacity2){
+    box-shadow:white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+}
+
+@mixin letterpress($opacity){
+    text-shadow: 0 1px 0 rgba(255, 255, 255, $opacity);
+}
+
+@mixin emboss($opacity){
+    text-shadow:0 -1px 0 rgba(0, 0, 0, $opacity);
+}
+
+
+$rockwell-fontstack: Rockwell, serif;
+
+.primary-nav {
+	//line-height: 8.125;
+	font-family: $rockwell-fontstack;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	@include letterpress(1.0);
+	color: #726C64; // warm gray
+	}
