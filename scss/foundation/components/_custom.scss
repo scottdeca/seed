@@ -29,3 +29,10 @@ $rockwell-fontstack: Rockwell, serif;
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, serif;
 	@include box-emboss(1.0, 0.8);
 	}
+
+.logo {
+	margin-top: 1.2em;
+	margin-left: 1.7em;
+	max-height: 70%;
+	width: auto;
+}

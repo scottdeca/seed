@@ -235,15 +235,15 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
             &::after {
               content:"";
               position: absolute;
-              #{$opposite-direction}: 0;
+              #{$opposite-direction}: 1.7em;
               display: block;
-              width: 16px;
+              width: 38px;
               top:0;
               height: 0;
               // Shh, don't tell, but box-shadows create the menu icon :)
-              box-shadow: 0 10px 0 1px $topbar-menu-icon-color,
-                          0 16px 0 1px $topbar-menu-icon-color,
-                          0 22px 0 1px $topbar-menu-icon-color;
+              box-shadow: 0 8px 0 4px $topbar-menu-icon-color,
+                          0 23px 0 4px $topbar-menu-icon-color,
+                          0 38px 0 4px $topbar-menu-icon-color;
             }
           }
         }

@@ -4343,7 +4343,7 @@ meta.foundation-mq-topbar {
     .top-bar .toggle-topbar a {
       color: #726c64;
       text-transform: uppercase;
-      font-size: 0.8125rem;
+      font-size: 1rem;
       font-weight: bold;
       position: relative;
       display: block;
@@ -4360,26 +4360,26 @@ meta.foundation-mq-topbar {
         line-height: 33px;
         padding: 0;
         padding-right: 25px;
-        color: white;
+        color: #95be49;
         position: relative; }
         .top-bar .toggle-topbar.menu-icon a::after {
           content: "";
           position: absolute;
-          right: 0;
+          right: 1.7em;
           display: block;
-          width: 16px;
+          width: 38px;
           top: 0;
           height: 0;
-          box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white; }
+          box-shadow: 0 8px 0 4px #95be49, 0 23px 0 4px #95be49, 0 38px 0 4px #95be49; }
   .top-bar.expanded {
     height: auto;
     background: transparent; }
     .top-bar.expanded .title-area {
       background: #f7f7f7; }
     .top-bar.expanded .toggle-topbar a {
-      color: #888888; }
+      color: #95be49; }
       .top-bar.expanded .toggle-topbar a::after {
-        box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888; }
+        box-shadow: 0 10px 0 1px #95be49, 0 16px 0 1px #95be49, 0 22px 0 1px #95be49; }
 
 .top-bar-section {
   left: 0;
@@ -4500,7 +4500,7 @@ meta.foundation-mq-topbar {
       width: 0;
       height: 0;
       border: inset 5px;
-      border-color: transparent transparent transparent rgba(255, 255, 255, 0.4);
+      border-color: transparent transparent transparent rgba(149, 190, 73, 0.4);
       border-left-style: solid;
       margin-right: 0.8125rem;
       margin-top: -4.5px;
@@ -4624,7 +4624,7 @@ meta.foundation-mq-topbar {
         width: 0;
         height: 0;
         border: inset 5px;
-        border-color: rgba(255, 255, 255, 0.4) transparent transparent transparent;
+        border-color: rgba(149, 190, 73, 0.4) transparent transparent transparent;
         border-top-style: solid;
         margin-top: -2.5px;
         top: 4.0625rem; }
@@ -5235,7 +5235,7 @@ blockquote p {
   display: block;
   line-height: 2.0625rem;
   padding: 0;
-  color: white;
+  color: #95be49;
   position: relative;
   -ms-transform: translate(0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -5630,3 +5630,9 @@ th.hide-for-touch {
   border-radius: 3px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, serif;
   box-shadow: white(1) 0 1px 0, inset black(0.8) 0 1px 0; }
+
+.logo {
+  margin-top: 1.2em;
+  margin-left: 1.7em;
+  max-height: 70%;
+  width: auto; }
