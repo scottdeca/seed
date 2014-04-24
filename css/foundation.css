@@ -5611,6 +5611,9 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
+.top-bar {
+  box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.1); }
+
 .primary-nav, .top-bar-section ul li > a {
   font-family: Rockwell, serif;
   font-weight: 500;
@@ -5635,6 +5638,12 @@ th.hide-for-touch {
   color: #fff; }
   .top-bar.expanded ul.primary-nav li > a.active {
     color: #95be49; }
+  .top-bar.expanded ul.primary-nav li > a.login {
+    color: #95be49;
+    background-color: #eee;
+    min-height: 3.3125rem;
+    line-height: 2;
+    border: none; }
 
 .logo {
   margin-top: 1.2em;
@@ -5657,3 +5666,9 @@ th.hide-for-touch {
   position: absolute;
   top: 1em;
   z-index: 99; }
+
+footer {
+  min-height: 13rem;
+  border-top: 1px solid #dddddd;
+  padding: 1em;
+  color: #8b8a85; }

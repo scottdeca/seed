@@ -14,6 +14,13 @@
 $rockwell-fontstack: Rockwell, serif;
 $meta-serif-fontstack: "ff-meta-serif-web-pro", Georgia, serif;
 $open-sans-fontstack: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+$gray-rule: 1px solid #ddd;
+$footer-text-color: #8B8A85;
+
+
+.top-bar {
+	box-shadow:0px -1px 4px rgba(0,0,0,0.1);
+	}
 
 .primary-nav, .top-bar-section ul li > a {
 	//line-height: 8.125;
@@ -43,6 +50,13 @@ $open-sans-fontstack: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
 	color: #fff;
 	
 	&.active { color: $primary-color; }
+	&.login {
+		color: $primary-color;
+		background-color: #eee;
+		min-height: rem-calc(53);
+		line-height: 2;
+		border: none;
+		}
 	}
 
 .logo {
@@ -50,7 +64,7 @@ $open-sans-fontstack: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
 	margin-left: 1.7em;
 	max-height: 70%;
 	width: auto;
-}
+	}
 
 #intro { position: relative; }
 
@@ -67,4 +81,11 @@ $open-sans-fontstack: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
 	position: absolute;
 	top: 1em;
 	z-index: 99;
-}
+	}
+
+footer {
+	min-height: rem-calc(208);
+	border-top: $gray-rule;
+	padding: 1em;
+	color: $footer-text-color;
+	}
