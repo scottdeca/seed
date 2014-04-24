@@ -5638,6 +5638,8 @@ th.hide-for-touch {
   color: #fff; }
   .top-bar.expanded ul.primary-nav li > a.active {
     color: #95be49; }
+  .top-bar.expanded ul.primary-nav li > a:hover {
+    background: #81a73c; }
   .top-bar.expanded ul.primary-nav li > a.login {
     color: #95be49;
     background-color: #eee;
@@ -5650,6 +5652,65 @@ th.hide-for-touch {
   margin-left: 1.7em;
   max-height: 70%;
   width: auto; }
+
+/* ------- Mobile Top Bar -------------*/
+.right-off-canvas-top-bar {
+  height: 8.125rem;
+  background: #F7F7F7;
+  background-color: #F7F7F7;
+  box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.1); }
+  .right-off-canvas-top-bar div {
+    height: 100%;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #fff; }
+  .right-off-canvas-top-bar div a {
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #95be49;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: .05;
+    line-height: 8.125rem; }
+
+.move-left .exit-off-canvas {
+  box-shadow: none;
+  position: static; }
+
+.mobile-nav li {
+  min-height: 6.25rem;
+  border-bottom: 1px solid #dddddd;
+  padding: 1.5em 2.5em .5em 5em;
+  position: relative; }
+  .mobile-nav li::before {
+    content: '';
+    background-image: url(../../../images/icon_our.people.png);
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 6px; }
+  .mobile-nav li::after {
+    content: '';
+    background-image: url(../../../images/icon_arrow.next.png);
+    width: 23px;
+    height: 37px;
+    position: absolute;
+    right: 10px;
+    top: 35%; }
+  .mobile-nav li > a {
+    width: 100%;
+    height: 100%;
+    display: block; }
+.mobile-nav h2 {
+  font-family: Rockwell, serif;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  color: #95be49;
+  letter-spacing: .05; }
+.mobile-nav p {
+  font-size: 0.875rem;
+  color: #8b8a85;
+  line-height: 1.1; }
 
 #intro {
   position: relative; }
@@ -5670,6 +5731,7 @@ th.hide-for-touch {
 footer {
   min-height: 13rem;
   border-top: 1px solid #dddddd;
+  margin-top: -1.1em;
   padding: 1em;
   color: #8b8a85; }
 
