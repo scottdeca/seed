@@ -5688,7 +5688,15 @@ th.hide-for-touch {
     width: 52px;
     height: 52px;
     position: absolute;
-    left: 6px; }
+    left: 10px; }
+  .mobile-nav li.events::before {
+    background-image: url(../../../images/icon_events.png); }
+  .mobile-nav li.join-us::before {
+    background-image: url(../../../images/icon_join.us.png); }
+  .mobile-nav li.blog::before {
+    background-image: url(../../../images/icon_blog.png); }
+  .mobile-nav li.contact-us::before {
+    background-image: url(../../../images/icon_contact.us.png); }
   .mobile-nav li::after {
     content: '';
     background-image: url(../../../images/icon_arrow.next.png);

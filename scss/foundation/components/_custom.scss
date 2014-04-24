@@ -114,8 +114,13 @@ $footer-text-color: #8B8A85;
 			width: 52px;
 			height: 52px;
 			position: absolute;
-			left: 6px;
+			left: 10px;
 			}
+		
+		&.events::before { background-image: url(../../../images/icon_events.png); }
+		&.join-us::before { background-image: url(../../../images/icon_join.us.png); }
+		&.blog::before { background-image: url(../../../images/icon_blog.png); }
+		&.contact-us::before { background-image: url(../../../images/icon_contact.us.png); }
 		
 		&::after {
 			content: '';
