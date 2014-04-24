@@ -3322,13 +3322,7 @@ kbd {
     width: 100px;
     z-index: 10; }
     .orbit-container .orbit-timer .orbit-progress {
-      height: 3px;
-      background-color: rgba(255, 255, 255, 0.3);
-      display: block;
-      width: 0%;
-      position: relative;
-      right: 20px;
-      top: 5px; }
+      display: none; }
     .orbit-container .orbit-timer > span {
       display: none;
       position: absolute;
@@ -4273,7 +4267,7 @@ meta.foundation-mq-topbar {
   width: 100%;
   background: #f7f7f7; }
   .contain-to-grid .top-bar {
-    margin-bottom: 2.25rem; }
+    margin-bottom: 0; }
 
 .fixed {
   width: 100%;
@@ -4300,7 +4294,7 @@ meta.foundation-mq-topbar {
   line-height: 8.125rem;
   position: relative;
   background: #f7f7f7;
-  margin-bottom: 2.25rem; }
+  margin-bottom: 0; }
   .top-bar ul {
     margin-bottom: 0;
     list-style: none; }
@@ -4370,7 +4364,7 @@ meta.foundation-mq-topbar {
           width: 38px;
           top: 0;
           height: 0;
-          box-shadow: 0 8px 0 4px #95be49, 0 23px 0 4px #95be49, 0 38px 0 4px #95be49; }
+          box-shadow: 0 8px 0 3px #95be49, 0 23px 0 3px #95be49, 0 38px 0 3px #95be49; }
   .top-bar.expanded {
     height: auto;
     background: transparent; }
@@ -4379,7 +4373,7 @@ meta.foundation-mq-topbar {
     .top-bar.expanded .toggle-topbar a {
       color: #95be49; }
       .top-bar.expanded .toggle-topbar a::after {
-        box-shadow: 0 10px 0 1px #95be49, 0 16px 0 1px #95be49, 0 22px 0 1px #95be49; }
+        box-shadow: 0 8px 0 3px #95be49, 0 23px 0 3px #95be49, 0 38px 0 3px #95be49; }
 
 .top-bar-section {
   left: 0;
@@ -4589,7 +4583,7 @@ meta.foundation-mq-topbar {
   .contain-to-grid .top-bar {
     max-width: 62.5rem;
     margin: 0 auto;
-    margin-bottom: 2.25rem; }
+    margin-bottom: 0; }
 
   .top-bar-section {
     transition: none 0 0;
@@ -5636,3 +5630,19 @@ th.hide-for-touch {
   margin-left: 1.7em;
   max-height: 70%;
   width: auto; }
+
+#intro {
+  position: relative; }
+
+.intro-statement {
+  font-family: "ff-meta-serif-web-pro", Georgia, serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  font-size: 1.375rem;
+  text-align: center;
+  margin: 2em auto;
+  padding: 0 2em;
+  position: absolute;
+  top: 1em;
+  z-index: 99; }

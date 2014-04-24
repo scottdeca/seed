@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
     
-    <!--
 	<script type="text/javascript" src="//use.typekit.net/sqw4kfi.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	-->
+	
   </head>
   <body>
 
@@ -38,9 +37,11 @@
 	
 	<div id="intro">
 	
-		<h1>Join Toledo’s original cowork community and rub elbows with some of the brightest innovators in the region.</h1>
+		<h1 class="intro-statement">Join Toledo’s original cowork community and rub elbows with some of the brightest innovators in the region.</h1>
 		
-		<ul class="intro-slider" data-orbit>
+		<img src="http://placehold.it/640x600" class="show-for-small-only" alt="Welcome to seed" />
+		
+		<ul class="intro-slider show-for-medium-up" data-orbit>
 		  <li>
 		    <img src="http://placehold.it/1600x456" alt="slide 1" />
 		    <ul class="orbit-caption">
@@ -69,14 +70,16 @@
 		
 	</div>
 	
-	<div class="lets-connect">
+	<div class="lets-connect hide-for-small-only">
 		<p>Seed Coworking is a for designers, developers and other independent contractors — or anyone who needs a professional work environment that isn’t your typical office.</p>
 		<p>Let’s connect!</p>
 		<input type="email" name="email">
 		<button>Contact Me</button>
 	</div>
 	
-	<section id="our-people">
+	<div id="desktop-only" class="hide-for-small-only">
+	
+		<section id="our-people">
 		<h3>Our People</h3>
 		<h2>Meet the folks who put “unity” in the community.</h2>
 		<p>Seed Coworking is more than desks, chairs and wifi (although those are all pretty nice). It’s a true community of like-minded folks who prefer the company of others while working, planning, learning and playing. Stop in, we’d love to meet you.</p>
@@ -132,13 +135,13 @@
 			</li>
 		</ul>
 	</section>
-	
-	<section id="events">
-		<h3>Events</h3>
-		<h2>Feed your head (and sometimes your stomach).</h2>
-		<p>From Monday Hackathons to monthly Lunch ’n’ Learns and everything in between. If you’re looking to get educated, inspired and (sometimes) fed, then you’ve come to the right place.</p>
 		
-		<section class="events-free">
+		<section id="events">
+			<h3>Events</h3>
+			<h2>Feed your head (and sometimes your stomach).</h2>
+			<p>From Monday Hackathons to monthly Lunch ’n’ Learns and everything in between. If you’re looking to get educated, inspired and (sometimes) fed, then you’ve come to the right place.</p>
+			
+			<section class="events-free">
 			<h4>Free and open to the public</h4>
 			<img src="http://placehold.it/303x124" alt="Free Event" />
 			<ul>
@@ -157,7 +160,7 @@
 				</li>
 			</ul>
 		</section>
-		<section class="events-members">
+			<section class="events-members">
 			<h4>For members only.</h4>
 			<img src="http://placehold.it/303x124" alt="Members only" />
 			<ul>
@@ -176,7 +179,7 @@
 				</li>
 			</ul>
 		</section>
-		<section class="events-elsewhere">
+			<section class="events-elsewhere">
 			<h4>Elsewhere. Nearby.</h4>
 			<img src="http://placehold.it/303x124" alt="Elsewhere" />
 			<ul>
@@ -195,150 +198,151 @@
 				</li>
 			</ul>
 		</section>
-		
-		<div class="sub-section follow-us">
-			<p>Learn about our events in advance. Follow us on <a class="twitter" href="#">Twitter</a>, Like us on <a class="facebook" href="#">Facebook</a> and connect with us on <a class="meetup" href="#">Meetup</a>.
-		</div>
-		
-		<div class="newsletter">
-			<p><strong>Signing up for our newsletter</strong> is also a great way to stay in the know:</p>
-			<input type="email" name="email">
-			<button>Sign me up</button>
-		</div>
-	</section>
-	
-	<section id="join-us">
-		<h3>Join Us</h3>
-		<h2>No contracts. No bosses. No cubicles. No bull#%&!</h2>
-		<p>Become part of Toledo’s original cowork community. Join us today. <strong>It’s easy, secure and it’ll improve your outlook.</strong><br /><strong>Ready?</strong> Select a membership level below.</p>
-		
-		<ul class="membership-cards pricing-table">
-			<li class="title">Standard</li>
-			<li class="price">$99.99</li>
-			<li class="description">An awesome description</li>
-			<li class="bullet-item">1 Database</li>
-			<li class="bullet-item">5GB Storage</li>
-			<li class="bullet-item">20 Users</li>
-			<li class="cta-button"><a class="button" href="#">Buy Now</a></li>
-		</ul>
-		<ul class="membership-cards pricing-table">
-			<li class="title">Standard</li>
-			<li class="price">$99.99</li>
-			<li class="description">An awesome description</li>
-			<li class="bullet-item">1 Database</li>
-			<li class="bullet-item">5GB Storage</li>
-			<li class="bullet-item">20 Users</li>
-			<li class="cta-button"><a class="button" href="#">Buy Now</a></li>
-		</ul>
-		<ul class="membership-cards pricing-table">
-			<li class="title">Standard</li>
-			<li class="price">$99.99</li>
-			<li class="description">An awesome description</li>
-			<li class="bullet-item">1 Database</li>
-			<li class="bullet-item">5GB Storage</li>
-			<li class="bullet-item">20 Users</li>
-			<li class="cta-button"><a class="button" href="#">Buy Now</a></li>
-		</ul>
-		<ul class="membership-cards pricing-table">
-			<li class="title">Standard</li>
-			<li class="price">$99.99</li>
-			<li class="description">An awesome description</li>
-			<li class="bullet-item">1 Database</li>
-			<li class="bullet-item">5GB Storage</li>
-			<li class="bullet-item">20 Users</li>
-			<li class="cta-button"><a class="button" href="#">Buy Now</a></li>
-		</ul>
-		<ul class="membership-cards pricing-table">
-			<li class="title">Group</li>
-			<li class="description">Group discounts are available for teams of three or more</li>
-			<li class="bullet-item"><a href="mailto:#">Email us to learn more.</a></li>
-		</ul>
-		
-		<div class="sub-section">
-			<p><strong><em>Not sure if you’re ready to join? Do you have questions?</em></strong></p>
-			<p>Contact us at <a href="mailto:hi@seedcoworking">hi@seedcoworking</a>, or check out our <b>FAQs</b> below.
-		</div>
-		
-		<h3>You’ve got questions. We’ve got answers.</h3>
-		<dl>
-			<dt>Question</dt>
-			<dd>Answer</dd>
-			<dt>Question</dt>
-			<dd>Answer</dd>
-			<dt>Question</dt>
-			<dd>Answer</dd>
-			<dt>Question</dt>
-			<dd>Answer</dd>
-			<dt>Question</dt>
-			<dd>Answer</dd>
-			<dt>Question</dt>
-			<dd>Answer</dd>
-			<dt>Question</dt>
-			<dd>Answer</dd>
-		</dl>
-		
-		<div class="sub-section">
-			<p>Still feeling lost? We’d better get you to the <a href="#contact">contact section</a>.</p>
-		</div>
-	</section>
-	
-	<section id="blog">
-		<h3>Blog</h3>
-		<h2>Cultivated.™ The Seed Coworking Blog</h3>
-		<p>Become part of Toledo’s original cowork community. Join us today. It’s easy, secure and it’ll improve your outlook. Ready? Select a membership level below.</p>
-		
-		<ul class="newsfeed">
-			<li>
-				<img src="http://placehold.it/111x111" alt="Happy Headline" />
-				<h4>Big happy headline.</h4>
-				<p><b>March 21, 2013</b>&nbsp;|&nbsp;Excerpt blah. Lorem ipsum dolor sit amet do equis. Zipsum dolor siet do equis.</p>
-				<a href="#">Click to continue</a>
-			</li>
-			<li>
-				<img src="http://placehold.it/111x111" alt="Happy Headline" />
-				<h4>Big happy headline.</h4>
-				<p><b>March 21, 2013</b>&nbsp;|&nbsp;Excerpt blah. Lorem ipsum dolor sit amet do equis. Zipsum dolor siet do equis.</p>
-				<a href="#">Click to continue</a>
-			</li>
-			<li>
-				<img src="http://placehold.it/111x111" alt="Happy Headline" />
-				<h4>Big happy headline.</h4>
-				<p><b>March 21, 2013</b>&nbsp;|&nbsp;Excerpt blah. Lorem ipsum dolor sit amet do equis. Zipsum dolor siet do equis.</p>
-				<a href="#">Click to continue</a>
-			</li>
-		</ul>
-	</section>
-	
-	<section id="contact-us">
-		<h3>Contact us</h3>
-		<h2>Call, visit, email or barnstorm. We’d love to hear from you!</h2>
-		
-		<div class="row">
-			<div class="one_third"> <!-- small-6 large-2 columns -->
-				<h5>Call and leave a message:</h5>
-				<a href="tel:14194076199">419.407.6199</a>
-				
-				<h5>Email and we'll respond jiffy-quick:</h5>
-				<a href="mailto:hi@seedcoworking.com">hi@seedcoworking.com</a>
-				
-				<h5 class="handwritten">We're highly social too!</h5>
-				<a class="twitter-icon" href="#">Twitter</a>
-				<a class="facebook-icon" href="#">Facebook</a>
-				<a class="meetup-icon" href="#">Meetup</a>
-			</div>
-		</div>
-		
-		<div class="one_third">
-			<h5>Visit us in bucolic St. Clair Village</h5>
-			<img src="http://placehold.it/303x124" alt="St. Clair Village" />
-			<p class="vcard"><span class="fn">Seed Coworking</span></p>
-			<p class="adr">
-				<span class="street-address">25 South Saint Clair Street</span><br />
-				<span class="locality">Toledo</span>, <span class="region">Ohio</span> <span class="postal-code">43604</span>
-			</p>
 			
-		</div>
-	</section>
+			<div class="sub-section follow-us">
+				<p>Learn about our events in advance. Follow us on <a class="twitter" href="#">Twitter</a>, Like us on <a class="facebook" href="#">Facebook</a> and connect with us on <a class="meetup" href="#">Meetup</a>.</p>
+			</div>
+			
+			<div class="newsletter">
+				<p><strong>Signing up for our newsletter</strong> is also a great way to stay in the know:</p>
+				<input type="email" name="email">
+				<button>Sign me up</button>
+			</div>
+		</section>
+		
+		<section id="join-us">
+			<h3>Join Us</h3>
+			<h2>No contracts. No bosses. No cubicles. No bull#%&!</h2>
+			<p>Become part of Toledo’s original cowork community. Join us today. <strong>It’s easy, secure and it’ll improve your outlook.</strong><br /><strong>Ready?</strong> Select a membership level below.</p>
+			
+			<ul class="membership-cards pricing-table">
+				<li class="title">Standard</li>
+				<li class="price">$99.99</li>
+				<li class="description">An awesome description</li>
+				<li class="bullet-item">1 Database</li>
+				<li class="bullet-item">5GB Storage</li>
+				<li class="bullet-item">20 Users</li>
+				<li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+			</ul>
+			<ul class="membership-cards pricing-table">
+			<li class="title">Standard</li>
+			<li class="price">$99.99</li>
+			<li class="description">An awesome description</li>
+			<li class="bullet-item">1 Database</li>
+			<li class="bullet-item">5GB Storage</li>
+			<li class="bullet-item">20 Users</li>
+			<li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+		</ul>
+			<ul class="membership-cards pricing-table">
+			<li class="title">Standard</li>
+			<li class="price">$99.99</li>
+			<li class="description">An awesome description</li>
+			<li class="bullet-item">1 Database</li>
+			<li class="bullet-item">5GB Storage</li>
+			<li class="bullet-item">20 Users</li>
+			<li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+		</ul>
+			<ul class="membership-cards pricing-table">
+			<li class="title">Standard</li>
+			<li class="price">$99.99</li>
+			<li class="description">An awesome description</li>
+			<li class="bullet-item">1 Database</li>
+			<li class="bullet-item">5GB Storage</li>
+			<li class="bullet-item">20 Users</li>
+			<li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+		</ul>
+			<ul class="membership-cards pricing-table">
+				<li class="title">Group</li>
+				<li class="description">Group discounts are available for teams of three or more</li>
+				<li class="bullet-item"><a href="mailto:#">Email us to learn more.</a></li>
+			</ul>
+			
+			<div class="sub-section">
+				<p><strong><em>Not sure if you’re ready to join? Do you have questions?</em></strong></p>
+				<p>Contact us at <a href="mailto:hi@seedcoworking">hi@seedcoworking</a>, or check out our <b>FAQs</b> below.</p>
+			</div>
+			
+			<h3>You’ve got questions. We’ve got answers.</h3>
+			<dl>
+				<dt>Question</dt>
+				<dd>Answer</dd>
+				<dt>Question</dt>
+				<dd>Answer</dd>
+				<dt>Question</dt>
+				<dd>Answer</dd>
+				<dt>Question</dt>
+				<dd>Answer</dd>
+				<dt>Question</dt>
+				<dd>Answer</dd>
+				<dt>Question</dt>
+				<dd>Answer</dd>
+				<dt>Question</dt>
+				<dd>Answer</dd>
+			</dl>
+			
+			<div class="sub-section">
+				<p>Still feeling lost? We’d better get you to the <a href="#contact">contact section</a>.</p>
+			</div>
+		</section>
+		
+		<section id="blog">
+			<h3>Blog</h3>
+			<h2>Cultivated.™ The Seed Coworking Blog</h2>
+			<p>Become part of Toledo’s original cowork community. Join us today. It’s easy, secure and it’ll improve your outlook. Ready? Select a membership level below.</p>
+			
+			<ul class="newsfeed">
+				<li>
+					<img src="http://placehold.it/111x111" alt="Happy Headline" />
+					<h4>Big happy headline.</h4>
+					<p><b>March 21, 2013</b>&nbsp;|&nbsp;Excerpt blah. Lorem ipsum dolor sit amet do equis. Zipsum dolor siet do equis.</p>
+					<a href="#">Click to continue</a>
+				</li>
+				<li>
+					<img src="http://placehold.it/111x111" alt="Happy Headline" />
+					<h4>Big happy headline.</h4>
+					<p><b>March 21, 2013</b>&nbsp;|&nbsp;Excerpt blah. Lorem ipsum dolor sit amet do equis. Zipsum dolor siet do equis.</p>
+					<a href="#">Click to continue</a>
+				</li>
+				<li>
+					<img src="http://placehold.it/111x111" alt="Happy Headline" />
+					<h4>Big happy headline.</h4>
+					<p><b>March 21, 2013</b>&nbsp;|&nbsp;Excerpt blah. Lorem ipsum dolor sit amet do equis. Zipsum dolor siet do equis.</p>
+					<a href="#">Click to continue</a>
+				</li>
+			</ul>
+		</section>
+		
+		<section id="contact-us">
+			<h3>Contact us</h3>
+			<h2>Call, visit, email or barnstorm. We’d love to hear from you!</h2>
+			
+			<div class="row">
+				<div class="one_third"> <!-- small-6 large-2 columns -->
+					<h5>Call and leave a message:</h5>
+					<a href="tel:14194076199">419.407.6199</a>
+					
+					<h5>Email and we'll respond jiffy-quick:</h5>
+					<a href="mailto:hi@seedcoworking.com">hi@seedcoworking.com</a>
+					
+					<h5 class="handwritten">We're highly social too!</h5>
+					<a class="twitter-icon" href="#">Twitter</a>
+					<a class="facebook-icon" href="#">Facebook</a>
+					<a class="meetup-icon" href="#">Meetup</a>
+				</div>
+			</div>
+			
+			<div class="one_third">
+				<h5>Visit us in bucolic St. Clair Village</h5>
+				<img src="http://placehold.it/303x124" alt="St. Clair Village" />
+				<p class="vcard"><span class="fn">Seed Coworking</span></p>
+				<p class="adr">
+					<span class="street-address">25 South Saint Clair Street</span><br />
+					<span class="locality">Toledo</span>, <span class="region">Ohio</span> <span class="postal-code">43604</span>
+				</p>
+				
+			</div>
+		</section>
+	</div> <!-- #desktop-only ends -->
 	
 	<footer>
 		<div class="row">

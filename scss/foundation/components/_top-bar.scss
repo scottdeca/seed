@@ -241,9 +241,9 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
               top:0;
               height: 0;
               // Shh, don't tell, but box-shadows create the menu icon :)
-              box-shadow: 0 8px 0 4px $topbar-menu-icon-color,
-                          0 23px 0 4px $topbar-menu-icon-color,
-                          0 38px 0 4px $topbar-menu-icon-color;
+              box-shadow: 0 8px 0 3px $topbar-menu-icon-color,
+                          0 23px 0 3px $topbar-menu-icon-color,
+                          0 38px 0 3px $topbar-menu-icon-color;
             }
           }
         }
@@ -260,9 +260,9 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
           a { color: $topbar-menu-link-color-toggled;
             &::after {
               // Shh, don't tell, but box-shadows create the menu icon :)
-              box-shadow: 0 10px 0 1px $topbar-menu-icon-color-toggled,
-                          0 16px 0 1px $topbar-menu-icon-color-toggled,
-                          0 22px 0 1px $topbar-menu-icon-color-toggled;
+              box-shadow: 0 8px 0 3px $topbar-menu-icon-color-toggled,
+                          0 23px 0 3px $topbar-menu-icon-color-toggled,
+                          0 38px 0 3px $topbar-menu-icon-color-toggled;
             }
           }
         }

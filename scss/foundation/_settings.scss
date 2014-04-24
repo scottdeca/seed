@@ -742,7 +742,7 @@ $primary-color: #95BE49;
 
 // We use these to control the timer styles
 // $orbit-timer-bg: rgba(255,255,255,0.3);
-// $orbit-timer-show-progress-bar: true;
+$orbit-timer-show-progress-bar: false;
 
 // We use these to control the bullet nav styles
 // $orbit-bullet-nav-color: #ccc;
@@ -1175,7 +1175,7 @@ $topbar-bg-color: #F7F7F7;
 
 // Height and margin
 $topbar-height: rem-calc(130);
-$topbar-margin-bottom: rem-calc(36);
+$topbar-margin-bottom: rem-calc(0);
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: normal;

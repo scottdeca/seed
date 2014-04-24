@@ -12,6 +12,7 @@
 
 
 $rockwell-fontstack: Rockwell, serif;
+$meta-serif-fontstack: "ff-meta-serif-web-pro", Georgia, serif;
 
 .primary-nav, .top-bar-section ul li > a {
 	//line-height: 8.125;
@@ -35,4 +36,21 @@ $rockwell-fontstack: Rockwell, serif;
 	margin-left: 1.7em;
 	max-height: 70%;
 	width: auto;
+}
+
+#intro { position: relative; }
+
+.intro-statement {
+	font-family: $meta-serif-fontstack;
+	font-weight: 500;
+	font-style: normal;
+	color: #fff;
+	font-size: rem-calc(22);
+	text-align: center;
+	margin: 2em auto;
+	padding: 0 2em;
+	
+	position: absolute;
+	top: 1em;
+	z-index: 99;
 }
