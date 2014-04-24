@@ -13,6 +13,7 @@
 
 $rockwell-fontstack: Rockwell, serif;
 $meta-serif-fontstack: "ff-meta-serif-web-pro", Georgia, serif;
+$open-sans-fontstack: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
 
 .primary-nav, .top-bar-section ul li > a {
 	//line-height: 8.125;
@@ -27,8 +28,21 @@ $meta-serif-fontstack: "ff-meta-serif-web-pro", Georgia, serif;
 
 .top-bar-section ul li > a.login {
 	border-radius: 3px;
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, serif;
+	font-family: $open-sans-fontstack;
 	@include box-emboss(1.0, 0.8);
+	}
+
+.top-bar.expanded ul.primary-nav > li {
+	border-bottom: 1px solid #637F2F;
+}
+
+.top-bar.expanded ul.primary-nav li > a {
+	font-family: $open-sans-fontstack;
+	font-size: rem-calc(18);
+	text-align: center;
+	color: #fff;
+	
+	&.active { color: $primary-color; }
 	}
 
 .logo {

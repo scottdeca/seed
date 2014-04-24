@@ -4394,7 +4394,7 @@ meta.foundation-mq-topbar {
     height: 1px;
     width: 100%; }
   .top-bar-section ul li {
-    background: #333333; }
+    background: #95be49; }
     .top-bar-section ul li > a {
       display: block;
       width: 100%;
@@ -4479,7 +4479,7 @@ meta.foundation-mq-topbar {
       background: white;
       color: #95be49; }
     .top-bar-section ul li.active > a {
-      background: white;
+      background: #81a73c;
       color: #95be49; }
       .top-bar-section ul li.active > a:hover {
         background: #81a73c;
@@ -4607,7 +4607,7 @@ meta.foundation-mq-topbar {
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 0.8125rem;
       color: #95be49;
-      background: white; }
+      background: #81a73c; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
         background: #81a73c; }
     .top-bar-section .has-dropdown > a {
@@ -4665,7 +4665,7 @@ meta.foundation-mq-topbar {
         background: white; }
       .top-bar-section .dropdown li label {
         white-space: nowrap;
-        background: #333333; }
+        background: #95be49; }
       .top-bar-section .dropdown li .dropdown {
         left: 100%;
         top: 0; }
@@ -4695,7 +4695,7 @@ meta.foundation-mq-topbar {
     background: white;
     color: #95be49; }
   .no-js .top-bar-section ul li:active > a {
-    background: white;
+    background: #81a73c;
     color: #95be49; }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     display: block;
@@ -5622,8 +5622,19 @@ th.hide-for-touch {
 
 .top-bar-section ul li > a.login {
   border-radius: 3px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   box-shadow: white(1) 0 1px 0, inset black(0.8) 0 1px 0; }
+
+.top-bar.expanded ul.primary-nav > li {
+  border-bottom: 1px solid #637F2F; }
+
+.top-bar.expanded ul.primary-nav li > a {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #fff; }
+  .top-bar.expanded ul.primary-nav li > a.active {
+    color: #95be49; }
 
 .logo {
   margin-top: 1.2em;
