@@ -150,6 +150,14 @@ $footer-text-color: #8B8A85;
 	}
 }
 
+/*------- Mobile Side Menu ---------*/
+
+.right-off-canvas-menu {
+	background: #fff;
+	
+	& > section { padding: 0 2em; }
+}
+
 #intro { position: relative; }
 
 .intro-statement {
