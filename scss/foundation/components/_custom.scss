@@ -39,17 +39,17 @@ $footer-text-color: #8B8A85;
 	@include box-emboss(1.0, 0.8);
 	}
 
-.top-bar.expanded ul.primary-nav > li {
+ul.primary-nav > li {
 	border-bottom: 1px solid #637F2F;
 }
 
-.top-bar.expanded ul.primary-nav li > a {
+ul.primary-nav li > a {
 	font-family: $open-sans-fontstack;
 	font-size: rem-calc(18);
 	text-align: center;
 	color: #fff;
 	
-	&.active { color: $primary-color; }
+	&.active { color: #fff; }
 	&:hover { background: scale-color($primary-color, $lightness: -14%); }
 	&.login {
 		color: $primary-color;

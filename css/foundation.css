@@ -5628,19 +5628,19 @@ th.hide-for-touch {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   box-shadow: white(1) 0 1px 0, inset black(0.8) 0 1px 0; }
 
-.top-bar.expanded ul.primary-nav > li {
+ul.primary-nav > li {
   border-bottom: 1px solid #637F2F; }
 
-.top-bar.expanded ul.primary-nav li > a {
+ul.primary-nav li > a {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.125rem;
   text-align: center;
   color: #fff; }
-  .top-bar.expanded ul.primary-nav li > a.active {
-    color: #95be49; }
-  .top-bar.expanded ul.primary-nav li > a:hover {
+  ul.primary-nav li > a.active {
+    color: #fff; }
+  ul.primary-nav li > a:hover {
     background: #81a73c; }
-  .top-bar.expanded ul.primary-nav li > a.login {
+  ul.primary-nav li > a.login {
     color: #95be49;
     background-color: #eee;
     min-height: 3.3125rem;
