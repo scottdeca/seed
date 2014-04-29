@@ -5789,30 +5789,30 @@ th.hide-for-touch {
 /*------- vCards --------*/
 .member-cards > li {
   background-color: #fff;
-  border-color: #efeddf;
-  border-width: 1px;
+  border: 1px solid #efeddf;
   -webkit-border-radius: 8px;
   border-radius: 8px;
-  font-size: 0.8125rem; }
+  font-size: 0.8125rem;
+  padding: .5em;
+  margin-bottom: 1em; }
   .member-cards > li .avatar {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 33.33333%;
     float: left;
     overflow: hidden;
-    height: 145px;
-    float: left; }
+    padding-left: 0; }
   .member-cards > li img {
     max-height: 100%;
     max-width: auto; }
-  .member-cards > li > ul {
+  .member-cards > li .member-info {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 66.66667%;
     float: left;
-    float: left;
-    text-align: left;
-    list-style-type: none; }
+    text-align: left; }
+  .member-cards > li .member-info > span {
+    display: block; }
   .member-cards > li .name {
     font-weight: 600;
     color: #95be49; }

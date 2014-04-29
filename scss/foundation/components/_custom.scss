@@ -244,19 +244,17 @@ $footer-text-color: #8B8A85;
 
 .member-cards > li {
 	background-color: #fff;
-	border-color:rgb(239,237,223);
-	border-width:1px;
+	border: 1px solid rgb(239,237,223);
 	-webkit-border-radius:8px;
 	border-radius:8px;
 	font-size: rem-calc(13);
+	padding: .5em;
+	margin-bottom: 1em;
 	
 	.avatar {
 		@include grid-column(4);
 		overflow: hidden;
-//		width: 124px;
-		height: 145px;
-		float: left;
-//		margin-right: 10px;
+		padding-left: 0;
 		}
 	
 	img { 
@@ -264,11 +262,13 @@ $footer-text-color: #8B8A85;
 		max-width: auto;
 		}
 		
-	& > ul {
+	.member-info {
 		@include grid-column(8);
-		float: left;
 		text-align: left;
-		list-style-type: none;
+		}
+	
+	.member-info > span {
+		display: block;
 		}
 	
 	.name {
