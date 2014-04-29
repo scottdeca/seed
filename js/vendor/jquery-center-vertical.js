@@ -17,5 +17,15 @@ function centerVertical(child, parent, property) {
 
 
 $(document).ready(function() {
-    centerVertical($(".member-info"), $("li"), "padding-top");
+//    centerVertical($(".member-info"), $("li"), "padding-top");
+//    centerVertical($(".intro-statement"), $("#intro"), "margin-top");
 });
+
+
+/*
+// Used to open a link when clicking on a div containing a link - http://css-tricks.com/snippets/jquery/make-entire-div-clickable/
+$(".clickable-box").click(function(){
+     window.location=$(this).find("a").attr("href");
+     return false;
+});
+*/

@@ -72,7 +72,6 @@ $footer-text-color: #8B8A85;
 
 .right-off-canvas-top-bar {
 	height: $topbar-height;
-	background: #F7F7F7;
 	background-color: #F7F7F7;
 	box-shadow:0px 1px 3px rgba(0,0,0,0.25);
 	
@@ -95,9 +94,20 @@ $footer-text-color: #8B8A85;
 	
 	}
 	
+	.back::before {
+			content: '';
+			background-image: url(../../../images/icon_arrow.back.png);
+			width: 12px;
+			height: 19px;
+			position: absolute;
+			left: 53px;
+			top: 55px;
+			}
+	
 	.move-left .exit-off-canvas { //Foundation overrides
 		box-shadow: none;
 		position: static;
+		background: transparent;
 		}
 
 .mobile-nav {
@@ -107,16 +117,6 @@ $footer-text-color: #8B8A85;
 		border-bottom: $gray-rule;
 		padding: 1.5em 2.5em .5em 5em;
 		position: relative;
-		
-		.back::before {
-			content: '';
-			background-image: url(../../../images/icon_arrow.back.png);
-			width: 12px;
-			height: 19px;
-			position: absolute;
-			left: -10px;
-			top: -10px;
-			}
 		
 		&::before {
 			content: '';
@@ -265,6 +265,7 @@ $footer-text-color: #8B8A85;
 	.member-info {
 		@include grid-column(8);
 		text-align: left;
+		padding-top: 10px;
 		}
 	
 	.member-info > span {

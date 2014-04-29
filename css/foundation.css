@@ -5656,7 +5656,6 @@ th.hide-for-touch {
 /* ------- Mobile Top Bar -------------*/
 .right-off-canvas-top-bar {
   height: 8.125rem;
-  background: #F7F7F7;
   background-color: #F7F7F7;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25); }
   .right-off-canvas-top-bar div {
@@ -5673,23 +5672,25 @@ th.hide-for-touch {
     letter-spacing: .05;
     line-height: 8.125rem; }
 
+.back::before {
+  content: '';
+  background-image: url(../../../images/icon_arrow.back.png);
+  width: 12px;
+  height: 19px;
+  position: absolute;
+  left: 53px;
+  top: 55px; }
+
 .move-left .exit-off-canvas {
   box-shadow: none;
-  position: static; }
+  position: static;
+  background: transparent; }
 
 .mobile-nav li {
   min-height: 6.25rem;
   border-bottom: 1px solid #dddddd;
   padding: 1.5em 2.5em .5em 5em;
   position: relative; }
-  .mobile-nav li .back::before {
-    content: '';
-    background-image: url(../../../images/icon_arrow.back.png);
-    width: 12px;
-    height: 19px;
-    position: absolute;
-    left: -10px;
-    top: -10px; }
   .mobile-nav li::before {
     content: '';
     background-image: url(../../../images/icon_our.people.png);
@@ -5810,7 +5811,8 @@ th.hide-for-touch {
     padding-right: 0.9375rem;
     width: 66.66667%;
     float: left;
-    text-align: left; }
+    text-align: left;
+    padding-top: 10px; }
   .member-cards > li .member-info > span {
     display: block; }
   .member-cards > li .name {
