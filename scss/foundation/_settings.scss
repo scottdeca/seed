@@ -41,7 +41,7 @@
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -1286,5 +1286,6 @@ $topbar-transition-speed: 300ms;
 // CUSTOM COLORS
 //
 
+$secondary-dark-gray: #7E7971;
 $secondary-gray: #8B8A85;
 $secondary-blue: #58B1DF;

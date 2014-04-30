@@ -308,11 +308,82 @@ ul.primary-nav li > a {
 
 /*------- Events --------*/
 
-#events h4 {
-	color: $primary-color;
-	font-size: rem-calc(18);
+#events {
+	
+	h4 {
+		color: $primary-color;
+		font-size: rem-calc(18);
+		}
+	
+	img+dl { margin-top: 1.5em; }
+	
+	dt h5 {
+		color: $secondary-dark-gray;
+		font-size: rem-calc(13);
+		font-weight: 700;
+		}
+	
+	dd {
+		color: $secondary-gray;
+		font-size: rem-calc(13);
+		}
+	
+	span { display: block; }
+	
+	.registration-required { 
+		font-style: italic; 
+		
+		& a { font-style: normal; }
+	}
+	
 }
 
+.sub-section {
+	position: relative;
+	margin-top: 4em;
+	
+	&::before {
+		content: '';
+		background-image: url(../../../images/mobile_divider.png);
+		background-repeat: no-repeat;
+		background-position-x: center;
+		background-position-y: center;
+		
+		width: 100%;
+		height: 8px;
+		position: absolute;
+		top: -20px;
+		left: 0;
+		z-index: -1;
+		}
+}
+
+.follow-us {
+	
+	.facebook, .twitter, .meetup {
+		padding: 2px 8px;
+		position: relative;
+		top: 2px;
+		color: #fff
+	}
+	
+	.facebook { background-color: #305891; }
+	.twitter { background-color: #2CA8D2; }
+	.meetup { background-color: #CC121E; }
+	
+}
+
+.follow-us.mobile {
+	
+	.facebook, .twitter, .meetup {
+		display: block;
+		width: 100%;
+		padding: 6px 8px;
+		margin: 4px auto;
+		border-radius: 4px;
+	}
+	
+}
 
 /*-------- Footer -------*/
 
