@@ -100,7 +100,7 @@ ul.primary-nav li > a {
 			width: 12px;
 			height: 19px;
 			position: absolute;
-			left: 53px;
+			left: 37px;
 			top: 55px;
 			}
 	
@@ -250,6 +250,10 @@ ul.primary-nav li > a {
 	font-size: rem-calc(13);
 	padding: .5em;
 	margin-bottom: 1em;
+	font-family: "open-sans",sans-serif;
+	font-style: italic;
+	font-weight: 400;
+	color: $secondary-gray;
 	
 	.avatar {
 		@include grid-column(4);
@@ -265,7 +269,6 @@ ul.primary-nav li > a {
 	.member-info {
 		@include grid-column(8);
 		text-align: left;
-		padding-top: 10px;
 		}
 	
 	.member-info > span {
@@ -275,7 +278,39 @@ ul.primary-nav li > a {
 	.name {
 		font-weight: 600;
 		color: $primary-color;
+		font-style: normal;
 		}
+	
+	.seed-position,
+	.twitter { text-indent: 24px; position: relative; }
+	
+	.seed-position::before,
+	.twitter::before {
+		content: '';
+		background-repeat: no-repeat;
+		width: 17px;
+		height: 14px;
+		position: absolute;
+		left: 0;
+		top: 1px;
+		}
+	
+	.seed-position::before { background-image: url(../../../images/icon_seed-position.png); }
+		
+	.twitter::before { background-image: url(../../../images/icon_seed-twitter.png); top: 3px; }
+	
+	&.your-mug p {
+		font-family: Dakota, "Dakota Regular";
+		font-style: normal;
+		color: $secondary-blue;
+		}
+}
+
+/*------- Events --------*/
+
+#events h4 {
+	color: $primary-color;
+	font-size: rem-calc(18);
 }
 
 

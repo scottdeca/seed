@@ -5678,7 +5678,7 @@ ul.primary-nav li > a {
   width: 12px;
   height: 19px;
   position: absolute;
-  left: 53px;
+  left: 37px;
   top: 55px; }
 
 .move-left .exit-off-canvas {
@@ -5795,7 +5795,11 @@ ul.primary-nav li > a {
   border-radius: 8px;
   font-size: 0.8125rem;
   padding: .5em;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  font-family: "open-sans",sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #8b8a85; }
   .member-cards > li .avatar {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -5811,13 +5815,40 @@ ul.primary-nav li > a {
     padding-right: 0.9375rem;
     width: 66.66667%;
     float: left;
-    text-align: left;
-    padding-top: 10px; }
+    text-align: left; }
   .member-cards > li .member-info > span {
     display: block; }
   .member-cards > li .name {
     font-weight: 600;
-    color: #95be49; }
+    color: #95be49;
+    font-style: normal; }
+  .member-cards > li .seed-position,
+  .member-cards > li .twitter {
+    text-indent: 24px;
+    position: relative; }
+  .member-cards > li .seed-position::before,
+  .member-cards > li .twitter::before {
+    content: '';
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    top: 1px; }
+  .member-cards > li .seed-position::before {
+    background-image: url(../../../images/icon_seed-position.png); }
+  .member-cards > li .twitter::before {
+    background-image: url(../../../images/icon_seed-twitter.png);
+    top: 3px; }
+  .member-cards > li.your-mug p {
+    font-family: Dakota, "Dakota Regular";
+    font-style: normal;
+    color: #58b1df; }
+
+/*------- Events --------*/
+#events h4 {
+  color: #95be49;
+  font-size: 1.125rem; }
 
 /*-------- Footer -------*/
 footer {
