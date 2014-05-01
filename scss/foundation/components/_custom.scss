@@ -11,13 +11,6 @@
 }
 
 
-$rockwell-fontstack: Rockwell, serif;
-$meta-serif-fontstack: "ff-meta-serif-web-pro", Georgia, serif;
-$open-sans-fontstack: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-$gray-rule: 1px solid #ddd;
-$footer-text-color: #8B8A85;
-
-
 .top-bar {
 	box-shadow:0px -1px 4px rgba(0,0,0,0.1);
 	}
@@ -168,7 +161,7 @@ ul.primary-nav li > a {
 /*------- Mobile Side Menu ---------*/
 
 .right-off-canvas-menu {
-	background: #fff;
+	background: #FCFCFC;
 	
 	& > section { padding: 0 2em; }
 }
@@ -192,27 +185,9 @@ ul.primary-nav li > a {
 
 /*------- Typography --------*/
 
-.header-swash { 
-	position: relative;
-	margin-top: 6em;
-	
-	&::before {
-			content: '';
-			background-image: url(../../../images/section_header_mobile.png);
-			background-repeat: no-repeat;
-			background-position-x: center;
-			background-position-y: center;
-			
-			width: 100%;
-			height: 66px;
-			position: absolute;
-			top: -82px;
-			left: 0;
-			z-index: -1;
-			}
-	}
-
 .right-off-canvas-menu {
+		
+		text-align: center;
 		
 		h3 {
 			font-family: $rockwell-fontstack;
@@ -224,6 +199,26 @@ ul.primary-nav li > a {
 			margin-top: 2em;
 			}
 		
+		.header-swash { 
+			position: relative;
+			margin-top: 7em;
+			
+			&::before {
+					content: '';
+					background-image: url(../../../images/section_header_mobile.png);
+					background-repeat: no-repeat;
+					background-position-x: center;
+					background-position-y: center;
+					
+					width: 100%;
+					height: 66px;
+					position: absolute;
+					top: -82px;
+					left: 0;
+					z-index: -1;
+					}
+			}
+		
 		h2 {
 			font-family: $meta-serif-fontstack;
 			font-weight: 500;
@@ -231,6 +226,8 @@ ul.primary-nav li > a {
 			color: #7E7971;
 			margin-top: .75em;
 			}
+		
+		.sub-section+h2 { margin-top: 2em; }
 		
 		p {
 			font-family: $open-sans-fontstack;
@@ -310,6 +307,8 @@ ul.primary-nav li > a {
 
 #events {
 	
+	section+section { margin-top: 3em; }
+	
 	h4 {
 		color: $primary-color;
 		font-size: rem-calc(18);
@@ -338,9 +337,107 @@ ul.primary-nav li > a {
 	
 }
 
+/*---------- FAQs -------------------*/
+
+dl { margin-top: 2em; }
+
+dt {
+	color: $secondary-dark-gray;
+	}
+
+dd {
+	color: $secondary-gray;
+	}
+
+dd+dt { margin-top: 1.5em; }
+
+
+/*-------- Blog ---------------------*/
+
+.newsfeed {
+	list-style: none;
+	padding-left: 0;
+	
+	li { margin-bottom: 3em; }
+	
+	img { margin-bottom: rem-calc(16); }
+	
+	h4 {
+		font-size: rem-calc(29);
+		font-weight: 800;
+		color: $primary-color;
+		line-height: 1.3;
+		margin-bottom: rem-calc(8);
+		}
+	
+	p { margin-bottom: .25em; }
+	
+}
+
+
+/*-------- Join Us / Pricing Table ---------*/
+
+.pricing-table {
+	
+	border-radius: 4px;
+	
+	.title {
+		background-image: url(../../../images/pattern_grain.texture.png);
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		}
+		
+	.price::before {
+		content: '$';
+		font-size: rem-calc(32);
+		position: relative;
+		bottom: rem-calc(8);
+		}
+	
+	.monthly {
+		font-size: rem-calc(13);
+		color: $secondary-gray;
+		font-weight: 300;
+		}
+	
+	.cta-button {
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		
+		& a {
+			border-radius: 4px;
+			box-shadow: inset 0px 1px 1px rgba(0,0,0,0.3);
+			text-shadow: 0px -1px 0px rgba(0,0,0,0.3);
+			text-transform: uppercase;
+			letter-spacing: .05em;
+			font-size: rem-calc(13);
+			} 
+		}
+	
+	&.badge { position: relative; }
+	
+	&.badge::before {
+		content: '';
+		background-image: url(../../../images/badge_most.popular.png);
+		width: 90px;
+		height: 90px;
+		position: absolute;
+		top: -40px;
+		right: -8px;
+		z-index: 10;
+	}
+	
+	&.badge.spots-left::before { background-image: url(../../../images/badge_seats.left.png); }
+	&.badge.most-popular::before { background-image: url(../../../images/badge_most.popular.png); }
+	
+}
+
+
+/*-------- Sub-sections ------------*/
+
 .sub-section {
 	position: relative;
-	margin-top: 4em;
+	margin-top: 5em;
 	
 	&::before {
 		content: '';
@@ -352,7 +449,7 @@ ul.primary-nav li > a {
 		width: 100%;
 		height: 8px;
 		position: absolute;
-		top: -20px;
+		top: -28px;
 		left: 0;
 		z-index: -1;
 		}
@@ -375,10 +472,12 @@ ul.primary-nav li > a {
 
 .follow-us.mobile {
 	
+	p { line-height: 1.2; font-size: rem-calc(15); margin-bottom: 1em; }
+	
 	.facebook, .twitter, .meetup {
 		display: block;
 		width: 100%;
-		padding: 6px 8px;
+		padding: 12px 8px;
 		margin: 4px auto;
 		border-radius: 4px;
 	}
