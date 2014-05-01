@@ -1,7 +1,7 @@
 <footer>
 	<form>
 		<div class="row collapse">
-			<p><b>Stay connected.</b><br />Sign up for our newletter, <b><i>Dripfeed</i></b>™</p>
+			<p><b>Stay connected.</b><br />Sign up for our newsletter, <b><i>Dripfeed</i></b>™</p>
 			<div class="small-7 columns">
 				<input type="email" placeholder="Your email address" name="email" />
 			</div>

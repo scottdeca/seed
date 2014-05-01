@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seed | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.custom.structure.css" />
     <script src="js/vendor/modernizr.js"></script>
     
 	<script type="text/javascript" src="//use.typekit.net/sqw4kfi.js"></script>
@@ -12,7 +13,7 @@
 	
   </head>
   <body>
-	
+	<div data-role="page" id="home" class="mobile-page">
 	    <nav class="top-bar" data-topbar>
 	    	
 			<section class="top-bar-section">
@@ -346,55 +347,62 @@
 			
 		</div> <!-- #desktop-only ends -->
 		
-		<div id="mobile-only" class="show-for-small-only">
-			<ul class="mobile-nav no-bullet">
-				<li class="our-people">
-					<a href="#our-people">
-						<h2>Our People</h2>
-						<p>Meet the folks who put "unity" in community.</p>
-					</a>
-				</li>
-				<li class="events">
-					<a href="#our-people">
-						<h2>Events</h2>
-						<p>Meet the folks who put "unity" in community.</p>
-					</a>
-				</li>
-				<li class="join-us">
-					<a href="#our-people">
-						<h2>Join Us</h2>
-						<p>Meet the folks who put "unity" in community.</p>
-					</a>
-				</li>
-				<li class="blog">
-					<a href="#our-people">
-						<h2>Blog</h2>
-						<p>Meet the folks who put "unity" in community.</p>
-					</a>
-				</li>
-				<li class="contact-us">
-					<a href="#our-people">
-						<h2>Contact Us</h2>
-						<p>Meet the folks who put "unity" in community.</p>
-					</a>
-				</li>
-			</ul>
-			
-			<aside>
-				
-				<div data-role="page" id="our-people" class="mobile-page">
-					<div data-role="header"><?php include("parts/mobile-sub-nav.php"); ?></div>
-					<div role="main" class="ui-content"><?php include("parts/our-people.php"); ?></div>
-					<div data-role="footer"><?php include("parts/footer.php"); ?></div>
-				</div>
-				
-			</aside>
-		</div> <!-- mobile-only -->
+		
+		
+			<div id="mobile-only" class="show-for-small-only">
+				<ul class="mobile-nav no-bullet">
+					<li class="our-people">
+						<a href="#our-people">
+							<h2>Our People</h2>
+							<p>Meet the folks who put "unity" in community.</p>
+						</a>
+					</li>
+					<li class="events">
+						<a href="#our-people">
+							<h2>Events</h2>
+							<p>Meet the folks who put "unity" in community.</p>
+						</a>
+					</li>
+					<li class="join-us">
+						<a href="#our-people">
+							<h2>Join Us</h2>
+							<p>Meet the folks who put "unity" in community.</p>
+						</a>
+					</li>
+					<li class="blog">
+						<a href="#our-people">
+							<h2>Blog</h2>
+							<p>Meet the folks who put "unity" in community.</p>
+						</a>
+					</li>
+					<li class="contact-us">
+						<a href="#our-people">
+							<h2>Contact Us</h2>
+							<p>Meet the folks who put "unity" in community.</p>
+						</a>
+					</li>
+				</ul>
+					
+			</div> <!-- mobile-only -->
+		
+		<!--
+		<div data-role="page" id="our-people" class="mobile-page">
+			<div data-role="header"><?php include("parts/mobile-sub-nav.php"); ?></div>
+			<div role="main" class="ui-content"><?php include("parts/our-people.php"); ?></div>
+			<div data-role="footer"><?php include("parts/footer.php"); ?></div>
+		</div>
+		
+		<div data-role="page" id="events" class="mobile-page">
+			<div data-role="header"><?php include("parts/mobile-sub-nav.php"); ?></div>
+			<div role="main" class="ui-content"><?php include("parts/events.php"); ?></div>
+			<div data-role="footer"><?php include("parts/footer.php"); ?></div>
+		</div>
+		-->
 		
 		<footer>
 			<form>
 				<div class="row collapse">
-					<p><b>Stay connected.</b><br />Sign up for our newletter, <b><i>Dripfeed</i></b>™</p>
+					<p><b>Stay connected.</b><br />Sign up for our newsletter, <b><i>Dripfeed</i></b>™</p>
 					<div class="small-7 columns">
 						<input type="email" placeholder="Your email address" name="email" />
 					</div>
@@ -406,10 +414,13 @@
 			
 			<p class="copyright">Copyright ® Seed Coworking LLC. <br class="show-for-small-only" /><a href="#">Privacy & Terms.</a></p>
 		</footer>
-
+		
+		
+		</div> <!-- data-role="page" ends -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
-    <script src="js/vendor/jquery.mobile.custom.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script>
+    <!-- <script src="js/vendor/jquery.mobile.custom.min.js"></script> -->
     <script src="js/vendor/jquery-center-vertical.js"></script>
     <script>
       $(document).foundation();
