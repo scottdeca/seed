@@ -163,7 +163,15 @@ ul.primary-nav li > a {
 .right-off-canvas-menu {
 	background: #FCFCFC;
 	
-	& > section { padding: 0 2em; }
+	& > section { 
+		padding: 0 2em; 
+		
+		&.last-child { // :last-child won't work for some reason
+			border-bottom: $gray-rule;
+			padding-bottom: 1em;
+			margin-bottom: 1.2em;
+			}
+		}
 }
 
 #intro { position: relative; }
@@ -303,6 +311,12 @@ ul.primary-nav li > a {
 		}
 }
 
+.handwritten {
+	font-family: Dakota, "Dakota Regular";
+	font-style: normal;
+	color: $secondary-blue;
+	}
+
 /*------- Events --------*/
 
 #events {
@@ -356,7 +370,7 @@ dd+dt { margin-top: 1.5em; }
 
 .newsfeed {
 	list-style: none;
-	padding-left: 0;
+	margin-left: 0; padding-left: 0;
 	
 	li { margin-bottom: 3em; }
 	
@@ -374,6 +388,56 @@ dd+dt { margin-top: 1.5em; }
 	
 }
 
+/*-------- Contact Us -----------*/
+
+#contact-us {
+	
+	h5 {
+		font-size: rem-calc(16);
+		color: $secondary-dark-gray;
+		font-weight: 600;
+		
+		&.handwritten {
+			font-family: Dakota, "Dakota Regular";
+			font-style: normal;
+			color: $secondary-blue;
+			}
+		}
+	
+	a+h5 { margin-top: 2em; }
+	
+	p { color: $secondary-gray; }
+	
+	.twitter-icon,
+	.facebook-icon,
+	.meetup-icon {
+		text-indent: -9999em;
+		color: transparent;
+		display: inline-block;
+		width: 31px;
+		height: 31px;
+		margin-right: 20px;
+		background-image: url(../../../images/icon_social.png);
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		}
+	
+	.facebook-icon { background-position: -39px 0; }
+	.meetup-icon { background-position: -78px 0; width: 46px; }
+	
+	.one_third+.one_third { margin-top: 3em; }
+	
+	.vcard {
+		border: none;
+		padding: 0;
+		margin-top: 1em;
+		margin-bottom: 0;
+		}
+	
+	.adr {
+		margin-top: 0;
+	}
+}
 
 /*-------- Join Us / Pricing Table ---------*/
 
