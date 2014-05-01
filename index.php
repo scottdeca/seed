@@ -352,7 +352,8 @@
 			<div id="mobile-only" class="show-for-small-only">
 				<ul class="mobile-nav no-bullet">
 					<li class="our-people">
-						<a href="#our-people">
+						<!-- <a href="#our-people"> -->
+						<a href="pages/our-people.php" data-prefetch="true">
 							<h2>Our People</h2>
 							<p>Meet the folks who put "unity" in community.</p>
 						</a>
