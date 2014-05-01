@@ -5730,11 +5730,11 @@ ul.primary-nav li > a {
   line-height: 1.1; }
 
 /*------- Mobile Side Menu ---------*/
-.right-off-canvas-menu {
+.mobile-page .ui-content {
   background: #FCFCFC; }
-  .right-off-canvas-menu > section {
+  .mobile-page .ui-content > section {
     padding: 0 2em; }
-    .right-off-canvas-menu > section.last-child {
+    .mobile-page .ui-content > section.last-child {
       border-bottom: 1px solid #dddddd;
       padding-bottom: 1em;
       margin-bottom: 1.2em; }
@@ -5756,20 +5756,19 @@ ul.primary-nav li > a {
   z-index: 99; }
 
 /*------- Typography --------*/
-.right-off-canvas-menu {
+.mobile-page {
   text-align: center; }
-  .right-off-canvas-menu h3 {
+  .mobile-page h3 {
     font-family: Rockwell, serif;
     text-transform: uppercase;
     font-size: 1.125rem;
     color: #95be49;
     letter-spacing: .05em;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
     margin-top: 2em; }
-  .right-off-canvas-menu .header-swash {
+  .mobile-page .header-swash {
     position: relative;
     margin-top: 7em; }
-    .right-off-canvas-menu .header-swash::before {
+    .mobile-page .header-swash::before {
       content: '';
       background-image: url(../../../images/section_header_mobile.png);
       background-repeat: no-repeat;
@@ -5781,15 +5780,15 @@ ul.primary-nav li > a {
       top: -82px;
       left: 0;
       z-index: -1; }
-  .right-off-canvas-menu h2 {
+  .mobile-page h2 {
     font-family: "ff-meta-serif-web-pro", Georgia, serif;
     font-weight: 500;
     font-style: normal;
     color: #7E7971;
     margin-top: .75em; }
-  .right-off-canvas-menu .sub-section + h2 {
+  .mobile-page .sub-section + h2 {
     margin-top: 2em; }
-  .right-off-canvas-menu p {
+  .mobile-page p {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
     color: #7E7971;
     margin-top: 1em; }

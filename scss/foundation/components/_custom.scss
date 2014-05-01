@@ -160,7 +160,7 @@ ul.primary-nav li > a {
 
 /*------- Mobile Side Menu ---------*/
 
-.right-off-canvas-menu {
+.mobile-page .ui-content {
 	background: #FCFCFC;
 	
 	& > section { 
@@ -193,7 +193,7 @@ ul.primary-nav li > a {
 
 /*------- Typography --------*/
 
-.right-off-canvas-menu {
+.mobile-page {
 		
 		text-align: center;
 		
@@ -203,7 +203,7 @@ ul.primary-nav li > a {
 			font-size: rem-calc(18);
 			color: $primary-color;
 			letter-spacing: .05em;
-			@include emboss(.3);
+			//@include emboss(.3);
 			margin-top: 2em;
 			}
 		
