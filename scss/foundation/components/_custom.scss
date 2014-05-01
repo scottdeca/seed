@@ -10,6 +10,7 @@
     text-shadow:0 -1px 0 rgba(0, 0, 0, $opacity);
 }
 
+/*----------- Top Bar Nav -----------------*/
 
 .top-bar {
 	box-shadow:0px -1px 4px rgba(0,0,0,0.1);
@@ -21,7 +22,7 @@
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: .05em;
-	@include letterpress(1.0);
+	//@include letterpress(1.0);
 	color: #726C64; // warm gray
 	font-size: rem-calc(15);
 	}
@@ -48,7 +49,8 @@ ul.primary-nav li > a {
 		color: $primary-color;
 		background-color: #eee;
 		min-height: rem-calc(53);
-		line-height: 2;
+		line-height: 3;
+		font-size: rem-calc(16);
 		border: none;
 		}
 	}
@@ -67,6 +69,7 @@ ul.primary-nav li > a {
 	height: $topbar-height;
 	background-color: #F7F7F7;
 	box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+	z-index: 10;
 	
 	div {
 		height: 100%;
@@ -209,7 +212,7 @@ ul.primary-nav li > a {
 		
 		.header-swash { 
 			position: relative;
-			margin-top: 7em;
+			margin-top: 5em;
 			
 			&::before {
 					content: '';
@@ -223,7 +226,7 @@ ul.primary-nav li > a {
 					position: absolute;
 					top: -82px;
 					left: 0;
-					z-index: -1;
+					z-index: 0;
 					}
 			}
 		

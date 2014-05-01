@@ -4480,7 +4480,7 @@ meta.foundation-mq-topbar {
       color: #95be49; }
     .top-bar-section ul li.active > a {
       background: #81a73c;
-      color: #95be49; }
+      color: white; }
       .top-bar-section ul li.active > a:hover {
         background: #81a73c;
         color: #dbdbdb; }
@@ -4606,7 +4606,7 @@ meta.foundation-mq-topbar {
         background: white; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 0.8125rem;
-      color: #95be49;
+      color: white;
       background: #81a73c; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
         background: #81a73c; }
@@ -4696,7 +4696,7 @@ meta.foundation-mq-topbar {
     color: #95be49; }
   .no-js .top-bar-section ul li:active > a {
     background: #81a73c;
-    color: #95be49; }
+    color: white; }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     display: block;
     position: static !important;
@@ -5611,6 +5611,7 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
+/*----------- Top Bar Nav -----------------*/
 .top-bar {
   box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.1); }
 
@@ -5619,7 +5620,6 @@ th.hide-for-touch {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .05em;
-  text-shadow: 0 1px 0 white;
   color: #726C64;
   font-size: 0.9375rem; }
 
@@ -5644,7 +5644,8 @@ ul.primary-nav li > a {
     color: #95be49;
     background-color: #eee;
     min-height: 3.3125rem;
-    line-height: 2;
+    line-height: 3;
+    font-size: 1rem;
     border: none; }
 
 .logo {
@@ -5657,7 +5658,8 @@ ul.primary-nav li > a {
 .right-off-canvas-top-bar {
   height: 8.125rem;
   background-color: #F7F7F7;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25); }
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  z-index: 10; }
   .right-off-canvas-top-bar div {
     height: 100%;
     border-right: 1px solid #ddd;
@@ -5767,7 +5769,7 @@ ul.primary-nav li > a {
     margin-top: 2em; }
   .mobile-page .header-swash {
     position: relative;
-    margin-top: 7em; }
+    margin-top: 5em; }
     .mobile-page .header-swash::before {
       content: '';
       background-image: url(../../../images/section_header_mobile.png);
@@ -5779,7 +5781,7 @@ ul.primary-nav li > a {
       position: absolute;
       top: -82px;
       left: 0;
-      z-index: -1; }
+      z-index: 0; }
   .mobile-page h2 {
     font-family: "ff-meta-serif-web-pro", Georgia, serif;
     font-weight: 500;
