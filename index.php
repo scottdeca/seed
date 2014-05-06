@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seed | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.css" />
+    <!-- <link rel="stylesheet" href="css/jquery.mobile-1.4.2.css" /> -->
+    <link rel="stylesheet" href="css/jquery.mobile.custom.structure.css" />
     <script src="js/vendor/modernizr.js"></script>
     
 	<script type="text/javascript" src="//use.typekit.net/sqw4kfi.js"></script>
@@ -144,8 +145,8 @@
 		</div> <!-- data-role="page" ends -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script>
-    <!-- <script src="js/vendor/jquery.mobile.custom.min.js"></script> -->
+    <!-- <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script> -->
+    <script src="js/vendor/jquery.mobile.custom.min.js"></script>
     <script src="js/vendor/jquery-center-vertical.js"></script>
     <script>
       $(document).foundation();
