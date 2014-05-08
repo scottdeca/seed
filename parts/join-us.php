@@ -1,6 +1,7 @@
 <section id="join-us">
 	<h3 class="header-swash">Join Us</h3>
-	<h2>No contracts. No bosses. No cubicles. No bull#%&!</h2>
+	<h2 class="hide-for-small-only">No contracts. No bosses. No cubicles. No bull#%&!</h2>
+	<h2 class="show-for-small-only">No contracts.<br />No bosses.<br />No cubicles.<br />No bull#%&!</h2>
 	<p>Become part of Toledo’s original cowork community. Join us today. <strong>It’s easy, secure and it’ll improve your outlook.</strong><br /><strong>Ready?</strong> Select a membership level below.</p>
 	
 	<ul class="membership-cards pricing-table badge spots-left">

@@ -12,7 +12,7 @@
 //
 
 $rockwell-fontstack: Rockwell, serif;
-$meta-serif-fontstack: "ff-meta-serif-web-pro", Georgia, serif;
+$meta-serif-fontstack: "lexia", Georgia, serif;
 $open-sans-fontstack: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
 $gray-rule: 1px solid #ddd;
 $footer-text-color: #8B8A85;
@@ -62,7 +62,7 @@ $body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial,
 // $body-font-style: normal;
 
 // We use this to control font-smoothing
-// $font-smoothing: antialiased;
+$font-smoothing: subpixel-antialiased;
 
 // We use these to control text direction settings
 // $text-direction: ltr;
@@ -852,11 +852,11 @@ $price-table-border: solid 1px #EFEDDF;
 
 // We use these to control the title styles
 $price-title-bg: #514F4A;
-$price-title-padding: rem-calc(10 20 5);
+$price-title-padding: rem-calc(11 20 12);
 // $price-title-align: center;
 $price-title-color: #fff;
-$price-title-weight: normal;
-$price-title-size: rem-calc(26);
+$price-title-weight: 300;
+$price-title-size: rem-calc(22);
 $price-title-font-family: $meta-serif-fontstack;
 
 // We use these to control the price styles
@@ -872,20 +872,20 @@ $price-money-size: rem-calc(44);
 // We use these to control the description styles
 // $price-bg: #fff;
 // $price-desc-color: #777;
-// $price-desc-padding: rem-calc(15);
+$price-desc-padding: rem-calc(5);
 // $price-desc-align: center;
 // $price-desc-font-size: rem-calc(12);
 // $price-desc-weight: normal;
-// $price-desc-line-height: 1.4;
-// $price-desc-bottom-border: dotted 1px #ddd;
+$price-desc-line-height: 1.1;
+$price-desc-bottom-border: none;
 
 // We use these to control the list item styles
 $price-item-color: $secondary-gray;
-// $price-item-padding: rem-calc(15);
+$price-item-padding: rem-calc(5);
 // $price-item-align: center;
 // $price-item-font-size: rem-calc(14);
 // $price-item-weight: normal;
-// $price-item-bottom-border: dotted 1px #ddd;
+$price-item-bottom-border: none;
 
 // We use these to control the CTA area styles
 // $price-cta-bg: #fff;

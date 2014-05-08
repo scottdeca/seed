@@ -3540,12 +3540,12 @@ ul.pagination {
     line-height: 1; }
   .pricing-table .title {
     background-color: #514f4a;
-    padding: 0.625rem 1.25rem 0.3125rem;
+    padding: 0.6875rem 1.25rem 0.75rem;
     text-align: center;
     color: white;
-    font-weight: normal;
-    font-size: 1.625rem;
-    font-family: "ff-meta-serif-web-pro", Georgia, serif; }
+    font-weight: 300;
+    font-size: 1.375rem;
+    font-family: "lexia", Georgia, serif; }
   .pricing-table .price {
     background-color: white;
     padding: 0.9375rem 1.25rem;
@@ -3556,21 +3556,21 @@ ul.pagination {
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
   .pricing-table .description {
     background-color: white;
-    padding: 0.9375rem;
+    padding: 0.3125rem;
     text-align: center;
     color: #777777;
     font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.4;
-    border-bottom: dotted 1px #dddddd; }
+    line-height: 1.1;
+    border-bottom: none; }
   .pricing-table .bullet-item {
     background-color: white;
-    padding: 0.9375rem;
+    padding: 0.3125rem;
     text-align: center;
     color: #8b8a85;
     font-size: 0.875rem;
     font-weight: normal;
-    border-bottom: dotted 1px #dddddd; }
+    border-bottom: none; }
   .pricing-table .cta-button {
     background-color: white;
     text-align: center;
@@ -5659,11 +5659,14 @@ ul.primary-nav li > a {
   height: 8.125rem;
   background-color: #F7F7F7;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  z-index: 10; }
+  z-index: 10;
+  position: relative; }
   .right-off-canvas-top-bar div {
-    height: 100%;
-    border-right: 1px solid #ddd;
-    border-left: 1px solid #fff; }
+    height: 100%; }
+    .right-off-canvas-top-bar div:first-child {
+      border-right: 1px solid #ddd; }
+    .right-off-canvas-top-bar div:last-child {
+      border-left: 1px solid #fff; }
   .right-off-canvas-top-bar div a {
     margin: 0 auto;
     text-align: center;
@@ -5745,7 +5748,7 @@ ul.primary-nav li > a {
   position: relative; }
 
 .intro-statement {
-  font-family: "ff-meta-serif-web-pro", Georgia, serif;
+  font-family: "lexia", Georgia, serif;
   font-weight: 500;
   font-style: normal;
   color: #fff;
@@ -5758,19 +5761,19 @@ ul.primary-nav li > a {
   z-index: 99; }
 
 /*------- Typography --------*/
-.mobile-page {
+.mobile-page, #desktop-only {
   text-align: center; }
-  .mobile-page h3 {
+  .mobile-page h3, #desktop-only h3 {
     font-family: Rockwell, serif;
     text-transform: uppercase;
     font-size: 1.125rem;
     color: #95be49;
     letter-spacing: .05em;
     margin-top: 2em; }
-  .mobile-page .header-swash {
+  .mobile-page .header-swash, #desktop-only .header-swash {
     position: relative;
     margin-top: 5em; }
-    .mobile-page .header-swash::before {
+    .mobile-page .header-swash::before, #desktop-only .header-swash::before {
       content: '';
       background-image: url(../../../images/section_header_mobile.png);
       background-repeat: no-repeat;
@@ -5782,15 +5785,16 @@ ul.primary-nav li > a {
       top: -82px;
       left: 0;
       z-index: 0; }
-  .mobile-page h2 {
-    font-family: "ff-meta-serif-web-pro", Georgia, serif;
+  .mobile-page h2, #desktop-only h2 {
+    font-family: "lexia", Georgia, serif;
     font-weight: 500;
     font-style: normal;
+    line-height: 1.1;
     color: #7E7971;
     margin-top: .75em; }
-  .mobile-page .sub-section + h2 {
+  .mobile-page .sub-section + h2, #desktop-only .sub-section + h2 {
     margin-top: 2em; }
-  .mobile-page p {
+  .mobile-page p, #desktop-only p {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
     color: #7E7971;
     margin-top: 1em; }
@@ -5955,11 +5959,14 @@ dd + dt {
 
 /*-------- Join Us / Pricing Table ---------*/
 .pricing-table {
-  border-radius: 4px; }
+  border-radius: 4px;
+  margin-top: 3em;
+  padding-bottom: 12px; }
   .pricing-table .title {
     background-image: url(../../../images/pattern_grain.texture.png);
     border-top-left-radius: 4px;
-    border-top-right-radius: 4px; }
+    border-top-right-radius: 4px;
+    margin-bottom: .75em; }
   .pricing-table .price::before {
     content: '$';
     font-size: 2rem;
@@ -5978,7 +5985,10 @@ dd + dt {
       text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
       text-transform: uppercase;
       letter-spacing: .05em;
-      font-size: 0.8125rem; }
+      font-size: 0.8125rem;
+      width: 90%;
+      padding: 8px 0 7px;
+      margin: 0; }
   .pricing-table.badge {
     position: relative; }
   .pricing-table.badge::before {
@@ -5988,7 +5998,7 @@ dd + dt {
     height: 90px;
     position: absolute;
     top: -40px;
-    right: -8px;
+    right: -18px;
     z-index: 10; }
   .pricing-table.badge.spots-left::before {
     background-image: url(../../../images/badge_seats.left.png); }
