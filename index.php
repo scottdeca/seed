@@ -18,15 +18,15 @@
 	    
 	    <?php include("parts/topbar.php"); ?>
 		
-		<div id="intro">
+		<div id="intro" class="row">
 	
-			<h1 class="intro-statement">Join Toledo’s original cowork community and rub elbows with some of the brightest innovators in the region.</h1>
+			<h1 class="intro-statement medium-8 medium-centered columns">Join Toledo’s original cowork community and rub elbows with some of the brightest innovators in the region.</h1>
 			
 			<img src="http://placehold.it/640x600" class="show-for-small-only" alt="Welcome to seed" />
 			
 			<ul class="intro-slider hide-for-small-only" data-orbit>
 			  <li>
-			    <img src="http://placehold.it/1600x456" alt="slide 1" />
+			    <img src="http://placehold.it/1400x456" alt="slide 1" />
 			    <ul class="orbit-caption">
 			    	<li class="name">Name</li>
 			    	<li class="job">Job</li>
@@ -34,7 +34,7 @@
 			    </ul>
 			  </li>
 			  <li>
-			    <img src="http://placehold.it/1600x456" alt="slide 2" />
+			    <img src="http://placehold.it/1400x456" alt="slide 2" />
 			    <ul class="orbit-caption">
 			    	<li class="name">Name</li>
 			    	<li class="job">Job</li>
@@ -42,7 +42,7 @@
 			    </ul>
 			  </li>
 			  <li>
-			    <img src="http://placehold.it/1600x456" alt="slide 3" />
+			    <img src="http://placehold.it/1400x456" alt="slide 3" />
 			    <ul class="orbit-caption">
 			    	<li class="name">Name</li>
 			    	<li class="job">Job</li>
@@ -51,18 +51,28 @@
 			  </li>
 			</ul>
 			
-		</div>
-		
-	<div class="lets-connect hide-for-small-only">
-		<p>Seed Coworking is a for designers, developers and other independent contractors — or anyone who needs a professional work environment that isn’t your typical office.</p>
-		<p>Let’s connect!</p>
-		<input type="email" name="email">
-		<button>Contact Me</button>
-	</div>
+			<div class="lets-connect hide-for-small-only medium-4 medium-offset-7">
+				<p>Seed Coworking is a for designers, developers and other independent contractors — or anyone who needs a professional work environment that isn’t your typical office.</p>
+				<p>Let’s connect!</p>
+				
+				<form>
+					<div class="row collapse">
+						<div class="small-7 columns">
+							<input type="email" placeholder="Your email address" name="email" />
+						</div>
+						<div class="small-5 columns">
+							<a href="#" class="postfix radius">Contact Me</a>
+						</div>
+					</div>
+				</form>
+			
+			</div>
+			
+		</div> <!-- #intro ends -->
 		
 		<div id="desktop-only" class="hide-for-small-only">
 		
-			<!-- <?php include("parts/our-people.php"); ?> -->
+			<?php include("parts/our-people.php"); ?>
 			
 			<?php include("parts/events.php"); ?>
 			

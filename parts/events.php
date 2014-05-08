@@ -1,13 +1,15 @@
-<section id="events" class="text-center">
+<section id="events" class="text-center row">
 					
 		<h3 class="header-swash">Events</h3>
 		
 		<h2>Feed your head (and sometimes your stomach).</h2>
 		<p>From Monday Hackathons to monthly Lunch ’n’ Learns and everything in between. If you’re looking to get educated, inspired and (sometimes) fed, then you’ve come to the right place.</p>
-		
-		<section class="events-free">
-		<h4>Free and open to the public</h4>
-		<img src="http://placehold.it/303x124" alt="Free Event" />
+	
+	<div class="row types-of-events">
+	<section class="events-free medium-4 columns">
+		<h4 class="hide-for-small-only">Free and open to the public.</h4>
+		<img src="http://placehold.it/303x124" alt="Free!" />
+		<h4 class="show-for-small-only">Free and open to the public.</h4>
 		<dl>
 			<dt><h5>Event Name</h5></dt>
 			<dd><span class="event-time">Wednesday, March 20, 7:30PM</span></dd>
@@ -22,9 +24,10 @@
 			<dd><span class="event-time">Wednesday, March 20, 7:30PM</span></dd>
 		</dl>
 	</section>
-	<section class="events-members">
-		<h4>For members only.</h4>
+	<section class="events-members medium-4 columns">
+		<h4 class="hide-for-small-only">For members only.</h4>
 		<img src="http://placehold.it/303x124" alt="Members only" />
+		<h4 class="show-for-small-only">For members only.</h4>
 		<dl>
 			<dt><h5>Event Name</h5></dt>
 			<dd><span class="event-time">Wednesday, March 20, 7:30PM</span></dd>
@@ -39,9 +42,10 @@
 			<dd><span class="event-time">Wednesday, March 20, 7:30PM</span></dd>
 		</dl>
 	</section>
-		<section class="events-elsewhere">
-		<h4>Elsewhere. Nearby.</h4>
+	<section class="events-elsewhere medium-4 columns">
+		<h4 class="hide-for-small-only">Elsewhere. Nearby.</h4>
 		<img src="http://placehold.it/303x124" alt="Elsewhere" />
+		<h4 class="show-for-small-only">Elsewhere. Nearby.</h4>
 		<dl>
 			<dt><h5>Event Name</h5></dt>
 			<dd><span class="event-time">Wednesday, March 20, 7:30PM</span></dd>
@@ -56,6 +60,7 @@
 			<dd><span class="event-time">Wednesday, March 20, 7:30PM</span></dd>
 		</dl>
 	</section>
+	</div>
 	
 	<div class="sub-section follow-us hide-for-small-only">
 		<p>Learn about our events in advance. Follow us on <a class="twitter" href="#">Twitter</a>, Like us on <a class="facebook" href="#">Facebook</a> and connect with us on <a class="meetup" href="#">Meetup</a>.</p>

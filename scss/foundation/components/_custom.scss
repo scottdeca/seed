@@ -178,23 +178,6 @@ ul.primary-nav li > a {
 		}
 }
 
-#intro { position: relative; }
-
-.intro-statement {
-	font-family: $meta-serif-fontstack;
-	font-weight: 500;
-	font-style: normal;
-	color: #fff;
-	font-size: rem-calc(22);
-	text-align: center;
-	margin: 2em auto;
-	padding: 0 2em;
-	
-	position: absolute;
-	top: 1em;
-	z-index: 99;
-	}
-
 /*------- Typography --------*/
 
 .mobile-page, #desktop-only {
@@ -249,6 +232,38 @@ ul.primary-nav li > a {
 			}
 
 }
+
+
+/*---------- Intro -----------*/
+
+#intro { position: relative; }
+
+.intro-statement {
+	font-family: $meta-serif-fontstack;
+	font-weight: 500;
+	font-style: normal;
+	color: #fff;
+	font-size: rem-calc(22);
+	text-align: center;
+	margin: 2em auto;
+	padding: 0 2em;
+	
+	position: absolute;
+	top: 1em;
+	z-index: 99;
+	}
+
+/*------- Let's Connect -----------*/
+
+.lets-connect {
+	background: rgba(149,190,73,0.9);
+	border: solid 1px #fff;
+	border-radius: 6px;
+	text-align: center;
+	color: #fff;
+	padding: rem-calc(24);
+}
+
 
 /*------- vCards --------*/
 
@@ -324,14 +339,18 @@ ul.primary-nav li > a {
 
 /*------- Events --------*/
 
+#mobile-only #events section+section { margin-top: 3em; }
+
 #events {
 	
-	section+section { margin-top: 3em; }
+	.types-of-events { margin-top: 3em; }
 	
 	h4 {
 		color: $primary-color;
 		font-size: rem-calc(18);
 		}
+		
+	img+h4 { margin-top: 0.75em; }
 	
 	img+dl { margin-top: 1.5em; }
 	
@@ -447,6 +466,8 @@ dd+dt { margin-top: 1.5em; }
 }
 
 /*-------- Join Us / Pricing Table ---------*/
+
+//.membership-options { @include block-grid(3); }
 
 .pricing-table {
 	

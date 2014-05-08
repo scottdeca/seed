@@ -5744,22 +5744,6 @@ ul.primary-nav li > a {
       padding-bottom: 1em;
       margin-bottom: 1.2em; }
 
-#intro {
-  position: relative; }
-
-.intro-statement {
-  font-family: "lexia", Georgia, serif;
-  font-weight: 500;
-  font-style: normal;
-  color: #fff;
-  font-size: 1.375rem;
-  text-align: center;
-  margin: 2em auto;
-  padding: 0 2em;
-  position: absolute;
-  top: 1em;
-  z-index: 99; }
-
 /*------- Typography --------*/
 .mobile-page, #desktop-only {
   text-align: center; }
@@ -5798,6 +5782,32 @@ ul.primary-nav li > a {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
     color: #7E7971;
     margin-top: 1em; }
+
+/*---------- Intro -----------*/
+#intro {
+  position: relative; }
+
+.intro-statement {
+  font-family: "lexia", Georgia, serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  font-size: 1.375rem;
+  text-align: center;
+  margin: 2em auto;
+  padding: 0 2em;
+  position: absolute;
+  top: 1em;
+  z-index: 99; }
+
+/*------- Let's Connect -----------*/
+.lets-connect {
+  background: rgba(149, 190, 73, 0.9);
+  border: solid 1px #fff;
+  border-radius: 6px;
+  text-align: center;
+  color: #fff;
+  padding: 1.5rem; }
 
 /*------- vCards --------*/
 .member-cards > li {
@@ -5863,11 +5873,16 @@ ul.primary-nav li > a {
   color: #58b1df; }
 
 /*------- Events --------*/
-#events section + section {
+#mobile-only #events section + section {
+  margin-top: 3em; }
+
+#events .types-of-events {
   margin-top: 3em; }
 #events h4 {
   color: #95be49;
   font-size: 1.125rem; }
+#events img + h4 {
+  margin-top: 0.75em; }
 #events img + dl {
   margin-top: 1.5em; }
 #events dt h5 {
