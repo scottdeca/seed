@@ -11,16 +11,16 @@
 		<img src="http://placehold.it/303x124" alt="Free!" />
 		<h4 class="show-for-small-only">Free and open to the public.</h4>
 		<dl>
-			<dt><h5>Event Name</h5></dt>
+			<dt>Event Name</dt>
 			<dd><span class="event-time">Wednesday, March 20, 7:30PM</span></dd>
 			
-			<dt><h5>Event Name</h5></dt>
+			<dt>Event Name</dt>
 			<dd>
 				<span class="event-time">Wednesday, March 20, 7:30PM</span>
 				<span class="registration-required">Registration required. <a href="#">Learn more.</a></span>
 			</dd>
 			
-			<dt><h5>Event Name</h5></dt>
+			<dt>Event Name</dt>
 			<dd><span class="event-time">Wednesday, March 20, 7:30PM</span></dd>
 		</dl>
 	</section>
@@ -29,16 +29,16 @@
 		<img src="http://placehold.it/303x124" alt="Members only" />
 		<h4 class="show-for-small-only">For members only.</h4>
 		<dl>
-			<dt><h5>Event Name</h5></dt>
+			<dt>Event Name</dt>
 			<dd><span class="event-time">Wednesday, March 20, 7:30PM</span></dd>
 			
-			<dt><h5>Event Name</h5></dt>
+			<dt>Event Name</dt>
 			<dd>
 				<span class="event-time">Wednesday, March 20, 7:30PM</span>
 				<span class="registration-required">Registration required. <a href="#">Learn more.</a></span>
 			</dd>
 			
-			<dt><h5>Event Name</h5></dt>
+			<dt>Event Name</dt>
 			<dd><span class="event-time">Wednesday, March 20, 7:30PM</span></dd>
 		</dl>
 	</section>
@@ -47,16 +47,16 @@
 		<img src="http://placehold.it/303x124" alt="Elsewhere" />
 		<h4 class="show-for-small-only">Elsewhere. Nearby.</h4>
 		<dl>
-			<dt><h5>Event Name</h5></dt>
+			<dt>Event Name</dt>
 			<dd><span class="event-time">Wednesday, March 20, 7:30PM</span></dd>
 			
-			<dt><h5>Event Name</h5></dt>
+			<dt>Event Name</dt>
 			<dd>
 				<span class="event-time">Wednesday, March 20, 7:30PM</span>
 				<span class="registration-required">Registration required. <a href="#">Learn more.</a></span>
 			</dd>
 			
-			<dt><h5>Event Name</h5></dt>
+			<dt>Event Name</dt>
 			<dd><span class="event-time">Wednesday, March 20, 7:30PM</span></dd>
 		</dl>
 	</section>

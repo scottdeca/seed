@@ -10,7 +10,7 @@
 			<div class="avatar"><img src="http://placehold.it/124x145" alt="The Don" /></div>
 			<div class="member-info">
 				<span class="name">Bob Sacamano</span>
-				<span class="position">President, GroundSpeed</span>
+				<span class="position">President, GroundSpeed Inc.</span>
 				<span class="seed-position">Seed Co-founder</span>
 				<span class="twitter">@importerexporter</span>
 			</div>

@@ -1,7 +1,7 @@
 <section id="blog">
 					<h3 class="header-swash">Blog</h3>
 					<h2>Cultivated.™ The Seed Coworking Blog</h2>
-					<p>Become part of Toledo’s original cowork community. Join us today. It’s easy, secure and it’ll improve your outlook. Ready? Select a membership level below.</p>
+					<p>Become part of Toledo’s original cowork community. Join us today.</p>
 					
 					<ul class="newsfeed">
 						<li>

@@ -29,7 +29,7 @@
 						<div class="one_third">
 							<h5>Where to park</h5>
 							<p>A few of you have asked, <em>“Where do I park when I visit Seed?”</em> We’re glad you asked.</p>
-							<p>If your visit is short, say 2 hours or less, or you’re a part-time member, we recommend street parking on South Saint Clair. Metered parking is available, and it’s free between 11AM and 2PM, M, W, F. Street parking is free all day (unmetered) if you park south of Lafayette Street.</p>
+							<p>If your visit is short, say 2 hours or less, or you’re a part-time member, we recommend street parking on South Saint Clair. Metered parking is available, and it’s free between 11AM and 2PM, M, W, F. Street parking is free all day (unmetered) if you park south of Lafayette Street.</p>
 							<p>We encourage Unlimited members to get a $35 monthly parking pass for the lots at Washington and Gratiot, and Washington and Depot Streets. <b><em>Ask us for details.</em></b></p>
 						</div>
 						
