@@ -5696,6 +5696,15 @@ ul.primary-nav li > a {
     height: 7.8125rem;
     position: relative;
     z-index: 101; }
+    .top-bar-section li.active:not(.has-form)::before {
+      height: 0;
+      width: 0;
+      border-color: transparent;
+      border-style: solid;
+      border-width: 15px;
+      border-top-color: white;
+      bottom: -30px;
+      left: 23px; }
     .top-bar-section li.active:not(.has-form)::after {
       -webkit-transform: rotateX(20deg);
       -moz-transform: rotate(7deg) translate(20px, 25px) skew(20deg);
