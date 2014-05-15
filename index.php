@@ -18,15 +18,15 @@
 	    
 	    <?php include("parts/topbar.php"); ?>
 		
-		<div id="intro" class="row">
+		<div id="intro">
 	
-			<h1 class="intro-statement medium-8 medium-centered columns">Join Toledo’s original cowork community and rub elbows with some of the brightest innovators in the region.</h1>
+			<h1 class="intro-statement">Join Toledo’s original cowork community and rub elbows with some of the brightest innovators in the region.</h1>
 			
 			<img src="http://placehold.it/640x600" class="show-for-small-only" alt="Welcome to seed" />
 			
 			<ul class="intro-slider hide-for-small-only" data-orbit>
 			  <li>
-			    <img src="http://placehold.it/1400x456" alt="slide 1" />
+			    <img src="http://placehold.it/1400x650" alt="slide 1" />
 			    <ul class="orbit-caption">
 			    	<li class="name">Name</li>
 			    	<li class="job">Job</li>
@@ -34,7 +34,7 @@
 			    </ul>
 			  </li>
 			  <li>
-			    <img src="http://placehold.it/1400x456" alt="slide 2" />
+			    <img src="http://placehold.it/1400x650" alt="slide 2" />
 			    <ul class="orbit-caption">
 			    	<li class="name">Name</li>
 			    	<li class="job">Job</li>
@@ -42,7 +42,7 @@
 			    </ul>
 			  </li>
 			  <li>
-			    <img src="http://placehold.it/1400x456" alt="slide 3" />
+			    <img src="http://placehold.it/1400x650" alt="slide 3" />
 			    <ul class="orbit-caption">
 			    	<li class="name">Name</li>
 			    	<li class="job">Job</li>
@@ -56,8 +56,8 @@
 				<p>Let’s connect!</p>
 				
 				<form>
-					<div class="row collapse">
-						<div class="small-7 columns">
+					<div class="row collapse inset-button">
+						<div class="small-12 columns">
 							<input type="email" placeholder="Your email address" name="email" />
 						</div>
 						<div class="small-5 columns">

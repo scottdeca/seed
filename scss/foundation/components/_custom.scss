@@ -65,8 +65,16 @@ ul.primary-nav li > a {
 // Medium screens
 @media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
 	
+	body { margin-top: $topbar-height !important; }
+	
 	.top-bar { 
 		border-top: solid 1px #fff;
+		width: 100%;
+		left: 0;
+		position: fixed;
+		top: 0;
+		z-index: 99;
+		
 		
 		&::before {
 			content: '';
@@ -253,21 +261,30 @@ ul.primary-nav li > a {
 
 /*---------- Intro -----------*/
 
-#intro { position: relative; }
+#intro { 
+	position: relative;
+	
+	.orbit-caption,
+	.orbit-timer,
+	.orbit-slide-number { display: none; }
+	}
 
 .intro-statement {
 	font-family: $meta-serif-fontstack;
 	font-weight: 500;
 	font-style: normal;
 	color: #fff;
-	font-size: rem-calc(22);
+	font-size: rem-calc(24);
 	text-align: center;
-	margin: 2em auto;
+	margin: 0 auto;
 	padding: 0 2em;
 	
 	position: absolute;
 	top: 1em;
-	z-index: 99;
+	padding: 0 7em;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 98;
 	}
 
 /*------- Let's Connect -----------*/
@@ -279,6 +296,23 @@ ul.primary-nav li > a {
 	text-align: center;
 	color: #fff;
 	padding: rem-calc(24);
+	
+	position: absolute;
+	bottom: 6em;
+}
+
+$inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
+
+.inset-button {
+	position: relative;
+	
+	input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea { margin-bottom: 0; }
+	
+	.small-5 { position: absolute; right: 4px; padding: 4px; }
+	.postfix { 
+		height: $inset-button-height;
+		line-height: $inset-button-height;
+		}
 }
 
 

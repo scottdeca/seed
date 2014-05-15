@@ -5656,8 +5656,16 @@ ul.primary-nav li > a {
 
 @media only screen and (min-width: 40.063em) {
   /* min-width 641px, medium screens */
+  body {
+    margin-top: 8.125rem !important; }
+
   .top-bar {
-    border-top: solid 1px #fff; }
+    border-top: solid 1px #fff;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 99; }
     .top-bar::before {
       content: '';
       background-image: url(../../../images/pattern_grain.texture.png);
@@ -5796,19 +5804,26 @@ ul.primary-nav li > a {
 /*---------- Intro -----------*/
 #intro {
   position: relative; }
+  #intro .orbit-caption,
+  #intro .orbit-timer,
+  #intro .orbit-slide-number {
+    display: none; }
 
 .intro-statement {
   font-family: "lexia", Georgia, serif;
   font-weight: 500;
   font-style: normal;
   color: #fff;
-  font-size: 1.375rem;
+  font-size: 1.5rem;
   text-align: center;
-  margin: 2em auto;
+  margin: 0 auto;
   padding: 0 2em;
   position: absolute;
   top: 1em;
-  z-index: 99; }
+  padding: 0 7em;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 98; }
 
 /*------- Let's Connect -----------*/
 .lets-connect {
@@ -5817,7 +5832,21 @@ ul.primary-nav li > a {
   border-radius: 6px;
   text-align: center;
   color: #fff;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  position: absolute;
+  bottom: 6em; }
+
+.inset-button {
+  position: relative; }
+  .inset-button input[type="text"], .inset-button input[type="password"], .inset-button input[type="date"], .inset-button input[type="datetime"], .inset-button input[type="datetime-local"], .inset-button input[type="month"], .inset-button input[type="week"], .inset-button input[type="email"], .inset-button input[type="number"], .inset-button input[type="search"], .inset-button input[type="tel"], .inset-button input[type="time"], .inset-button input[type="url"], .inset-button textarea {
+    margin-bottom: 0; }
+  .inset-button .small-5 {
+    position: absolute;
+    right: 4px;
+    padding: 4px; }
+  .inset-button .postfix {
+    height: 1.8125rem;
+    line-height: 1.8125rem; }
 
 /*------- vCards --------*/
 .member-cards > li {

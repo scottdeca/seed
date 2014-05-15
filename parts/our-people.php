@@ -1,4 +1,4 @@
-<section id="our-people" class="text-center">
+<section id="our-people" class="text-center row">
 					
 	<h3 class="header-swash">Our People</h3>
 	
