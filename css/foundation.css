@@ -5627,7 +5627,7 @@ th.hide-for-touch {
 .top-bar-section ul li > a.login {
   border-radius: 3px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-  box-shadow: white(1) 0 1px 0, inset black(0.8) 0 1px 0; }
+  box-shadow: white 0 1px 0, inset rgba(0, 0, 0, 0.8) 0 1px 0; }
 
 ul.primary-nav > li {
   border-bottom: 1px solid #637F2F; }
@@ -5670,10 +5670,13 @@ ul.primary-nav li > a {
       content: '';
       background-image: url(../../../images/pattern_grain.texture.png);
       border-bottom: solid 1px #fff;
-      height: 5px;
+      height: 6px;
       width: 100%;
       position: absolute;
       z-index: 100; }
+
+  .top-bar-section ul > li:hover {
+    background: #81a73c; }
 
   .top-bar-section ul li > a {
     line-height: 8.125rem;
@@ -5686,29 +5689,38 @@ ul.primary-nav li > a {
     font-size: 0.9375rem;
     text-align: center; }
 
+  .top-bar-section li.active:not(.has-form) {
+    border-top: solid 5px #95be49;
+    position: relative;
+    z-index: 101; }
+
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     background-color: #fff;
     color: #95be49; }
     .top-bar-section li.active:not(.has-form) a:not(.button):hover {
       background-color: #fff; }
 
-  .top-bar-section ul > li:hover {
-    background: #81a73c; }
-  .top-bar-section ul > li.login {
-    color: #95be49;
-    background-color: #eee;
-    min-height: 3.3125rem;
-    line-height: 3;
-    font-size: 1rem;
-    border: none; }
+  .top-bar-section ul li, .top-bar-section ul li:hover {
+    background: transparent; }
 
   .top-bar-section ul li > a.login {
     border-radius: 3px;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-    box-shadow: white(1) 0 1px 0, inset black(0.8) 0 1px 0; }
+    font-size: 0.8125rem;
+    box-shadow: white 0 1px 0, inset rgba(0, 0, 0, 0.8) 0 1px 0;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    min-height: 1em;
+    line-height: 1em;
+    margin-top: 2.70833rem;
+    margin-left: 2em;
+    color: #fff;
+    background-color: #95be49; }
 
   ul.primary-nav > li {
-    border-bottom: none; } }
+    border-bottom: none; }
+
+  .top-bar .title-area {
+    margin-right: 1em; } }
 /* ------- Mobile Top Bar -------------*/
 .right-off-canvas-top-bar {
   height: 8.125rem;

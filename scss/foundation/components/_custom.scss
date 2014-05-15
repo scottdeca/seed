@@ -1,5 +1,5 @@
 @mixin box-emboss($opacity, $opacity2){
-    box-shadow:white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+    box-shadow:rgba(255,255,255,$opacity) 0 1px 0, inset rgba(0,0,0,$opacity2) 0 1px 0;
 }
 
 @mixin letterpress($opacity){
@@ -82,11 +82,15 @@ ul.primary-nav li > a {
 			content: '';
 			background-image: url(../../../images/pattern_grain.texture.png);
 			border-bottom: solid 1px #fff;
-			height: 5px;
+			height: 6px;
 			width: 100%;
 			position: absolute;
 			z-index: 100;
 			}
+	}
+	
+	.top-bar-section ul > li {
+		&:hover { background: scale-color($primary-color, $lightness: -14%); }
 	}
 	
 	.top-bar-section ul li > a {
@@ -101,32 +105,41 @@ ul.primary-nav li > a {
 		text-align: center;
 		}
 	
+	.top-bar-section li.active:not(.has-form) {
+		border-top: solid 5px $primary-color;
+		position: relative;
+		z-index: 101;
+		}
+	
 	.top-bar-section li.active:not(.has-form) a:not(.button) {
 		background-color: #fff;
 		color: $primary-color;
+		//line-height: ($topbar-height - rem-calc(6));
 		
-		&:hover { background-color: #fff;  }
+		&:hover { background-color: #fff; }
 	}
 	
-	.top-bar-section ul > li {
-		&:hover { background: scale-color($primary-color, $lightness: -14%); }
-		&.login {
-			color: $primary-color;
-			background-color: #eee;
-			min-height: rem-calc(53);
-			line-height: 3;
-			font-size: rem-calc(16);
-			border: none;
-			}
-	}
+	.top-bar-section ul li, .top-bar-section ul li:hover { background: transparent; }
 	
 	.top-bar-section ul li > a.login {
 		border-radius: 3px;
 		font-family: $open-sans-fontstack;
+		font-size: rem-calc(13);
 		@include box-emboss(1.0, 0.8);
+		@include emboss(0.3);
+		
+		min-height: 1em;
+		line-height: 1em;
+		margin-top: ($topbar-height / 3);
+		margin-left: 2em;
+		
+		color: #fff;
+		background-color: $primary-color;
 		}
 	
 	ul.primary-nav > li { border-bottom: none; }
+	
+	.top-bar .title-area { margin-right: 1em; }
 		
 }
 
