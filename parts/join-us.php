@@ -1,4 +1,4 @@
-<section id="join-us">
+<section id="join-us" class="row">
 	<h3 class="header-swash">Join Us</h3>
 	<h2 class="hide-for-small-only">No contracts. No bosses. No cubicles. No bull#%&amp;!</h2>
 	<h2 class="show-for-small-only">No contracts.<br />No bosses.<br />No cubicles.<br />No bull#%&amp;!</h2>

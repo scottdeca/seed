@@ -125,16 +125,16 @@ ul.primary-nav li > a {
 		border-radius: 3px;
 		font-family: $open-sans-fontstack;
 		font-size: rem-calc(13);
-		@include box-emboss(1.0, 0.8);
+		
+		@include box-emboss(1.0, 0.15);
 		@include emboss(0.3);
+		color: #fff;
+		background-color: $primary-color;
 		
 		min-height: 1em;
 		line-height: 1em;
 		margin-top: ($topbar-height / 3);
 		margin-left: 2em;
-		
-		color: #fff;
-		background-color: $primary-color;
 		}
 	
 	ul.primary-nav > li { border-bottom: none; }
@@ -375,6 +375,16 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 	.postfix { 
 		height: $inset-button-height;
 		line-height: $inset-button-height;
+		font-size: rem-calc(14);
+		text-transform: uppercase;
+		@include box-emboss(1.0, 0.15);
+		@include emboss(0.7);
+		color: #fff;
+		background-color: $primary-color;
+		background-image:-webkit-gradient(radial,50% -73%,0,50% -73%,99,color-stop(0, rgb(176,206,119)),color-stop(1, rgb(149,190,73)));
+		background-image:-webkit-radial-gradient(50% -73%,circle farthest-corner, rgb(176,206,119) 0%,rgb(149,190,73) 100%);
+		background-image:radial-gradient(99px at 50% -73%,rgb(176,206,119) 0%,rgb(149,190,73) 100%);
+		border-radius: 4px;
 		}
 }
 
