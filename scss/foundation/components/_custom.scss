@@ -92,6 +92,25 @@ ul.primary-nav li > a {
 	.top-bar-section ul > li {
 		&:hover { background: scale-color($primary-color, $lightness: -14%); }
 		-webkit-perspective: 35em;
+	}
+	
+	.top-bar-section ul li > a {
+		line-height: $topbar-height;
+		font-family: $meta-serif-fontstack;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: .05em;
+		@include letterpress(1.0);
+		color: #726C64; // warm gray
+		font-size: rem-calc(15);
+		text-align: center;
+		}
+	
+	.top-bar-section li.active:not(.has-form) {
+		border-top: solid 5px $primary-color;
+		height: ($topbar-height - rem-calc(5));
+		position: relative;
+		z-index: 101;
 		
 		&::after {
 			-webkit-transform: rotateX(20deg);
@@ -109,30 +128,13 @@ ul.primary-nav li > a {
 			content: "";
 			box-shadow: 0 3px 8px rgba(0,0,0,0.4);
 			}
-	}
-	
-	.top-bar-section ul li > a {
-		line-height: $topbar-height;
-		font-family: $meta-serif-fontstack;
-		font-weight: 500;
-		text-transform: uppercase;
-		letter-spacing: .05em;
-		@include letterpress(1.0);
-		color: #726C64; // warm gray
-		font-size: rem-calc(15);
-		text-align: center;
-		}
-	
-	.top-bar-section li.active:not(.has-form) {
-		border-top: solid 5px $primary-color;
-		position: relative;
-		z-index: 101;
 		}
 	
 	.top-bar-section li.active:not(.has-form) a:not(.button) {
 		background-color: #fff;
 		color: $primary-color;
-		//line-height: ($topbar-height - rem-calc(6));
+		height: ($topbar-height - rem-calc(5));
+		line-height: ($topbar-height - rem-calc(10));
 		
 		&:hover { background-color: #fff; }
 	}
