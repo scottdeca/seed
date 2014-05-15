@@ -445,9 +445,6 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 
 /*------- vCards --------*/
 
-.member-cards> li:nth-of-type(1n+1) { clear: both; }
-.member-cards> li:nth-of-type(1n) { margin-right: 0; }
-
 .member-cards > li {
 	background-color: #fff;
 	border: 1px solid rgb(239,237,223);
@@ -456,7 +453,6 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 	font-size: rem-calc(13);
 	padding: .5em;
 	margin-bottom: 1em;
-	margin-right: 1em;
 	font-family: "open-sans",sans-serif;
 	font-style: italic;
 	font-weight: 400;
@@ -528,11 +524,6 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 	font-style: normal;
 	color: $secondary-blue;
 	}
-
-@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
-	.member-cards > li:nth-of-type(3n) { margin-right: 0; }
-	.member-cards > li:nth-of-type(3n+1) { clear: both; }
-}
 
 /*------- Events --------*/
 
