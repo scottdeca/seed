@@ -113,17 +113,32 @@ ul.primary-nav li > a {
 		z-index: 101;
 		
 		&::before {
-		    @include triangle(30px, white, down);
-		    bottom: -30px;
-		    left: 23px;
+			content: "";
+		    position: absolute;
+		    width: 100%;
+		    height: 0;
+		    border-style: solid;
+		    border-color: transparent;
+		    border-bottom: 0;
+		    pointer-events: none;
+		    
+		    height: 0;
+			width: 0;
+			border-color: transparent;
+			border-style: solid;
+			border-width: 65px;
+			border-top-color: white;
+		    
+		    bottom: -($topbar-height);
+		    left: 0;
 			}
 		
 		&::after {
-			-webkit-transform: rotateX(20deg);
-		     -moz-transform: rotate(7deg) translate(20px,25px) skew(20deg);
-		     -ms-transform: rotate(7deg) translate(20px,25px) skew(20deg);
-		     -o-transform: rotate(7deg) translate(20px,25px) skew(20deg);
-		     transform: rotate(7deg) translate(20px,25px) skew(20deg);
+			-webkit-transform: rotateX(20deg) translateX(1px);
+			-moz-transform: rotate(7deg) translate(20px,25px) skew(20deg);
+			-ms-transform: rotate(7deg) translate(20px,25px) skew(20deg);
+			-o-transform: rotate(7deg) translate(20px,25px) skew(20deg);
+			transform: rotate(7deg) translate(20px,25px) skew(20deg);
 			position: absolute;
 			width: 94%;
 			height: 64%;
@@ -403,12 +418,30 @@ p.section-description {
 	}
 
 .newsletter {
-	min-height: rem-calc(90);
+	background: $primary-color;
 	text-align: center;
+	padding: rem-calc(14);
+	margin-top: 5em;
+	position: relative;
 	
 	.centered { overflow: hidden; display: inline-block; }
 	.inline-form { width: 17em; }
 	p.left { margin: .35em .6em 0 0; }
+	&::before {
+		content: '';
+		background-color: $primary-color;
+		background-image: url(../../../images/icon_leaves_bubble.png);
+		background-repeat: no-repeat;
+		background-position: 11px 10px;
+		position: absolute;
+		top: -25px;
+		left: 47%;
+		width: 50px;
+		height: 50px;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		}
 }
 
 .newsletter-note {
@@ -416,6 +449,7 @@ p.section-description {
 	font-style: normal;
 	color: $secondary-blue;
 	float: right;
+	margin: .5em 0;
 	}
 
 $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
@@ -423,7 +457,7 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 .inset-button {
 	position: relative;
 	
-	input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea { margin-bottom: 0; }
+	input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea { margin-bottom: 0; border-radius: 6px; }
 	
 	.cta-button { position: absolute; right: 4px; padding: 4px; }
 	.postfix {

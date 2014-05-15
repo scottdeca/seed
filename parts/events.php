@@ -74,19 +74,20 @@
 	</div>
 	
 	<div class="newsletter green-cta hide-for-small-only">
-	<div class="centered">
-		<p class="left"><strong>Signing up for our newsletter</strong> is also a great way to stay in the know:</p>
-		<form class="left inline-form">
-			<div class="row collapse inset-button">
-				<div class="small-12 columns">
-					<input type="email" placeholder="Your email address" name="email" />
+		<div class="centered">
+			<p class="left"><strong>Signing up for our newsletter</strong> is also a great way to stay in the know:</p>
+			<form class="left inline-form">
+				<div class="row collapse inset-button">
+					<div class="small-12 columns">
+						<input type="email" placeholder="Your email address" name="email" />
+					</div>
+					<div class="small-5 cta-button columns">
+						<a href="#" class="postfix radius">Sign Me Up</a>
+					</div>
 				</div>
-				<div class="small-4 cta-button columns">
-					<a href="#" class="postfix radius">Sign Me Up</a>
-				</div>
-			</div>
-		</form>
+			</form>
+		</div>
 	</div>
-	</div>
+	<p class="newsletter-note">Our newsletter is called Dripfeed. Clever, eh?</p>
 		
 </section>

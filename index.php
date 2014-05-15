@@ -66,7 +66,6 @@
 					</div>
 				</form>
 			</div>
-			<p class="newsletter-note">Our newsletter is called Dripfeed. Clever, eh?</p>
 			
 		</div> <!-- #intro ends -->
 		
