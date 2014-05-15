@@ -51,7 +51,7 @@
 			  </li>
 			</ul>
 			
-			<div class="lets-connect hide-for-small-only medium-4 medium-offset-7">
+			<div class="lets-connect green-cta hide-for-small-only">
 				<p>Seed Coworking is a for designers, developers and other independent contractors — or anyone who needs a professional work environment that isn’t your typical office.</p>
 				<p>Let’s connect!</p>
 				
@@ -60,13 +60,13 @@
 						<div class="small-12 columns">
 							<input type="email" placeholder="Your email address" name="email" />
 						</div>
-						<div class="small-5 columns">
+						<div class="small-5 cta-button columns">
 							<a href="#" class="postfix radius">Contact Me</a>
 						</div>
 					</div>
 				</form>
-			
 			</div>
+			<p class="newsletter-note">Our newsletter is called Dripfeed. Clever, eh?</p>
 			
 		</div> <!-- #intro ends -->
 		

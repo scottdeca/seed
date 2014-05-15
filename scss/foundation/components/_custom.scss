@@ -287,58 +287,62 @@ ul.primary-nav li > a {
 
 /*------- Typography --------*/
 
-.mobile-page, #desktop-only {
-		
-		text-align: center;
-		
-		h3 {
-			font-family: $rockwell-fontstack;
-			text-transform: uppercase;
-			font-size: rem-calc(18);
-			color: $primary-color;
-			letter-spacing: .05em;
-			//@include emboss(.3);
-			margin-top: 2em;
-			}
-		
-		.header-swash { 
-			position: relative;
-			margin-top: 5em;
-			
-			&::before {
-					content: '';
-					background-image: url(../../../images/section_header_mobile.png);
-					background-repeat: no-repeat;
-					background-position-x: center;
-					background-position-y: center;
-					
-					width: 100%;
-					height: 66px;
-					position: absolute;
-					top: -82px;
-					left: 0;
-					z-index: 0;
-					}
-			}
-		
-		h2 {
-			font-family: $meta-serif-fontstack;
-			font-weight: 500;
-			font-style: normal;
-			line-height: 1.1;
-			color: #7E7971;
-			margin-top: .75em;
-			}
-		
-		.sub-section+h2 { margin-top: 2em; }
-		
-		p {
-			font-family: $open-sans-fontstack;
-			color: #7E7971;
-			margin-top: 1em;
-			}
+.mobile-page { text-align: center; }
 
-}
+h3.header-swash { 
+	
+	font-family: $rockwell-fontstack;
+	text-transform: uppercase;
+	font-size: rem-calc(18);
+	color: $primary-color;
+	letter-spacing: .05em;
+	//@include emboss(.3);
+	margin-top: 2em;
+	text-align: center;
+	
+	position: relative;
+	margin-top: 5em;
+	
+	&::before {
+			content: '';
+			background-image: url(../../../images/section_header_mobile.png);
+			background-repeat: no-repeat;
+			background-position-x: center;
+			background-position-y: center;
+			
+			width: 100%;
+			height: 66px;
+			position: absolute;
+			top: -82px;
+			left: 0;
+			z-index: 0;
+			}
+	}
+
+h2.section-subhead {
+	font-family: $meta-serif-fontstack;
+	font-size: rem-calc(29);
+	font-weight: 500;
+	font-style: normal;
+	line-height: 1.1;
+	color: #7E7971;
+	margin-top: .75em;
+	text-align: center;
+	}
+
+.sub-section+h2 { margin-top: 2em; }
+
+p {
+	font-family: $open-sans-fontstack;
+	color: #8B8A85;
+	font-weight: 300;
+	}
+
+p.section-description {
+	margin-top: 1em;
+	padding: 0 7em;
+	text-align: center;
+	}
 
 
 /*---------- Intro -----------*/
@@ -379,17 +383,40 @@ ul.primary-nav li > a {
 }
 /*------- Let's Connect -----------*/
 
-.lets-connect {
+.green-cta {
 	background: rgba(149,190,73,0.9);
 	border: solid 1px #fff;
 	border-radius: 6px;
-	text-align: center;
-	color: #fff;
 	padding: rem-calc(24);
 	
+	p {
+		text-align: center;
+		color: #fff;
+		}
+	}
+
+.lets-connect {
+	width: rem-calc(400);
 	position: absolute;
 	bottom: 6em;
+	right: 4em;
+	}
+
+.newsletter {
+	min-height: rem-calc(90);
+	text-align: center;
+	
+	.centered { overflow: hidden; display: inline-block; }
+	.inline-form { width: 17em; }
+	p.left { margin: .35em .6em 0 0; }
 }
+
+.newsletter-note {
+	font-family: Dakota, "Dakota Regular";
+	font-style: normal;
+	color: $secondary-blue;
+	float: right;
+	}
 
 $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 
@@ -398,8 +425,8 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 	
 	input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea { margin-bottom: 0; }
 	
-	.small-5 { position: absolute; right: 4px; padding: 4px; }
-	.postfix { 
+	.cta-button { position: absolute; right: 4px; padding: 4px; }
+	.postfix {
 		height: $inset-button-height;
 		line-height: $inset-button-height;
 		font-size: rem-calc(14);
@@ -418,6 +445,9 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 
 /*------- vCards --------*/
 
+.member-cards> li:nth-of-type(1n+1) { clear: both; }
+.member-cards> li:nth-of-type(1n) { margin-right: 0; }
+
 .member-cards > li {
 	background-color: #fff;
 	border: 1px solid rgb(239,237,223);
@@ -426,13 +456,15 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 	font-size: rem-calc(13);
 	padding: .5em;
 	margin-bottom: 1em;
+	margin-right: 1em;
 	font-family: "open-sans",sans-serif;
 	font-style: italic;
 	font-weight: 400;
 	color: $secondary-gray;
+	height: rem-calc(164);
 	
 	.avatar {
-		@include grid-column(4);
+		@include grid-column(5);
 		overflow: hidden;
 		padding-left: 0;
 		}
@@ -443,8 +475,9 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 		}
 		
 	.member-info {
-		@include grid-column(8);
+		@include grid-column(7);
 		text-align: left;
+		margin-left: -1.3em;
 		}
 	
 	.member-info > span {
@@ -475,10 +508,18 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 		
 	.twitter::before { background-image: url(../../../images/icon_seed-twitter.png); top: 3px; }
 	
+	
+	&.your-mug { 
+		border: none;
+		background: none;
+		}
+		
 	&.your-mug p {
 		font-family: Dakota, "Dakota Regular";
 		font-style: normal;
 		color: $secondary-blue;
+		text-align: center;
+		margin-top: (8.5em / 3.5);
 		}
 }
 
@@ -487,6 +528,11 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 	font-style: normal;
 	color: $secondary-blue;
 	}
+
+@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+	.member-cards > li:nth-of-type(3n) { margin-right: 0; }
+	.member-cards > li:nth-of-type(3n+1) { clear: both; }
+}
 
 /*------- Events --------*/
 
@@ -499,13 +545,14 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 	h4 {
 		color: $primary-color;
 		font-size: rem-calc(18);
+		text-align: center;
 		}
 		
 	img+h4 { margin-top: 0.75em; }
 	
 	img+dl { margin-top: 1.5em; }
 	
-	dt h5 {
+	dt {
 		color: $secondary-dark-gray;
 		font-size: rem-calc(13);
 		font-weight: 700;
@@ -514,6 +561,7 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 	dd {
 		color: $secondary-gray;
 		font-size: rem-calc(13);
+		font-weight: 300;
 		}
 	
 	span { display: block; }

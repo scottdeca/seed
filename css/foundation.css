@@ -5841,43 +5841,54 @@ ul.primary-nav li > a {
       margin-bottom: 1.2em; }
 
 /*------- Typography --------*/
-.mobile-page, #desktop-only {
+.mobile-page {
   text-align: center; }
-  .mobile-page h3, #desktop-only h3 {
-    font-family: Rockwell, serif;
-    text-transform: uppercase;
-    font-size: 1.125rem;
-    color: #95be49;
-    letter-spacing: .05em;
-    margin-top: 2em; }
-  .mobile-page .header-swash, #desktop-only .header-swash {
-    position: relative;
-    margin-top: 5em; }
-    .mobile-page .header-swash::before, #desktop-only .header-swash::before {
-      content: '';
-      background-image: url(../../../images/section_header_mobile.png);
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-position-y: center;
-      width: 100%;
-      height: 66px;
-      position: absolute;
-      top: -82px;
-      left: 0;
-      z-index: 0; }
-  .mobile-page h2, #desktop-only h2 {
-    font-family: "lexia", Georgia, serif;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.1;
-    color: #7E7971;
-    margin-top: .75em; }
-  .mobile-page .sub-section + h2, #desktop-only .sub-section + h2 {
-    margin-top: 2em; }
-  .mobile-page p, #desktop-only p {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-    color: #7E7971;
-    margin-top: 1em; }
+
+h3.header-swash {
+  font-family: Rockwell, serif;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  color: #95be49;
+  letter-spacing: .05em;
+  margin-top: 2em;
+  text-align: center;
+  position: relative;
+  margin-top: 5em; }
+  h3.header-swash::before {
+    content: '';
+    background-image: url(../../../images/section_header_mobile.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    width: 100%;
+    height: 66px;
+    position: absolute;
+    top: -82px;
+    left: 0;
+    z-index: 0; }
+
+h2.section-subhead {
+  font-family: "lexia", Georgia, serif;
+  font-size: 1.8125rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.1;
+  color: #7E7971;
+  margin-top: .75em;
+  text-align: center; }
+
+.sub-section + h2 {
+  margin-top: 2em; }
+
+p {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  color: #8B8A85;
+  font-weight: 300; }
+
+p.section-description {
+  margin-top: 1em;
+  padding: 0 7em;
+  text-align: center; }
 
 /*---------- Intro -----------*/
 #intro {
@@ -5907,21 +5918,43 @@ ul.primary-nav li > a {
     margin-right: auto;
     z-index: 98; } }
 /*------- Let's Connect -----------*/
-.lets-connect {
+.green-cta {
   background: rgba(149, 190, 73, 0.9);
   border: solid 1px #fff;
   border-radius: 6px;
-  text-align: center;
-  color: #fff;
-  padding: 1.5rem;
+  padding: 1.5rem; }
+  .green-cta p {
+    text-align: center;
+    color: #fff; }
+
+.lets-connect {
+  width: 25rem;
   position: absolute;
-  bottom: 6em; }
+  bottom: 6em;
+  right: 4em; }
+
+.newsletter {
+  min-height: 5.625rem;
+  text-align: center; }
+  .newsletter .centered {
+    overflow: hidden;
+    display: inline-block; }
+  .newsletter .inline-form {
+    width: 17em; }
+  .newsletter p.left {
+    margin: .35em .6em 0 0; }
+
+.newsletter-note {
+  font-family: Dakota, "Dakota Regular";
+  font-style: normal;
+  color: #58b1df;
+  float: right; }
 
 .inset-button {
   position: relative; }
   .inset-button input[type="text"], .inset-button input[type="password"], .inset-button input[type="date"], .inset-button input[type="datetime"], .inset-button input[type="datetime-local"], .inset-button input[type="month"], .inset-button input[type="week"], .inset-button input[type="email"], .inset-button input[type="number"], .inset-button input[type="search"], .inset-button input[type="tel"], .inset-button input[type="time"], .inset-button input[type="url"], .inset-button textarea {
     margin-bottom: 0; }
-  .inset-button .small-5 {
+  .inset-button .cta-button {
     position: absolute;
     right: 4px;
     padding: 4px; }
@@ -5940,6 +5973,12 @@ ul.primary-nav li > a {
     border-radius: 4px; }
 
 /*------- vCards --------*/
+.member-cards > li:nth-of-type(1n+1) {
+  clear: both; }
+
+.member-cards > li:nth-of-type(1n) {
+  margin-right: 0; }
+
 .member-cards > li {
   background-color: #fff;
   border: 1px solid #efeddf;
@@ -5948,14 +5987,16 @@ ul.primary-nav li > a {
   font-size: 0.8125rem;
   padding: .5em;
   margin-bottom: 1em;
+  margin-right: 1em;
   font-family: "open-sans",sans-serif;
   font-style: italic;
   font-weight: 400;
-  color: #8b8a85; }
+  color: #8b8a85;
+  height: 10.25rem; }
   .member-cards > li .avatar {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 33.33333%;
+    width: 41.66667%;
     float: left;
     overflow: hidden;
     padding-left: 0; }
@@ -5965,9 +6006,10 @@ ul.primary-nav li > a {
   .member-cards > li .member-info {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 66.66667%;
+    width: 58.33333%;
     float: left;
-    text-align: left; }
+    text-align: left;
+    margin-left: -1.3em; }
   .member-cards > li .member-info > span {
     display: block; }
   .member-cards > li .name {
@@ -5992,16 +6034,28 @@ ul.primary-nav li > a {
   .member-cards > li .twitter::before {
     background-image: url(../../../images/icon_seed-twitter.png);
     top: 3px; }
+  .member-cards > li.your-mug {
+    border: none;
+    background: none; }
   .member-cards > li.your-mug p {
     font-family: Dakota, "Dakota Regular";
     font-style: normal;
-    color: #58b1df; }
+    color: #58b1df;
+    text-align: center;
+    margin-top: 2.42857em; }
 
 .handwritten {
   font-family: Dakota, "Dakota Regular";
   font-style: normal;
   color: #58b1df; }
 
+@media only screen and (min-width: 40.063em) {
+  /* min-width 641px, medium screens */
+  .member-cards > li:nth-of-type(3n) {
+    margin-right: 0; }
+
+  .member-cards > li:nth-of-type(3n+1) {
+    clear: both; } }
 /*------- Events --------*/
 #mobile-only #events section + section {
   margin-top: 3em; }
@@ -6010,18 +6064,20 @@ ul.primary-nav li > a {
   margin-top: 3em; }
 #events h4 {
   color: #95be49;
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+  text-align: center; }
 #events img + h4 {
   margin-top: 0.75em; }
 #events img + dl {
   margin-top: 1.5em; }
-#events dt h5 {
+#events dt {
   color: #7e7971;
   font-size: 0.8125rem;
   font-weight: 700; }
 #events dd {
   color: #8b8a85;
-  font-size: 0.8125rem; }
+  font-size: 0.8125rem;
+  font-weight: 300; }
 #events span {
   display: block; }
 #events .registration-required {
