@@ -4401,7 +4401,7 @@ meta.foundation-mq-topbar {
       color: #726c64;
       padding: 12px 0 12px 0;
       padding-left: 0.8125rem;
-      font-family: Rockwell, Helvetica;
+      font-family: "lexia", Georgia, serif;
       font-size: 0.8125rem;
       font-weight: normal;
       text-transform: uppercase; }
@@ -4479,11 +4479,11 @@ meta.foundation-mq-topbar {
       background: white;
       color: #95be49; }
     .top-bar-section ul li.active > a {
-      background: #81a73c;
+      background: #95be49;
       color: white; }
       .top-bar-section ul li.active > a:hover {
         background: #81a73c;
-        color: #dbdbdb; }
+        color: white; }
   .top-bar-section .has-form {
     padding: 0.8125rem; }
   .top-bar-section .has-dropdown {
@@ -4607,7 +4607,7 @@ meta.foundation-mq-topbar {
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 0.8125rem;
       color: white;
-      background: #81a73c; }
+      background: #95be49; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
         background: #81a73c; }
     .top-bar-section .has-dropdown > a {
@@ -4695,7 +4695,7 @@ meta.foundation-mq-topbar {
     background: white;
     color: #95be49; }
   .no-js .top-bar-section ul li:active > a {
-    background: #81a73c;
+    background: #95be49;
     color: white; }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     display: block;
@@ -5612,8 +5612,9 @@ th.hide-for-touch {
   display: table-cell !important; }
 
 /*----------- Top Bar Nav -----------------*/
-.top-bar {
-  box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.1); }
+.top-bar-container {
+  box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5); }
 
 .primary-nav, .top-bar-section ul li > a {
   font-family: Rockwell, serif;
@@ -5636,10 +5637,6 @@ ul.primary-nav li > a {
   font-size: 1.125rem;
   text-align: center;
   color: #fff; }
-  ul.primary-nav li > a.active {
-    color: #fff; }
-  ul.primary-nav li > a:hover {
-    background: #81a73c; }
   ul.primary-nav li > a.login {
     color: #95be49;
     background-color: #eee;
@@ -5647,6 +5644,10 @@ ul.primary-nav li > a {
     line-height: 3;
     font-size: 1rem;
     border: none; }
+
+.top-bar-section ul li.active > a {
+  background: #fff;
+  color: #95be49; }
 
 .logo {
   margin-top: 1.2em;
@@ -5659,19 +5660,55 @@ ul.primary-nav li > a {
   body {
     margin-top: 8.125rem !important; }
 
-  .top-bar {
-    border-top: solid 1px #fff;
+  .top-bar-container {
     width: 100%;
     left: 0;
     position: fixed;
     top: 0;
     z-index: 99; }
-    .top-bar::before {
+    .top-bar-container::before {
       content: '';
       background-image: url(../../../images/pattern_grain.texture.png);
+      border-bottom: solid 1px #fff;
       height: 5px;
       width: 100%;
-      position: static; } }
+      position: absolute;
+      z-index: 100; }
+
+  .top-bar-section ul li > a {
+    line-height: 8.125rem;
+    font-family: "lexia", Georgia, serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    text-shadow: 0 1px 0 white;
+    color: #726C64;
+    font-size: 0.9375rem;
+    text-align: center; }
+
+  .top-bar-section li.active:not(.has-form) a:not(.button) {
+    background-color: #fff;
+    color: #95be49; }
+    .top-bar-section li.active:not(.has-form) a:not(.button):hover {
+      background-color: #fff; }
+
+  .top-bar-section ul > li:hover {
+    background: #81a73c; }
+  .top-bar-section ul > li.login {
+    color: #95be49;
+    background-color: #eee;
+    min-height: 3.3125rem;
+    line-height: 3;
+    font-size: 1rem;
+    border: none; }
+
+  .top-bar-section ul li > a.login {
+    border-radius: 3px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    box-shadow: white(1) 0 1px 0, inset black(0.8) 0 1px 0; }
+
+  ul.primary-nav > li {
+    border-bottom: none; } }
 /* ------- Mobile Top Bar -------------*/
 .right-off-canvas-top-bar {
   height: 8.125rem;
@@ -5819,12 +5856,15 @@ ul.primary-nav li > a {
   margin: 0 auto;
   padding: 0 2em;
   position: absolute;
-  top: 1em;
-  padding: 0 7em;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 98; }
+  top: 1em; }
 
+@media only screen and (min-width: 40.063em) {
+  /* min-width 641px, medium screens */
+  .intro-statement {
+    padding: 0 7em;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 98; } }
 /*------- Let's Connect -----------*/
 .lets-connect {
   background: rgba(149, 190, 73, 0.9);

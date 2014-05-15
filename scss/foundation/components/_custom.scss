@@ -12,8 +12,9 @@
 
 /*----------- Top Bar Nav -----------------*/
 
-.top-bar {
+.top-bar-container {
 	box-shadow:0px -1px 4px rgba(0,0,0,0.1);
+	box-shadow:0px 1px 4px rgba(0,0,0,0.5);
 	}
 
 .primary-nav, .top-bar-section ul li > a {
@@ -43,8 +44,6 @@ ul.primary-nav li > a {
 	text-align: center;
 	color: #fff;
 	
-	&.active { color: #fff; }
-	&:hover { background: scale-color($primary-color, $lightness: -14%); }
 	&.login {
 		color: $primary-color;
 		background-color: #eee;
@@ -53,6 +52,11 @@ ul.primary-nav li > a {
 		font-size: rem-calc(16);
 		border: none;
 		}
+	}
+
+.top-bar-section ul li.active > a {
+	background: #fff;
+	color: $primary-color;
 	}
 
 .logo {
@@ -67,25 +71,63 @@ ul.primary-nav li > a {
 	
 	body { margin-top: $topbar-height !important; }
 	
-	.top-bar { 
-		border-top: solid 1px #fff;
+	.top-bar-container {
 		width: 100%;
 		left: 0;
 		position: fixed;
 		top: 0;
 		z-index: 99;
 		
-		
 		&::before {
 			content: '';
 			background-image: url(../../../images/pattern_grain.texture.png);
+			border-bottom: solid 1px #fff;
 			height: 5px;
 			width: 100%;
-			position: static;
+			position: absolute;
+			z-index: 100;
 			}
-		
+	}
+	
+	.top-bar-section ul li > a {
+		line-height: $topbar-height;
+		font-family: $meta-serif-fontstack;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: .05em;
+		@include letterpress(1.0);
+		color: #726C64; // warm gray
+		font-size: rem-calc(15);
+		text-align: center;
 		}
-
+	
+	.top-bar-section li.active:not(.has-form) a:not(.button) {
+		background-color: #fff;
+		color: $primary-color;
+		
+		&:hover { background-color: #fff;  }
+	}
+	
+	.top-bar-section ul > li {
+		&:hover { background: scale-color($primary-color, $lightness: -14%); }
+		&.login {
+			color: $primary-color;
+			background-color: #eee;
+			min-height: rem-calc(53);
+			line-height: 3;
+			font-size: rem-calc(16);
+			border: none;
+			}
+	}
+	
+	.top-bar-section ul li > a.login {
+		border-radius: 3px;
+		font-family: $open-sans-fontstack;
+		@include box-emboss(1.0, 0.8);
+		}
+	
+	ul.primary-nav > li { border-bottom: none; }
+		
 }
 
 /* ------- Mobile Top Bar -------------*/
@@ -281,12 +323,20 @@ ul.primary-nav li > a {
 	
 	position: absolute;
 	top: 1em;
-	padding: 0 7em;
-	margin-left: auto;
-	margin-right: auto;
-	z-index: 98;
 	}
 
+
+// Medium screens
+@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+
+	.intro-statement {
+		padding: 0 7em;
+		margin-left: auto;
+		margin-right: auto;
+		z-index: 98;
+		}
+		
+}
 /*------- Let's Connect -----------*/
 
 .lets-connect {

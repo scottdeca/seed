@@ -1,4 +1,4 @@
-
+<div class="contain-to-grid top-bar-container">
 	<nav class="top-bar" data-topbar>
 		<section class="top-bar-section">
 			<ul class="left primary-nav">
@@ -20,3 +20,4 @@
 			<li class="toggle-topbar menu-icon"><a href="#"></a></li>
 		</ul>
 	</nav>
+</div>
