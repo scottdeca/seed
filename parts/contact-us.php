@@ -1,9 +1,9 @@
-<section id="contact-us" class="last-child" data-magellan-destination="contact-us">
+<section id="contact-us" class="last-child row" data-magellan-destination="contact-us">
 	<h3 class="header-swash">Contact us</h3>
 	<h2 class="section-subhead">Call, visit, email or barnstorm. We’d love to hear from you!</h2>
 	
 	<div class="row">
-		<div class="one_third"> <!-- small-6 large-2 columns -->
+		<div class="small-12 medium-4 columns"> <!-- small-12 large-4 columns or class="one_third" -->
 			<h5>Call and leave a message:</h5>
 			<a href="tel:14194076199">419.407.6199</a>
 			
@@ -16,7 +16,7 @@
 			<a class="meetup-icon" href="#">Meetup</a>
 		</div>
 	
-		<div class="one_third">
+		<div class="small-12 medium-4 columns">
 			<h5>Visit us in bucolic St. Clair Village</h5>
 			<img src="http://placehold.it/303x124" alt="St. Clair Village" />
 			<p class="vcard"><span class="fn">Seed Coworking</span></p>
@@ -26,7 +26,7 @@
 			</p>
 		</div>
 		
-		<div class="one_third">
+		<div class="small-12 medium-4 columns">
 			<h5>Where to park</h5>
 			<p>A few of you have asked, <em>“Where do I park when I visit Seed?”</em> We’re glad you asked.</p>
 			<p>If your visit is short, say 2 hours or less, or you’re a part-time member, we recommend street parking on South Saint Clair. Metered parking is available, and it’s free between 11AM and 2PM, M, W, F. Street parking is free all day (unmetered) if you park south of Lafayette Street.</p>
