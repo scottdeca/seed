@@ -112,6 +112,7 @@ ul.primary-nav li > a {
 		position: relative;
 		z-index: 101;
 		
+		/* //Bottom triangle
 		&::before {
 			content: "";
 		    position: absolute;
@@ -126,14 +127,14 @@ ul.primary-nav li > a {
 			width: 0;
 			border-color: transparent;
 			border-style: solid;
-			border-width: 90px;
+			border-width: 75px;
 			border-top-color: white;
 		    
 		    bottom: -($topbar-height);
 		    left: 0;
 		    
 		    -webkit-transform: rotateX(82deg) translateY(-173px);
-			}
+			} */
 		
 		&::after {
 			-webkit-transform: rotateX(20deg) translateX(1px);
