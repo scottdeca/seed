@@ -1,13 +1,15 @@
-<div class="contain-to-grid top-bar-container">
+<!-- <div class="contain-to-grid top-bar-container"> -->
+<div data-magellan-expedition="fixed" class="contain-to-grid top-bar-container">
 	<nav class="top-bar" data-topbar>
 		<section class="top-bar-section">
 			<ul class="left primary-nav">
-				<li class="active"><a href="#">About Seed</a></li>
-				<li><a href="#">Our People</a></li>
-				<li><a href="#">Events</a></li>
-				<li><a href="#">Join Us</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Contact Us</a></li>
+<!-- 				<li data-magellan-arrival="first" class="active"><a href="#first">About Seed</a></li> -->
+				<li data-magellan-arrival="about"><a href="#about">About Seed</a></li>
+				<li data-magellan-arrival="our-people"><a href="#our-people">Our People</a></li>
+				<li data-magellan-arrival="events"><a href="#events">Events</a></li>
+				<li data-magellan-arrival="join-us"><a href="#join-us">Join Us</a></li>
+				<li data-magellan-arrival="blog"><a href="#blog">Blog</a></li>
+				<li data-magellan-arrival="contact-us"><a href="#contact-us">Contact Us</a></li>
 				<li><a href="#" class="button login">Login</a></li>
 			</ul>
 		</section>

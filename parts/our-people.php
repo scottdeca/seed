@@ -1,4 +1,4 @@
-<section id="our-people" class="row">
+<section id="our-people" class="row" data-magellan-destination="our-people">
 					
 	<h3 class="header-swash">Our People</h3>
 	

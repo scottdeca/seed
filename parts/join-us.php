@@ -1,4 +1,4 @@
-<section id="join-us" class="row">
+<section id="join-us" class="row" data-magellan-destination="join-us">
 	<h3 class="header-swash">Join Us</h3>
 	<h2 class="section-subhead hide-for-small-only">No contracts. No bosses. No cubicles. No bull#%&amp;!</h2>
 	<h2 class="section-subhead show-for-small-only">No contracts.<br />No bosses.<br />No cubicles.<br />No bull#%&amp;!</h2>

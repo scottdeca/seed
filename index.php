@@ -18,7 +18,8 @@
 	    
 	    <?php include("parts/topbar.php"); ?>
 		
-		<div id="intro">
+		<a name="about"></a>
+		<div id="intro" data-magellan-destination="about">
 	
 			<h1 class="intro-statement">Join Toledo’s original cowork community and rub elbows with some of the brightest innovators in the region.</h1>
 			
@@ -70,15 +71,20 @@
 		</div> <!-- #intro ends -->
 		
 		<div id="desktop-only" class="hide-for-small-only">
-		
+			
+			<a name="our-people"></a>
 			<?php include("parts/our-people.php"); ?>
 			
+			<a name="events"></a>
 			<?php include("parts/events.php"); ?>
 			
+			<a name="join-us"></a>
 			<?php include("parts/join-us.php"); ?>
 			
+			<a name="blog"></a>
 			<?php include("parts/blog.php"); ?>
 			
+			<a name="contact-us"></a>
 			<?php include("parts/contact-us.php"); ?>
 			
 		</div> <!-- #desktop-only ends -->

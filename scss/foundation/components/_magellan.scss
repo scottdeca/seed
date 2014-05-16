@@ -16,10 +16,10 @@ $magellan-padding: 10px !default;
   @if $include-html-magellan-classes {
 
     #{data('magellan-expedition')}, #{data('magellan-expedition-clone')} {
-      background: $magellan-bg;
+      //background: $magellan-bg;
       z-index: 50;
       min-width: 100%;
-      padding: $magellan-padding;
+      //padding: $magellan-padding;
 
       .sub-nav {
         margin-bottom: 0;

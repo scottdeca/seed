@@ -1,4 +1,4 @@
-<section id="blog" class="row">
+<section id="blog" class="row" data-magellan-destination="blog">
 	<h3 class="header-swash">Blog</h3>
 	<h2 class="section-subhead">Cultivated.™ The Seed Coworking Blog</h2>
 	<p class="section-description">Become part of Toledo’s original cowork community. Join us today.</p>
