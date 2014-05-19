@@ -335,6 +335,13 @@ h3.header-swash {
 			left: 0;
 			z-index: 0;
 			}
+			
+	// Medium screens
+	@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+		&::before {	background-image: url(../../../images/section_header_desktop.png); }
+	}
+	
+	
 	}
 
 h2.section-subhead {
@@ -360,6 +367,21 @@ p.section-description {
 	margin-top: 1em;
 	padding: 0 7em;
 	text-align: center;
+	}
+
+/*--------- Layout -----------*/
+
+.three-column-split { 
+	margin-top: 3em;
+	
+	&:after {
+		clear: both;
+		}
+	&:before, &:after {
+		content: " ";
+		display: table;
+		}
+	
 	}
 
 
@@ -423,7 +445,7 @@ p.section-description {
 .newsletter {
 	background: $primary-color;
 	text-align: center;
-	padding: rem-calc(14);
+	padding: rem-calc(16);
 	margin-top: 5em;
 	position: relative;
 	
@@ -568,11 +590,10 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 
 #events {
 	
-	.types-of-events { margin-top: 3em; }
-	
 	h4 {
 		color: $primary-color;
 		font-size: rem-calc(18);
+		font-weight: 700;
 		text-align: center;
 		}
 		
@@ -582,13 +603,13 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 	
 	dt {
 		color: $secondary-dark-gray;
-		font-size: rem-calc(13);
-		font-weight: 700;
+		font-size: rem-calc(14);
+		font-weight: 600;
 		}
 	
 	dd {
 		color: $secondary-gray;
-		font-size: rem-calc(13);
+		font-size: rem-calc(14);
 		font-weight: 300;
 		}
 	
@@ -699,7 +720,7 @@ dd+dt { margin-top: 1.5em; }
 .pricing-table {
 	
 	border-radius: 4px;
-	margin-top: 3em;
+	margin-top: .5em;
 	padding-bottom: 12px;
 	
 	.title {
@@ -778,6 +799,11 @@ dd+dt { margin-top: 1.5em; }
 		left: 0;
 		z-index: -1;
 		}
+	
+		// Medium screens
+		@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+			&::before { background-image: url(../../../images/desktop_divider.png); }
+		}
 }
 
 .follow-us {
@@ -817,6 +843,18 @@ footer {
 	margin-top: -1.1em;
 	padding: 1em;
 	color: $footer-text-color;
+	background-color: #fff;
+	
+	.inline-form {
+		width: 40%;
+		margin-left: 1.5em;
+		}
+		
+	// Medium screens
+	@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+		margin-top: 3em;
+		}
+	
 	}
 
 .copyright { font-size: rem-calc(13); }

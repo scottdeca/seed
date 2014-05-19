@@ -4,7 +4,7 @@
 	<h2 class="section-subhead show-for-small-only">No contracts.<br />No bosses.<br />No cubicles.<br />No bull#%&amp;!</h2>
 	<p class="section-description">Become part of Toledo’s original cowork community. Join us today. <strong>It’s easy, secure and it’ll improve your outlook.</strong><br /><strong>Ready?</strong> Select a membership level below.</p>
 	
-	<ul class="medium-block-grid-3 membership-options">
+	<ul class="medium-block-grid-3 membership-options three-column-split">
 		
 		<li><ul class="membership-cards pricing-table badge spots-left">
 			<li class="title">Unlimited</li>

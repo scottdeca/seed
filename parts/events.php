@@ -5,7 +5,7 @@
 		
 		<p class="section-description">From Monday Hackathons to monthly Lunch ’n’ Learns and everything in between. If you’re looking to get educated, inspired and (sometimes) fed, then you’ve come to the right place.</p>
 	
-	<div class="row types-of-events">
+	<div class="row types-of-events three-column-split">
 	<section class="events-free medium-4 columns">
 		<h4 class="hide-for-small-only">Free and open to the public.</h4>
 		<img src="http://placehold.it/303x124" alt="Free!" />
@@ -73,7 +73,7 @@
 		<a href="#" class="meetup">Meetup</a>
 	</div>
 	
-	<div class="newsletter green-cta hide-for-small-only">
+	<div class="newsletter medium-10-centered green-cta hide-for-small-only">
 		<div class="centered">
 			<p class="left"><strong>Signing up for our newsletter</strong> is also a great way to stay in the know:</p>
 			<form class="left inline-form">

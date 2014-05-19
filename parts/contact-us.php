@@ -2,7 +2,7 @@
 	<h3 class="header-swash">Contact us</h3>
 	<h2 class="section-subhead">Call, visit, email or barnstorm. We’d love to hear from you!</h2>
 	
-	<div class="row">
+	<div class="three-column-split">
 		<div class="small-12 medium-4 columns"> <!-- small-12 large-4 columns or class="one_third" -->
 			<h5>Call and leave a message:</h5>
 			<a href="tel:14194076199">419.407.6199</a>
