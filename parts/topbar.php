@@ -3,7 +3,6 @@
 	<nav class="top-bar" data-topbar>
 		<section class="top-bar-section">
 			<ul class="left primary-nav">
-<!-- 				<li data-magellan-arrival="first" class="active"><a href="#first">About Seed</a></li> -->
 				<li data-magellan-arrival="about"><a href="#about">About Seed</a></li>
 				<li data-magellan-arrival="our-people"><a href="#our-people">Our People</a></li>
 				<li data-magellan-arrival="events"><a href="#events">Events</a></li>
