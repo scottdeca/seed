@@ -106,7 +106,7 @@ ul.primary-nav li > a {
 		text-align: center;
 		}
 	
-	.top-bar-section li.active:not(.has-form) {
+	.top-bar-section li.active {
 		border-top: solid 5px $primary-color;
 		height: ($topbar-height - rem-calc(5));
 		position: relative;
@@ -160,9 +160,9 @@ ul.primary-nav li > a {
 			background-repeat: no-repeat;
 			position: absolute;
 			height: 147px;
-			width: 108%;
-			left: -5px;
-			right: 5px;
+			width: 112%;
+			left: -6%;
+			right: 6%;
 			top: 0;
 			z-index: -1;
 			}
@@ -178,6 +178,7 @@ ul.primary-nav li > a {
 		&:hover { background-color: transparent; }
 	}
 	
+	.top-bar-section li:not(.has-form) a:not(.button),
 	.top-bar-section li:not(.has-form) a:not(.button):hover { background: transparent; } //overrides the settings.scss, set for mobile first
 	
 	.top-bar-section ul li, .top-bar-section ul li:hover { background: transparent; }
@@ -202,6 +203,26 @@ ul.primary-nav li > a {
 	
 	.top-bar .title-area { margin-right: 1em; }
 		
+	.join-us::after {
+		content: '';
+		background-image: url('../../../images/menu_join.us_callout.png');
+		background-repeat: no-repeat;
+		background-position: center center;
+		position: absolute;
+		bottom: 16px;
+		left: -50%;
+		width: 199px;
+		height: 33px;
+		-webkit-transition: opacity 200ms ease-in-out;
+		-moz-transition: opacity 1s ease-in-out;
+		-ms-transition: opacity 1s ease-in-out;
+		-o-transition: opacity 1s ease-in-out;
+		transition: opacity 200ms ease-in-out;
+		opacity: 1;
+		}
+	
+	li.active .join-us::after { opacity: 0; }
+	
 }
 
 /* ------- Mobile Top Bar -------------*/
