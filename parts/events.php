@@ -73,7 +73,7 @@
 		<a href="#" class="meetup">Meetup</a>
 	</div>
 	
-	<div class="newsletter medium-10-centered green-cta hide-for-small-only">
+	<div class="newsletter green-cta hide-for-small-only">
 		<div class="centered">
 			<p class="left"><strong>Signing up for our newsletter</strong> is also a great way to stay in the know:</p>
 			<form class="left inline-form">

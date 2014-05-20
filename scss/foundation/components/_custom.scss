@@ -106,7 +106,7 @@ ul.primary-nav li > a {
 		text-align: center;
 		}
 	
-	.top-bar-section li.active {
+	.top-bar-section li.active:not(.has-form) {
 		border-top: solid 5px $primary-color;
 		height: ($topbar-height - rem-calc(5));
 		position: relative;
