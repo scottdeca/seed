@@ -178,6 +178,8 @@ ul.primary-nav li > a {
 		&:hover { background-color: transparent; }
 	}
 	
+	.top-bar-section li:not(.has-form) a:not(.button):hover { background: transparent; } //overrides the settings.scss, set for mobile first
+	
 	.top-bar-section ul li, .top-bar-section ul li:hover { background: transparent; }
 	
 	.top-bar-section ul li > a.login {
@@ -379,11 +381,14 @@ p {
 
 p.section-description {
 	margin-top: 1em;
+	margin-bottom: 2.5em;
 	padding: 0 7em;
 	text-align: center;
 	}
 	
 a.email { font-weight: 600; }
+
+b, strong { font-weight: 600; } // The default bold is too heavy w/open sans
 
 
 /*--------- Layout -----------*/

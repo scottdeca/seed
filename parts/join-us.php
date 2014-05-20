@@ -47,8 +47,8 @@
 	</ul>
 	
 	<div class="sub-section">
-		<p class="section-description"><strong><em>Not sure if you’re ready to join? Do you have questions?</em></strong></p>
-		<p class="section-description">Contact us at <a href="mailto:hi@seedcoworking" class="email">hi@seedcoworking</a>, or check out our <b>FAQs</b> below.</p>
+		<p class="text-center"><b><em>Not sure if you’re ready to join? Do you have questions?</em></b><br />
+		Contact us at <a href="mailto:hi@seedcoworking" class="email">hi@seedcoworking</a>, or check out our <b>FAQs</b> below.</p>
 	</div>
 	
 	<h2 class="section-subhead">You’ve got questions. We’ve got answers.</h2>
