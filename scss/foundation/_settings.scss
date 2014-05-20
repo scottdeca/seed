@@ -762,9 +762,9 @@ $off-canvas-width: 100%;
 $orbit-timer-show-progress-bar: false;
 
 // We use these to control the bullet nav styles
-// $orbit-bullet-nav-color: #ccc;
-// $orbit-bullet-nav-color-active: #999;
-// $orbit-bullet-radius: rem-calc(9);
+$orbit-bullet-nav-color: #D6D4D2;
+$orbit-bullet-nav-color-active: $primary-color;
+$orbit-bullet-radius: rem-calc(12);
 
 // We use these to controls the style of slide numbers
 // $orbit-slide-number-bg: rgba(0,0,0,0);
@@ -874,8 +874,8 @@ $price-money-size: rem-calc(44);
 // $price-desc-color: #777;
 $price-desc-padding: rem-calc(5);
 // $price-desc-align: center;
-// $price-desc-font-size: rem-calc(12);
-// $price-desc-weight: normal;
+$price-desc-font-size: rem-calc(15);
+$price-desc-weight: 300;
 $price-desc-line-height: 1.1;
 $price-desc-bottom-border: none;
 
@@ -883,8 +883,8 @@ $price-desc-bottom-border: none;
 $price-item-color: $secondary-gray;
 $price-item-padding: rem-calc(5);
 // $price-item-align: center;
-// $price-item-font-size: rem-calc(14);
-// $price-item-weight: normal;
+$price-item-font-size: rem-calc(15);
+$price-item-weight: 300;
 $price-item-bottom-border: none;
 
 // We use these to control the CTA area styles

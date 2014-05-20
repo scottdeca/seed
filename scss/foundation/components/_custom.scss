@@ -368,6 +368,9 @@ p.section-description {
 	padding: 0 7em;
 	text-align: center;
 	}
+	
+a.email { font-weight: 600; }
+
 
 /*--------- Layout -----------*/
 
@@ -393,6 +396,12 @@ p.section-description {
 	.orbit-caption,
 	.orbit-timer,
 	.orbit-slide-number { display: none; }
+	
+	.orbit-bullets {
+		border-bottom: 1px solid #E8E8E8;
+		padding: 3px 0 2px;
+		top: 0;
+		}
 	}
 
 .intro-statement {
@@ -504,7 +513,7 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 
 /*------- vCards --------*/
 
-.member-cards > li {
+.member-cards {
 	background-color: #fff;
 	border: 1px solid rgb(239,237,223);
 	-webkit-border-radius:8px;
@@ -644,19 +653,28 @@ dd+dt { margin-top: 1.5em; }
 	list-style: none;
 	margin-left: 0; padding-left: 0;
 	
-	li { margin-bottom: 3em; }
+	li {
+		margin-bottom: 1em;
+		border-bottom: 1px solid #e8e8e8;
+		padding-bottom: 1.7em;
+		}
+	
+	li:last-child { border: none; }
 	
 	img { margin-bottom: rem-calc(16); float: left; margin-right: 1em; }
 	
 	h4 {
 		font-size: rem-calc(29);
-		font-weight: 800;
+		font-weight: 700;
 		color: $primary-color;
 		line-height: 1.3;
-		margin-bottom: rem-calc(8);
+		padding-top: rem-calc(4);
+		margin-bottom: rem-calc(12);
 		}
 	
-	p { margin-bottom: .25em; }
+	p { margin-bottom: 0; }
+	
+	b, a { font-weight: 600; }
 	
 }
 
@@ -710,6 +728,13 @@ dd+dt { margin-top: 1.5em; }
 	
 	.adr {
 		margin-top: 0;
+	}
+	
+	// Medium screens
+	@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+		.twitter-icon,
+		.facebook-icon,
+		.meetup-icon { margin-right: 4px; }
 	}
 }
 
@@ -853,6 +878,8 @@ footer {
 	// Medium screens
 	@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
 		margin-top: 3em;
+		margin-bottom: .5em;
+		min-height: intrinsic;
 		}
 	
 	}

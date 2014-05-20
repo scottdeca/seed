@@ -41,14 +41,14 @@
 		<li><ul class="membership-cards pricing-table">
 			<li class="title">Group</li>
 			<li class="description">Group discounts are available for teams of three or more</li>
-			<li class="bullet-item"><a href="mailto:#">Email us to learn more.</a></li>
+			<li class="bullet-item"><a href="mailto:#" class="email">Email us to learn more.</a></li>
 		</ul></li>
 		
 	</ul>
 	
 	<div class="sub-section">
 		<p class="section-description"><strong><em>Not sure if you’re ready to join? Do you have questions?</em></strong></p>
-		<p class="section-description">Contact us at <a href="mailto:hi@seedcoworking">hi@seedcoworking</a>, or check out our <b>FAQs</b> below.</p>
+		<p class="section-description">Contact us at <a href="mailto:hi@seedcoworking" class="email">hi@seedcoworking</a>, or check out our <b>FAQs</b> below.</p>
 	</div>
 	
 	<h2 class="section-subhead">You’ve got questions. We’ve got answers.</h2>
