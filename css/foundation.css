@@ -5882,12 +5882,10 @@ ul.primary-nav li > a {
 /*------- Mobile Side Menu ---------*/
 .mobile-page .ui-content {
   background: #FCFCFC; }
-  .mobile-page .ui-content > section {
-    padding: 0 2em; }
-    .mobile-page .ui-content > section.last-child {
-      border-bottom: 1px solid #dddddd;
-      padding-bottom: 1em;
-      margin-bottom: 1.2em; }
+  .mobile-page .ui-content > section.last-child {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 1em;
+    margin-bottom: 1.2em; }
 
 /*------- Typography --------*/
 .mobile-page {
@@ -5942,9 +5940,12 @@ p {
 p.section-description {
   margin-top: 1em;
   margin-bottom: 2.5em;
-  padding: 0 7em;
   text-align: center; }
 
+@media only screen and (min-width: 40.063em) {
+  /* min-width 641px, medium screens */
+  p.section-description {
+    padding: 0 7em; } }
 a.email {
   font-weight: 600; }
 

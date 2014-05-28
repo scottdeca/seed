@@ -330,7 +330,7 @@ ul.primary-nav li > a {
 	background: #FCFCFC;
 	
 	& > section { 
-		padding: 0 2em; 
+		//padding: 0 2em; 
 		
 		&.last-child { // :last-child won't work for some reason
 			border-bottom: $gray-rule;
@@ -403,10 +403,14 @@ p {
 p.section-description {
 	margin-top: 1em;
 	margin-bottom: 2.5em;
-	padding: 0 7em;
 	text-align: center;
 	}
-	
+
+// Medium screens
+@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+	p.section-description { padding: 0 7em;	}
+}
+
 a.email { font-weight: 600; }
 
 b, strong { font-weight: 600; } // The default bold is too heavy w/open sans
