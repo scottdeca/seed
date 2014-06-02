@@ -5615,7 +5615,7 @@ th.hide-for-touch {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3); }
 
 [data-magellan-expedition-clone] {
-  display: none; }
+  display: none !important; }
 
 .primary-nav, .top-bar-section ul li > a {
   font-family: "lexia", Georgia, serif;
@@ -5626,9 +5626,7 @@ th.hide-for-touch {
   font-size: 0.9375rem; }
 
 .top-bar-section ul li > a.login {
-  border-radius: 3px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-  box-shadow: white 0 1px 0, inset rgba(0, 0, 0, 0.8) 0 1px 0; }
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif; }
 
 ul.primary-nav > li {
   border-bottom: 1px solid #637F2F; }
