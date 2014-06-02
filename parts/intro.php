@@ -31,7 +31,7 @@
 	  </li>
 	</ul>
 	
-	<div class="lets-connect green-cta hide-for-small-only">
+	<div class="lets-connect green-cta show-for-large-up">
 		<p>Seed Coworking is a for designers, developers and other independent contractors — or anyone who needs a professional work environment that isn’t your typical office.</p>
 		<p>Let’s connect!</p>
 		

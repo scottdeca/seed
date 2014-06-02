@@ -23,6 +23,8 @@
 	</nav>
 </div>
 
+
+<!-- Extra copy for a non-sticky mobile nav -->
 <div class="show-for-small-only">
 	<div class="contain-to-grid top-bar-container">
 		<nav class="top-bar" data-topbar>
