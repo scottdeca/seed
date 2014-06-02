@@ -21,7 +21,7 @@
 
 .primary-nav, .top-bar-section ul li > a {
 	//line-height: 8.125;
-	font-family: $rockwell-fontstack;
+	font-family: $meta-serif-fontstack;
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: .05em;
@@ -68,7 +68,7 @@ ul.primary-nav li > a {
 	width: auto;
 	}
 
-// Medium screens
+// Medium screens and up
 @media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
 	
 	body { margin-top: $topbar-height !important; }
@@ -227,6 +227,50 @@ ul.primary-nav li > a {
 	
 }
 
+// Medium screens only - for a more compact nav
+@media #{$medium-only} {
+	.logo {
+		margin-top: 2.3em;
+		max-height: 45%;
+		}
+	
+	.top-bar-section ul { width: auto; margin-top: 3em; }
+	
+	.top-bar-section li.active:not(.has-form) {
+		border-top: none;
+		height: auto;
+		position: relative;
+		
+		&::after { display: none; }
+		
+		}
+	
+	.top-bar-section li.active:not(.has-form) a:not(.button),
+	.top-bar-section li:not(.has-form) a:not(.button) {
+		background-color: transparent;
+		height: auto;
+		line-height: 1em;
+		font-size: rem-calc(14);
+		padding: 0 0.8;
+		
+		&:hover { background-color: transparent; }
+	}
+	
+	.join-us::after { display: none };
+	
+	.top-bar-section ul li > a.login {
+		border-radius: 3px;
+		font-family: $open-sans-fontstack;
+		font-size: rem-calc(13);
+		
+		min-height: 1em;
+		line-height: 1em;
+		margin-top: 0;
+		margin-left: 0;
+		clear: left;
+		}
+}
+
 /* ------- Mobile Top Bar -------------*/
 
 .right-off-canvas-top-bar {
@@ -312,7 +356,7 @@ ul.primary-nav li > a {
 	}
 	
 	h2 {
-		font-family: $rockwell-fontstack;
+		font-family: $meta-serif-fontstack;
 		text-transform: uppercase;
 		font-size: rem-calc(18);
 		color: $primary-color;
@@ -348,9 +392,9 @@ ul.primary-nav li > a {
 
 h3.header-swash { 
 	
-	font-family: $rockwell-fontstack;
+	font-family: $meta-serif-fontstack;
 	text-transform: uppercase;
-	font-size: rem-calc(18);
+	font-size: rem-calc(17);
 	color: $primary-color;
 	letter-spacing: .05em;
 	//@include emboss(.3);
@@ -377,7 +421,7 @@ h3.header-swash {
 			
 	// Medium screens
 	@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
-		&::before {	background-image: url(../../../images/section_header_desktop.png); }
+		&::before {	background-image: url(../../../images/section_header_desktop.png); top: -65px; }
 	}
 	
 	
@@ -410,7 +454,7 @@ p.section-description {
 
 // Medium screens
 @media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
-	p.section-description { padding: 0 7em;	}
+	p.section-description { padding: 0 3em;	}
 }
 
 a.email { font-weight: 600; }
@@ -430,6 +474,8 @@ b, strong { font-weight: 600; } // The default bold is too heavy w/open sans
 		content: " ";
 		display: table;
 		}
+	
+	&+.sub-section { margin-top: 2em; }
 	
 	}
 
@@ -556,6 +602,10 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 		}
 }
 
+// Medium screens
+@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+	.pricing-table .cta-button a { width: auto !important; padding: 8px 13px 7px !important; }
+}
 
 /*------- vCards --------*/
 

@@ -53,7 +53,7 @@
 	
 	<h2 class="section-subhead">You’ve got questions. We’ve got answers.</h2>
 	
-	<ul class="medium-block-grid-3">
+	<ul class="medium-block-grid-3 three-column-split">
 		<li><dl>
 			<dt>Question</dt>
 			<dd>Answer</dd>

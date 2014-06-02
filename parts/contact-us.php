@@ -18,7 +18,7 @@
 	
 		<div class="small-12 medium-4 columns">
 			<h5>Visit us in bucolic St. Clair Village</h5>
-			<img src="http://placehold.it/303x124" alt="St. Clair Village" />
+			<img src="images/google.map.png" alt="St. Clair Village" />
 			<p class="vcard"><span class="fn">Seed Coworking</span></p>
 			<p class="adr">
 				<span class="street-address">25 South Saint Clair Street</span><br />

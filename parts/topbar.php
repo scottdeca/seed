@@ -9,7 +9,7 @@
 				<li data-magellan-arrival="join-us"><a href="#join-us" class="join-us">Join Us</a></li>
 				<li data-magellan-arrival="blog"><a href="#blog">Blog</a></li>
 				<li data-magellan-arrival="contact-us"><a href="#contact-us">Contact Us</a></li>
-				<li><a href="#" class="button login">Login</a></li>
+				<li class="login"><a href="#" class="button login">Login</a></li>
 			</ul>
 		</section>
 		
