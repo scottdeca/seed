@@ -91,7 +91,6 @@ ul.primary-nav li > a {
 	
 	.top-bar-section ul > li {
 		&:hover { background: scale-color($primary-color, $lightness: -14%); }
-		-webkit-perspective: 35em;
 	}
 	
 	.top-bar-section ul li > a {
@@ -223,21 +222,16 @@ ul.primary-nav li > a {
 	.join-us::after { display: none };
 	
 	li.login {
-		clear: left;
-		
-		font-size: rem-calc(12);
-		position: absolute;
-		top: 0;
-		right: 1em;
-		}
+		margin-left: 1em;
+		float: right;
+	}
 	
 	.top-bar-section ul li > a.login {
 		border-radius: 3px;
 		font-family: $open-sans-fontstack;
-		font-size: rem-calc(13);
+		font-size: rem-calc(12);
 		
-		min-height: 1em;
-		line-height: 1em;
+		top: -6px;
 		margin-top: 0;
 		margin-left: 0;
 		}

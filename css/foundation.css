@@ -5674,10 +5674,8 @@ ul.primary-nav li > a {
       position: absolute;
       z-index: 100; }
 
-  .top-bar-section ul > li {
-    -webkit-perspective: 35em; }
-    .top-bar-section ul > li:hover {
-      background: #81a73c; }
+  .top-bar-section ul > li:hover {
+    background: #81a73c; }
 
   .top-bar-section ul li > a {
     line-height: 8.125rem;
@@ -5798,18 +5796,14 @@ ul.primary-nav li > a {
     display: none; }
 
   li.login {
-    clear: left;
-    font-size: 0.75rem;
-    position: absolute;
-    top: 0;
-    right: 1em; }
+    margin-left: 1em;
+    float: right; }
 
   .top-bar-section ul li > a.login {
     border-radius: 3px;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 0.8125rem;
-    min-height: 1em;
-    line-height: 1em;
+    font-size: 0.75rem;
+    top: -6px;
     margin-top: 0;
     margin-left: 0; } }
 /* ------- Mobile Top Bar -------------*/
