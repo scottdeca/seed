@@ -6403,14 +6403,20 @@ footer {
   color: #8b8a85;
   background-color: #fff; }
   footer .inline-form {
-    width: 40%;
-    margin-left: 1.5em; }
+    margin-top: 0;
+    margin-bottom: .75em;
+    clear: left; }
   @media only screen and (min-width: 40.063em) {
     footer {
       /* min-width 641px, medium screens */
       margin-top: 3em;
       margin-bottom: .5em;
-      min-height: intrinsic; } }
+      min-height: intrinsic; }
+      footer .inline-form {
+        width: 40%;
+        margin-left: 1.5em;
+        float: left;
+        clear: none; } }
 
 .copyright {
   font-size: 0.8125rem; }

@@ -965,15 +965,23 @@ footer {
 	background-color: #fff;
 	
 	.inline-form {
-		width: 40%;
-		margin-left: 1.5em;
+		margin-top: 0;
+		margin-bottom: .75em;
+		clear: left;
 		}
 		
-	// Medium screens
+	// Medium screens and up
 	@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
 		margin-top: 3em;
 		margin-bottom: .5em;
 		min-height: intrinsic;
+		
+		.inline-form {
+			width: 40%;
+			margin-left: 1.5em;
+			float: left;
+			clear: none;
+			}
 		}
 	
 	}

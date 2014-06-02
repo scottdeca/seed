@@ -125,28 +125,7 @@
 				
 		</div> <!-- mobile-only -->
 		
-		<footer>
-			<p class="small-12 row show-for-small-only"><b>Stay connected.</b><br />Sign up for our newsletter, <b><i>Dripfeed</i></b>™</p>
-			
-			<div class="row hide-for-small-only">
-				<p class="left"><b>Stay connected.</b> Sign up for our newsletter, <b><i>Dripfeed</i></b>™</p>
-				<form class="left inline-form">
-					<div class="row collapse inset-button">
-						<div class="small-12 columns">
-							<input type="email" placeholder="Your email address" name="email" />
-						</div>
-						<div class="small-5 cta-button columns">
-							<a href="#" class="postfix radius">Sign Me Up</a>
-						</div>
-					</div>
-				</form>
-			
-			</div>
-			
-			<p class="copyright row">Copyright ® Seed Coworking LLC. <br class="show-for-small-only" /><a href="#">Privacy & Terms.</a></p>
-			
-		</footer>
-		
+		<?php include("parts/footer.php"); ?>
 		
 		</div> <!-- data-role="page" ends -->
     <script src="js/vendor/jquery.js"></script>
