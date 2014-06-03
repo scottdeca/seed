@@ -5803,7 +5803,7 @@ ul.primary-nav li > a {
     border-radius: 3px;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 0.75rem;
-    top: -6px;
+    top: -7px;
     margin-top: 0;
     margin-left: 0; } }
 /* ------- Mobile Top Bar -------------*/
@@ -5971,6 +5971,10 @@ b, strong {
   .three-column-split + .sub-section {
     margin-top: 2em; }
 
+@media only screen and (min-width: 40.063em) and (max-width: 58.75em) {
+  section.row,
+  footer > .row {
+    padding: 0 2em; } }
 /*---------- Intro -----------*/
 #intro {
   position: relative; }
@@ -6029,8 +6033,9 @@ b, strong {
     display: inline-block; }
   .newsletter .inline-form {
     width: 17em; }
-  .newsletter p.left {
-    margin: .35em .6em 0 0; }
+  .newsletter p {
+    margin: .35em .6em 0 0;
+    float: left; }
   .newsletter::before {
     content: '';
     background-color: #95be49;
@@ -6080,7 +6085,16 @@ b, strong {
   /* min-width 641px, medium screens */
   .pricing-table .cta-button a {
     width: auto !important;
-    padding: 8px 13px 7px !important; } }
+    padding: 8px 13px 7px !important; }
+
+  .newsletter p {
+    float: none !important;
+    text-align: center; }
+
+  .newsletter .inline-form {
+    float: none !important;
+    display: block;
+    margin: .5em auto 0; } }
 /*------- vCards --------*/
 .member-cards {
   background-color: #fff;
@@ -6179,6 +6193,9 @@ b, strong {
   #events .registration-required a {
     font-style: normal; }
 
+@media only screen and (min-width: 40.063em) and (max-width: 58.75em) {
+  #events h4 {
+    font-size: 0.875rem; } }
 /*---------- FAQs -------------------*/
 dl {
   margin-top: 2em; }
@@ -6339,7 +6356,7 @@ dd + dt {
         background-image: url(../../../images/desktop_divider.png); } }
 
 .follow-us .facebook, .follow-us .twitter, .follow-us .meetup {
-  padding: 2px 8px;
+  padding: 1px 8px;
   position: relative;
   top: 2px;
   color: white; }

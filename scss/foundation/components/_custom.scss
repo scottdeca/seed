@@ -231,7 +231,7 @@ ul.primary-nav li > a {
 		font-family: $open-sans-fontstack;
 		font-size: rem-calc(12);
 		
-		top: -6px;
+		top: -7px;
 		margin-top: 0;
 		margin-left: 0;
 		}
@@ -445,6 +445,11 @@ b, strong { font-weight: 600; } // The default bold is too heavy w/open sans
 	
 	}
 
+// Medium screens only
+@media #{$medium-only} {
+	section.row,
+	footer > .row { padding: 0 2em; }
+}
 
 /*---------- Intro -----------*/
 
@@ -518,7 +523,7 @@ b, strong { font-weight: 600; } // The default bold is too heavy w/open sans
 	
 	.centered { overflow: hidden; display: inline-block; }
 	.inline-form { width: 17em; }
-	p.left { margin: .35em .6em 0 0; }
+	p { margin: .35em .6em 0 0; float: left; }
 	&::before {
 		content: '';
 		background-color: $primary-color;
@@ -571,6 +576,9 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 // Medium screens
 @media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
 	.pricing-table .cta-button a { width: auto !important; padding: 8px 13px 7px !important; }
+	
+	.newsletter p { float: none !important; text-align: center; }
+	.newsletter .inline-form { float: none !important; display: block; margin: .5em auto 0; }
 }
 
 /*------- vCards --------*/
@@ -655,6 +663,11 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 	color: $secondary-blue;
 	}
 
+// Medium screens only
+@media #{$medium-only} {
+	
+}
+
 /*------- Events --------*/
 
 #mobile-only #events section+section { margin-top: 3em; }
@@ -692,6 +705,11 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 		& a { font-style: normal; }
 	}
 	
+}
+
+// Medium screens only
+@media #{$medium-only} {
+	#events h4 { font-size: rem-calc(14); }
 }
 
 /*---------- FAQs -------------------*/
@@ -896,7 +914,7 @@ dd+dt { margin-top: 1.5em; }
 .follow-us {
 	
 	.facebook, .twitter, .meetup {
-		padding: 2px 8px;
+		padding: 1px 8px;
 		position: relative;
 		top: 2px;
 		color: #fff
