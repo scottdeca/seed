@@ -272,7 +272,7 @@ ul.primary-nav li > a {
 			height: 19px;
 			position: absolute;
 			left: 37px;
-			top: 55px;
+			top: 36px;
 			}
 	
 	.move-left .exit-off-canvas { //Foundation overrides
@@ -340,16 +340,6 @@ ul.primary-nav li > a {
 
 .mobile-page .ui-content {
 	background: #FCFCFC;
-	
-	& > section { 
-		//padding: 0 2em; 
-		
-		&.last-child { // :last-child won't work for some reason
-			border-bottom: $gray-rule;
-			padding-bottom: 1em;
-			margin-bottom: 1.2em;
-			}
-		}
 }
 
 /*------- Typography --------*/
@@ -946,7 +936,7 @@ footer {
 	min-height: rem-calc(208);
 	border-top: $gray-rule;
 	margin-top: -1.1em;
-	padding: 1em;
+	padding: 1em 0;
 	color: $footer-text-color;
 	background-color: #fff;
 	
@@ -962,14 +952,17 @@ footer {
 		margin-bottom: .5em;
 		min-height: intrinsic;
 		
+		p { margin-bottom: .5em; }
+		
 		.inline-form {
 			width: 40%;
-			margin-left: 1.5em;
-			float: left;
+			//margin-left: 1.5em;
+			margin-left: 0;
+			float: left !important;
 			clear: none;
 			}
 		}
-	
+
 	}
 
 .copyright { font-size: rem-calc(13); }

@@ -5836,7 +5836,7 @@ ul.primary-nav li > a {
   height: 19px;
   position: absolute;
   left: 37px;
-  top: 55px; }
+  top: 36px; }
 
 .move-left .exit-off-canvas {
   box-shadow: none;
@@ -5889,10 +5889,6 @@ ul.primary-nav li > a {
 /*------- Mobile Side Menu ---------*/
 .mobile-page .ui-content {
   background: #FCFCFC; }
-  .mobile-page .ui-content > section.last-child {
-    border-bottom: 1px solid #dddddd;
-    padding-bottom: 1em;
-    margin-bottom: 1.2em; }
 
 /*------- Typography --------*/
 .mobile-page {
@@ -6383,7 +6379,7 @@ footer {
   min-height: 13rem;
   border-top: 1px solid #dddddd;
   margin-top: -1.1em;
-  padding: 1em;
+  padding: 1em 0;
   color: #8b8a85;
   background-color: #fff; }
   footer .inline-form {
@@ -6396,10 +6392,12 @@ footer {
       margin-top: 3em;
       margin-bottom: .5em;
       min-height: intrinsic; }
+      footer p {
+        margin-bottom: .5em; }
       footer .inline-form {
         width: 40%;
-        margin-left: 1.5em;
-        float: left;
+        margin-left: 0;
+        float: left !important;
         clear: none; } }
 
 .copyright {
