@@ -1007,20 +1007,15 @@ dd+dt { margin-top: 1.5em; }
 	
 	p { line-height: 1.8; }
 	
-	#pagination.sub-section::before {
-		background-image: url('../../../images/sub-section_desktop.png');
-	}
+	#pagination.sub-section::before { background-image: url('../../../images/sub-section_desktop.png'); }
 	
-	.prev, .next {
-		
-		i {
-			content: '';
-			display: inline-block;
-			width: 12px;
-			height: 19px;
-			position: relative;
-			top: 3px;
-			}
+	.prev i, .next i {
+		content: '';
+		display: inline-block;
+		width: 12px;
+		height: 19px;
+		position: relative;
+		top: 3px;
 	}
 	
 	.prev {
@@ -1046,7 +1041,7 @@ dd+dt { margin-top: 1.5em; }
 		
 		
 		//#pagination { overflow: auto; } // clear floats fix
-		#pagination > a { height: 2em; &:last-child { margin-bottom: 1.6em; } }
+		#pagination > a { height: 2.2em; &:last-child { margin-bottom: 2.3em; } }
 		
 		.next, .back, .prev {
 			margin-bottom: 1em;
