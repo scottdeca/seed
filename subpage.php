@@ -48,10 +48,12 @@
 			</div>
 		</section>
 		
-		<div id="pagination">
-			<a href="#" class="prev left">Seed's new website</a>
-			<a href="#">Back to all posts</a> 
-			<a href="#" class="next right">That newer article</a>
+		<div class="row">
+			<div id="pagination" class="large-9 large-offset-3 end sub-section">
+				<a href="#" class="prev left large-4 columns">Seed's new website</a>
+				<a href="#" class="back large-4 columns">Back to all posts</a> 
+				<a href="#" class="next right large-4 columns">That newer article</a>
+			</div>
 		</div>
 		
 		<?php include("parts/footer.php"); ?>
