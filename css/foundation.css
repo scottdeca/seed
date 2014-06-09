@@ -6456,7 +6456,8 @@ dd + dt {
   color: #8B8A85; }
 @media only screen and (max-width: 40em) {
   #blog-single .post-title {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    line-height: 1.2; }
   #blog-single .post-date {
     font-size: 0.8125rem; }
   #blog-single .post-subhead {
@@ -6467,6 +6468,8 @@ dd + dt {
       margin-bottom: 2.3em; }
   #blog-single .next, #blog-single .back, #blog-single .prev {
     margin-bottom: 1em; }
+    #blog-single .next i, #blog-single .back i, #blog-single .prev i {
+      display: none; }
   #blog-single .next, #blog-single .back {
     text-align: left; }
   #blog-single .next {

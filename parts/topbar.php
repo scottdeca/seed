@@ -16,7 +16,7 @@
 		<ul class="title-area">
 			<li class="name">
 			  <!-- <h1><a href="#">My Site</a></h1> -->
-			  <img class="left logo" src="images/logo.png" alt='Seed Coworking' />
+			  <a href="http://dev.seed/"><img class="left logo" src="images/logo.png" alt='Seed Coworking' /></a>
 			</li>
 			<li class="toggle-topbar menu-icon"><a href="#"></a></li>
 		</ul>
@@ -42,8 +42,7 @@
 			
 			<ul class="title-area">
 				<li class="name">
-				  <!-- <h1><a href="#">My Site</a></h1> -->
-				  <img class="left logo" src="images/logo.png" alt='Seed Coworking' />
+				  <a href="http://dev.seed/"><img class="left logo" src="images/logo.png" alt='Seed Coworking' /></a>
 				</li>
 				<li class="toggle-topbar menu-icon"><a href="#"></a></li>
 			</ul>
