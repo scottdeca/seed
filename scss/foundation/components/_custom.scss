@@ -1012,32 +1012,25 @@ dd+dt { margin-top: 1.5em; }
 	}
 	
 	.prev, .next {
-		position: relative;
 		
-		&::before {
+		i {
 			content: '';
+			display: inline-block;
 			width: 12px;
 			height: 19px;
-			position: absolute;
-			left: -1px;
-			top: -1px;
+			position: relative;
+			top: 3px;
 			}
 	}
 	
 	.prev {
-		right: -15px;
-		&::before { background-image: url('../../../images/icon_arrow.back.png'); }
+		i { background-image: url('../../../images/icon_arrow.back.png'); margin-right: 2px; }
 		}
 		
 	.next { 
 		text-align: right;
-		left: -14px;
 		
-		&::before {
-			background-image: url('../../../images/icon_arrow.next.png');
-			left: auto;
-			right: 0;
-			}
+		i { background-image: url('../../../images/icon_arrow.next.png'); margin-left: 2px; }
 		}
 		
 	.back {

@@ -6436,26 +6436,21 @@ dd + dt {
   line-height: 1.8; }
 #blog-single #pagination.sub-section::before {
   background-image: url("../../../images/sub-section_desktop.png"); }
-#blog-single .prev, #blog-single .next {
-  position: relative; }
-  #blog-single .prev::before, #blog-single .next::before {
-    content: '';
-    width: 12px;
-    height: 19px;
-    position: absolute;
-    left: -1px;
-    top: -1px; }
-#blog-single .prev {
-  right: -15px; }
-  #blog-single .prev::before {
-    background-image: url("../../../images/icon_arrow.back.png"); }
+#blog-single .prev i, #blog-single .next i {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 19px;
+  position: relative;
+  top: 3px; }
+#blog-single .prev i {
+  background-image: url("../../../images/icon_arrow.back.png");
+  margin-right: 2px; }
 #blog-single .next {
-  text-align: right;
-  left: -14px; }
-  #blog-single .next::before {
+  text-align: right; }
+  #blog-single .next i {
     background-image: url("../../../images/icon_arrow.next.png");
-    left: auto;
-    right: 0; }
+    margin-left: 2px; }
 #blog-single .back {
   text-align: center;
   color: #8B8A85; }
