@@ -305,7 +305,7 @@ ul.primary-nav li > a {
 		
 		&::after {
 			content: '';
-			background-image: url(../../../images/icon_arrow.next.png);
+			background-image: url(../../../images/icon_arrow_mobile.nav.png);
 			width: 23px;
 			height: 37px;
 			position: absolute;
@@ -980,7 +980,7 @@ dd+dt { margin-top: 1.5em; }
 	
 	.post-title {
 		font-family: $meta-serif-fontstack;
-		font-size: rem-calc(34);
+		font-size: rem-calc(32);
 		font-weight: 500;
 		font-style: normal;
 		line-height: 1.1;
@@ -1019,15 +1019,14 @@ dd+dt { margin-top: 1.5em; }
 			width: 12px;
 			height: 19px;
 			position: absolute;
-			left: 0;
+			left: -1px;
 			top: -1px;
-			background-image: url('../../../images/icon_arrow.back.png');
 			}
 	}
 	
 	.prev {
-		right: -14px;
-		&::before { background-image: url(../../../images/icon_arrow.back.png); }
+		right: -15px;
+		&::before { background-image: url('../../../images/icon_arrow.back.png'); }
 		}
 		
 	.next { 
@@ -1035,6 +1034,7 @@ dd+dt { margin-top: 1.5em; }
 		left: -14px;
 		
 		&::before {
+			background-image: url('../../../images/icon_arrow.next.png');
 			left: auto;
 			right: 0;
 			}

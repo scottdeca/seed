@@ -5863,7 +5863,7 @@ ul.primary-nav li > a {
     background-image: url(../../../images/icon_contact.us.png); }
   .mobile-nav li::after {
     content: '';
-    background-image: url(../../../images/icon_arrow.next.png);
+    background-image: url(../../../images/icon_arrow_mobile.nav.png);
     width: 23px;
     height: 37px;
     position: absolute;
@@ -6413,7 +6413,7 @@ dd + dt {
     margin-left: inherit; }
 #blog-single .post-title {
   font-family: "lexia", Georgia, serif;
-  font-size: 2.125rem;
+  font-size: 2rem;
   font-weight: 500;
   font-style: normal;
   line-height: 1.1;
@@ -6443,17 +6443,17 @@ dd + dt {
     width: 12px;
     height: 19px;
     position: absolute;
-    left: 0;
-    top: -1px;
-    background-image: url("../../../images/icon_arrow.back.png"); }
+    left: -1px;
+    top: -1px; }
 #blog-single .prev {
-  right: -14px; }
+  right: -15px; }
   #blog-single .prev::before {
-    background-image: url(../../../images/icon_arrow.back.png); }
+    background-image: url("../../../images/icon_arrow.back.png"); }
 #blog-single .next {
   text-align: right;
   left: -14px; }
   #blog-single .next::before {
+    background-image: url("../../../images/icon_arrow.next.png");
     left: auto;
     right: 0; }
 #blog-single .back {
