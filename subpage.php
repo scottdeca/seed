@@ -23,7 +23,7 @@
 		</section>
 		
 		<section class="row">
-			<div class="large-3 columns">
+			<div class="hide-for-small-only medium-3 columns">
 				<div class="member-cards">
 					<div class="avatar"><img src="http://placehold.it/200x200" alt="The Don" /></div>
 					<div class="member-info">
@@ -35,7 +35,7 @@
 				</div>
 			</div>
 			
-			<div class="large-9 columns">
+			<div class="small-12 medium-9 columns">
 				<h1 class="post-title">Meet the folks who put “unity” in the community.</h1>
 				<h4 class="post-date">March 21, 2013</h4>
 				
@@ -48,13 +48,13 @@
 			</div>
 		</section>
 		
-		<div class="row">
+		<section class="row">
 			<div id="pagination" class="large-9 large-offset-3 end sub-section">
-				<a href="#" class="prev left large-4 columns">Seed's new website</a>
-				<a href="#" class="back large-4 columns">Back to all posts</a> 
-				<a href="#" class="next right large-4 columns">That newer article</a>
+				<a href="#" class="prev left small-12 medium-4 columns">Seed's new website</a>
+				<a href="#" class="back medium-4 small-12 columns">Back to all posts</a> 
+				<a href="#" class="next right small-12 medium-4 columns">That newer article</a>
 			</div>
-		</div>
+		</section>
 		
 		<?php include("parts/footer.php"); ?>
 		

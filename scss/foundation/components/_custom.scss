@@ -1044,6 +1044,20 @@ dd+dt { margin-top: 1.5em; }
 		text-align: center;
 		color: #8B8A85;
 		}
+		
+	// Small screens only
+	@media #{$small-only} {
+		.post-title { font-size: rem-calc(24); }
+		.post-date { font-size: rem-calc(13); }
+		.post-subhead { font-size: rem-calc(22); }
+		
+		
+		.pagination { overflow: auto; } // clear floats fix
+		
+		.next, .back, .prev {
+			margin-bottom: 1em;
+			}
+		}
 }
 
 /*-------- Footer -------*/

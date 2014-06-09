@@ -6459,6 +6459,17 @@ dd + dt {
 #blog-single .back {
   text-align: center;
   color: #8B8A85; }
+@media only screen and (max-width: 40em) {
+  #blog-single .post-title {
+    font-size: 1.5rem; }
+  #blog-single .post-date {
+    font-size: 0.8125rem; }
+  #blog-single .post-subhead {
+    font-size: 1.375rem; }
+  #blog-single .pagination {
+    overflow: auto; }
+  #blog-single .next, #blog-single .back, #blog-single .prev {
+    margin-bottom: 1em; } }
 
 /*-------- Footer -------*/
 footer {

@@ -1,8 +1,8 @@
 <nav class="right-off-canvas-top-bar">
 	<div class="small-6 columns">
-		<a class="back" href="#home" data-transition="slide" data-direction="reverse" data-prefetch="true">Home</a>
+		<a class="back" data-rel="back" data-transition="slide" data-direction="reverse" data-prefetch="true">Back</a>
 	</div>
 	<div class="small-6 columns">
-		<a class="exit-off-canvas"><img src="images/logo_no.tag.png" alt="logo" /></a>
+		<a href="../" data-transition="slide" data-direction="reverse"><img src="images/logo_no.tag.png" alt="logo" /></a>
 	</div>
 </nav>
