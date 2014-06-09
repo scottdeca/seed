@@ -246,6 +246,11 @@ ul.primary-nav li > a {
 	z-index: 10;
 	position: relative;
 	
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	
 	div {
 		height: 100%;
 		&:first-child { border-right: 1px solid #ddd; }
@@ -340,6 +345,7 @@ ul.primary-nav li > a {
 
 .mobile-page .ui-content {
 	background: #FCFCFC;
+	margin-top: $topbar-height;
 }
 
 /*------- Typography --------*/
@@ -571,7 +577,7 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 	.newsletter .inline-form { float: none !important; display: block; margin: .5em auto 0; }
 }
 
-/*------- vCards --------*/
+/*------- Our People --------*/
 
 .member-cards {
 	background-color: #fff;
@@ -585,7 +591,8 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 	font-style: italic;
 	font-weight: 400;
 	color: $secondary-gray;
-	height: rem-calc(164);
+	height: auto;
+	overflow: auto;
 	
 	.avatar {
 		@include grid-column(5);
@@ -594,8 +601,8 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 		}
 	
 	img { 
-		max-height: 100%;
-		max-width: auto;
+		height: auto;
+		max-width: 100%;
 		}
 		
 	.member-info {
@@ -731,7 +738,7 @@ dd+dt { margin-top: 1.5em; }
 	
 	li:last-child { border: none; }
 	
-	img { margin-bottom: rem-calc(16); float: left; margin-right: 1em; }
+	img { margin-bottom: rem-calc(16); }
 	
 	h4 {
 		font-size: rem-calc(29);
@@ -745,6 +752,11 @@ dd+dt { margin-top: 1.5em; }
 	p { margin-bottom: 0; }
 	
 	b, a { font-weight: 600; }
+	
+	// Medium screens and up
+	@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+		img { margin-bottom: rem-calc(16); float: left; margin-right: 1em; }
+	}
 	
 }
 
@@ -865,13 +877,22 @@ dd+dt { margin-top: 1.5em; }
 		position: absolute;
 		top: -40px;
 		right: -18px;
-		z-index: 10;
+		z-index: 9;
 	}
 	
 	&.badge.spots-left::before { background-image: url(../../../images/badge_seats.left.png); }
 	&.badge.most-popular::before { background-image: url(../../../images/badge_most.popular.png); }
-	
+
 }
+
+// Small screens only
+@media #{$small-only} {
+	.faq dl { margin-top: 0; margin-bottom: 0; }
+	}
+
+@media #{$medium-only} {
+	.faq dl { margin-top: 0; margin-bottom: 0; }
+	}
 
 
 /*-------- Sub-sections ------------*/
@@ -930,6 +951,68 @@ dd+dt { margin-top: 1.5em; }
 	
 }
 
+/*-------- Blog ---------*/
+
+/*------- Single Post -------*/
+.featured-image {
+	margin-bottom: 2em;
+	}
+
+#blog-single {
+	
+	.member-cards {
+		height: auto;
+		overflow: hidden;
+		line-height: 1.8;
+		padding: 0.75em;
+	
+		.avatar { 
+			@include grid-column(12);
+			padding: 0;
+			margin-bottom: 1em;
+			}
+			
+		img { 
+			}
+		
+		.member-info { 
+			@include grid-column(12);
+			padding: 0;
+			margin-left: inherit;
+			}
+		
+	}
+	
+	.post-title {
+		font-family: $meta-serif-fontstack;
+		font-size: rem-calc(34);
+		font-weight: 500;
+		font-style: normal;
+		line-height: 1.1;
+		color: #7E7971;
+		}
+	
+	.post-date {
+		font-family: $open-sans-fontstack;
+		font-size: rem-calc(16);
+		font-weight: 600;
+		letter-spacing: -0.05em;
+		color: #8B8A85;
+		margin-bottom: 1.25em;
+		}
+	
+	.post-subhead {
+		font-size: rem-calc(29);
+		font-weight: 700;
+		color: $primary-color;
+		line-height: 1.3;
+		padding-top: rem-calc(4);
+		margin-bottom: rem-calc(12);
+	}
+	
+	p { line-height: 1.8; }
+}
+
 /*-------- Footer -------*/
 
 footer {
@@ -962,7 +1045,12 @@ footer {
 			clear: none;
 			}
 		}
-
+		
+	// Small screens only
+	@media #{$small-only} {
+		text-align: left;
+		}
+		
 	}
 
 .copyright { font-size: rem-calc(13); }

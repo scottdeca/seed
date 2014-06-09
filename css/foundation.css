@@ -5812,7 +5812,11 @@ ul.primary-nav li > a {
   background-color: #F7F7F7;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   z-index: 10;
-  position: relative; }
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
   .right-off-canvas-top-bar div {
     height: 100%; }
     .right-off-canvas-top-bar div:first-child {
@@ -5888,7 +5892,8 @@ ul.primary-nav li > a {
 
 /*------- Mobile Side Menu ---------*/
 .mobile-page .ui-content {
-  background: #FCFCFC; }
+  background: #FCFCFC;
+  margin-top: 5.625rem; }
 
 /*------- Typography --------*/
 .mobile-page {
@@ -6091,7 +6096,7 @@ b, strong {
     float: none !important;
     display: block;
     margin: .5em auto 0; } }
-/*------- vCards --------*/
+/*------- Our People --------*/
 .member-cards {
   background-color: #fff;
   border: 1px solid #efeddf;
@@ -6104,7 +6109,8 @@ b, strong {
   font-style: italic;
   font-weight: 400;
   color: #8b8a85;
-  height: 10.25rem; }
+  height: auto;
+  overflow: auto; }
   .member-cards .avatar {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -6113,8 +6119,8 @@ b, strong {
     overflow: hidden;
     padding-left: 0; }
   .member-cards img {
-    max-height: 100%;
-    max-width: auto; }
+    height: auto;
+    max-width: 100%; }
   .member-cards .member-info {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -6217,9 +6223,7 @@ dd + dt {
   .newsfeed li:last-child {
     border: none; }
   .newsfeed img {
-    margin-bottom: 1rem;
-    float: left;
-    margin-right: 1em; }
+    margin-bottom: 1rem; }
   .newsfeed h4 {
     font-size: 1.8125rem;
     font-weight: 700;
@@ -6231,6 +6235,13 @@ dd + dt {
     margin-bottom: 0; }
   .newsfeed b, .newsfeed a {
     font-weight: 600; }
+  @media only screen and (min-width: 40.063em) {
+    .newsfeed {
+      /* min-width 641px, medium screens */ }
+      .newsfeed img {
+        margin-bottom: 1rem;
+        float: left;
+        margin-right: 1em; } }
 
 /*-------- Contact Us -----------*/
 #contact-us h5 {
@@ -6323,12 +6334,20 @@ dd + dt {
     position: absolute;
     top: -40px;
     right: -18px;
-    z-index: 10; }
+    z-index: 9; }
   .pricing-table.badge.spots-left::before {
     background-image: url(../../../images/badge_seats.left.png); }
   .pricing-table.badge.most-popular::before {
     background-image: url(../../../images/badge_most.popular.png); }
 
+@media only screen and (max-width: 40em) {
+  .faq dl {
+    margin-top: 0;
+    margin-bottom: 0; } }
+@media only screen and (min-width: 40.063em) and (max-width: 58.75em) {
+  .faq dl {
+    margin-top: 0;
+    margin-bottom: 0; } }
 /*-------- Sub-sections ------------*/
 .sub-section {
   position: relative;
@@ -6374,6 +6393,54 @@ dd + dt {
   margin: 4px auto;
   border-radius: 4px; }
 
+/*-------- Blog ---------*/
+/*------- Single Post -------*/
+.featured-image {
+  margin-bottom: 2em; }
+
+#blog-single .member-cards {
+  height: auto;
+  overflow: hidden;
+  line-height: 1.8;
+  padding: 0.75em; }
+  #blog-single .member-cards .avatar {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin-bottom: 1em; }
+  #blog-single .member-cards .member-info {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin-left: inherit; }
+#blog-single .post-title {
+  font-family: "lexia", Georgia, serif;
+  font-size: 2.125rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.1;
+  color: #7E7971; }
+#blog-single .post-date {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  color: #8B8A85;
+  margin-bottom: 1.25em; }
+#blog-single .post-subhead {
+  font-size: 1.8125rem;
+  font-weight: 700;
+  color: #95be49;
+  line-height: 1.3;
+  padding-top: 0.25rem;
+  margin-bottom: 0.75rem; }
+#blog-single p {
+  line-height: 1.8; }
+
 /*-------- Footer -------*/
 footer {
   min-height: 13rem;
@@ -6399,6 +6466,9 @@ footer {
         margin-left: 0;
         float: left !important;
         clear: none; } }
+  @media only screen and (max-width: 40em) {
+    footer {
+      text-align: left; } }
 
 .copyright {
   font-size: 0.8125rem; }

@@ -8,7 +8,7 @@
 	<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
 		<li>
 			<div class="member-cards">
-				<div class="avatar"><img src="http://placehold.it/124x145" alt="The Don" /></div>
+				<div class="avatar"><img src="http://placehold.it/200x200" alt="The Don" /></div>
 				<div class="member-info">
 					<span class="name">Bob Sacamano</span>
 					<span class="position">President, GroundSpeed Inc.</span>
@@ -19,7 +19,7 @@
 		</li>
 		<li>
 			<div class="member-cards">
-				<div class="avatar"><img src="http://placehold.it/124x145" alt="The Don" /></div>
+				<div class="avatar"><img src="http://placehold.it/200x200" alt="The Don" /></div>
 				<div class="member-info">
 					<span class="name">Bob Sacamano</span>
 					<span class="position">President, GroundSpeed Inc.</span>
@@ -30,7 +30,7 @@
 		</li>
 		<li>
 			<div class="member-cards">
-				<div class="avatar"><img src="http://placehold.it/124x145" alt="The Don" /></div>
+				<div class="avatar"><img src="http://placehold.it/200x200" alt="The Don" /></div>
 				<div class="member-info">
 					<span class="name">Bob Sacamano</span>
 					<span class="position">President, GroundSpeed Inc.</span>
@@ -41,7 +41,7 @@
 		</li>
 		<li>
 			<div class="member-cards">
-				<div class="avatar"><img src="http://placehold.it/124x145" alt="The Don" /></div>
+				<div class="avatar"><img src="http://placehold.it/200x200" alt="The Don" /></div>
 				<div class="member-info">
 					<span class="name">Bob Sacamano</span>
 					<span class="position">President, GroundSpeed Inc.</span>
@@ -52,7 +52,7 @@
 		</li>
 		<li>
 			<div class="member-cards">
-				<div class="avatar"><img src="http://placehold.it/124x145" alt="The Don" /></div>
+				<div class="avatar"><img src="http://placehold.it/200x200" alt="The Don" /></div>
 				<div class="member-info">
 					<span class="name">Bob Sacamano</span>
 					<span class="position">President, GroundSpeed Inc.</span>

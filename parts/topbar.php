@@ -31,11 +31,11 @@
 			<section class="top-bar-section">
 				<ul class="left primary-nav">
 					<li><a href="#about">About Seed</a></li>
-					<li><a href="#our-people">Our People</a></li>
-					<li><a href="#events">Events</a></li>
-					<li><a href="#join-us" class="join-us">Join Us</a></li>
-					<li><a href="#blog">Blog</a></li>
-					<li><a href="#contact-us">Contact Us</a></li>
+					<li><a href="pages/our-people.php" data-transition="slide">Our People</a></li>
+					<li><a href="pages/events.php" data-transition="slide">Events</a></li>
+					<li><a href="pages/join-us.php" data-transition="slide">Join Us</a></li>
+					<li><a href="pages/blog.php" data-transition="slide">Blog</a></li>
+					<li><a href="pages/contact-us.php" data-transition="slide">Contact Us</a></li>
 					<li class="login"><a href="#" class="button login">Login</a></li>
 				</ul>
 			</section>
