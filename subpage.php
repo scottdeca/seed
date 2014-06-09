@@ -49,10 +49,10 @@
 		</section>
 		
 		<section class="row">
-			<div id="pagination" class="large-9 large-offset-3 end sub-section">
-				<a href="#" class="prev left small-12 medium-4 columns">Seed's new website</a>
-				<a href="#" class="back medium-4 small-12 columns">Back to all posts</a> 
-				<a href="#" class="next right small-12 medium-4 columns">That newer article</a>
+			<div id="pagination" class="small-12 medium-9 medium-offset-3 end sub-section">
+				<a href="#" class="prev small-12 medium-4 columns">Seed's new website</a>
+				<a href="#" class="back small-12 medium-4 columns">Back to all posts</a> 
+				<a href="#" class="next small-12 medium-4 columns">That newer article</a>
 			</div>
 		</section>
 		

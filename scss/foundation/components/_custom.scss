@@ -1052,11 +1052,17 @@ dd+dt { margin-top: 1.5em; }
 		.post-subhead { font-size: rem-calc(22); }
 		
 		
-		.pagination { overflow: auto; } // clear floats fix
+		//#pagination { overflow: auto; } // clear floats fix
+		#pagination > a { height: 2em; &:last-child { margin-bottom: 1.6em; } }
 		
 		.next, .back, .prev {
 			margin-bottom: 1em;
 			}
+		
+		.next, .back { text-align: left; }
+		
+		.next { left: auto; }
+		
 		}
 }
 
