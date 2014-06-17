@@ -485,18 +485,22 @@ b, strong { font-weight: 600; } // The default bold is too heavy w/open sans
   
   & > span {  
     font-family: $seedsvg;
-    font-size: 2em;
-    display: block;
+    font-size: 3em;
+    color: rgba(255,255,255,0.56);
     width: 100%;
     height: 100%;
     margin: 0;
     position: static;
     text-indent: 0;
     border: none;
+    
+    &:hover { color: rgba(255,255,255,1); }
     }
   }
 
 .orbit-container .orbit-prev { text-align: right; margin-left: .25em; }
+
+.orbit-container .orbit-next { right: .4em; }
 
 // Medium screens
 @media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
@@ -513,7 +517,7 @@ b, strong { font-weight: 600; } // The default bold is too heavy w/open sans
 // Large Screens
 @media #{$large-up} {
   .intro-statement {
-		padding: 2em 14em 0;
+		padding: 2em 10em 0;
 		margin-left: auto;
 		margin-right: auto;
 		z-index: 98;
@@ -532,13 +536,47 @@ b, strong { font-weight: 600; } // The default bold is too heavy w/open sans
     right: 2em;
   }
 }
+
+// Large Screens
+@media #{$xlarge-up} {
+  .intro-statement {
+		padding: 2em 14em 0;
+  }
+}
+
+
 /*------- Let's Connect -----------*/
 
 .green-cta {
-	background: rgba(149,190,73,0.9);
+	background: rgb(149,190,73);
 	border: solid 1px #fff;
 	border-radius: 6px;
 	padding: rem-calc(24);
+	opacity: 0.9;
+	
+	&::before {
+  	content: '';
+  	background-image: url(/images/icon_bubble.png);
+  	background-position: center center;
+  	background-repeat: no-repeat;
+  	position: absolute;
+  	height: 25px;
+  	top: -25px;
+  	left: 0;
+  	right: 0;
+  	}
+  	
+	&::after {
+  	content: '';
+  	background-image: url(/images/icon_leaves.png);
+  	background-position: center center;
+  	background-repeat: no-repeat;
+  	position: absolute;
+  	height: 21px;
+  	top: -12px;
+  	left: 0;
+  	right: 2px;
+  	}
 	
 	p {
 		text-align: center;
@@ -618,6 +656,7 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 	
 	.newsletter p { float: none !important; text-align: center; }
 	.newsletter .inline-form { float: none !important; display: block; margin: .5em auto 0; }
+	.lets-connect form { margin-top: -0.8em; }
 }
 
 // Large Screens
@@ -818,7 +857,7 @@ dd+dt { margin-top: 1.5em; }
 		font-weight: 600;
 		
 		&.handwritten {
-			font-family: Dakota, "Dakota Regular";
+			font-family: $handwriting-fontstack;
 			font-style: normal;
 			color: $secondary-blue;
 			}
