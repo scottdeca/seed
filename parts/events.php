@@ -63,7 +63,7 @@
 	</div>
 	
 	<div class="sub-section follow-us hide-for-small-only">
-		<p class="text-center">Learn about our events in advance. Follow us on <a class="twitter" href="#">Twitter</a>, Like us on <a class="facebook" href="#">Facebook</a> and connect with us on <a class="meetup" href="#">Meetup</a>.</p>
+		<p class="text-center">Learn about our events in advance. Follow us on <a class="twitter" href="#">Twitter</a> Like us on <a class="facebook" href="#">Facebook</a> and connect with us on <a class="meetup" href="#">Meetup</a>.</p>
 	</div>
 	
 	<div class="sub-section follow-us mobile show-for-small-only">

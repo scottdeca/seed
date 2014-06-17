@@ -53,6 +53,8 @@ ul.primary-nav li > a {
 		line-height: 3;
 		font-size: rem-calc(16);
 		border: none;
+		
+		&:hover { background-color: scale-color($primary-color, $lightness: -14%); color: white; }
 		}
 	}
 
@@ -642,11 +644,20 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 		@include box-emboss(1.0, 0.15);
 		@include emboss(0.7);
 		color: #fff;
-		background-color: $primary-color;
+		background-color: scale-color($primary-color, $lightness: -14%);
 		background-image:-webkit-gradient(radial,50% -73%,0,50% -73%,99,color-stop(0, rgb(176,206,119)),color-stop(1, rgb(149,190,73)));
 		background-image:-webkit-radial-gradient(50% -73%,circle farthest-corner, rgb(176,206,119) 0%,rgb(149,190,73) 100%);
 		background-image:radial-gradient(99px at 50% -73%,rgb(176,206,119) 0%,rgb(149,190,73) 100%);
 		border-radius: 4px;
+		@include single-transition(all, 300ms, ease-in-out);
+		
+		&:hover { 
+		  background-image:-moz-radial-gradient(50% -73%,circle farthest-corner,rgb(164,194,95) 0%,rgb(130,166,62) 100%); 
+      background-image:-webkit-gradient(radial,50% -73%,0,50% -73%,99,color-stop(0, rgb(164,194,95)),color-stop(1, rgb(130,166,62)));
+      background-image:-webkit-radial-gradient(50% -73%,circle farthest-corner, rgb(164,194,95) 0%,rgb(130,166,62) 100%);
+      background-image:-ms-radial-gradient(50% -73%,circle farthest-corner, rgb(164,194,95) 0%,rgb(130,166,62) 100%);
+      background-image:radial-gradient(99px at 50% -73%,rgb(164,194,95) 0%,rgb(130,166,62) 100%);
+      }
 		}
 }
 
@@ -1018,9 +1029,9 @@ dd+dt { margin-top: 1.5em; }
 		color: #fff
 	}
 	
-	.facebook { background-color: #305891; }
-	.twitter { background-color: #2CA8D2; }
-	.meetup { background-color: #CC121E; }
+	.facebook { background-color: #305891; &:hover { background-color: scale-color(#305891, $lightness: -25%) } }
+	.twitter { background-color: #2CA8D2; &:hover { background-color: scale-color(#2CA8D2, $lightness: -25%) } }
+	.meetup { background-color: #CC121E; &:hover { background-color: scale-color(#CC121E, $lightness: -25%) } }
 	
 }
 
