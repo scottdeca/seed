@@ -478,6 +478,25 @@ b, strong { font-weight: 600; } // The default bold is too heavy w/open sans
 	top: 1em;
 	}
 
+.orbit-container .orbit-prev, 
+.orbit-container .orbit-next {
+  
+  &:hover { background: transparent; }
+  
+  & > span {  
+    font-family: $seedsvg;
+    font-size: 2em;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: static;
+    text-indent: 0;
+    border: none;
+    }
+  }
+
+.orbit-container .orbit-prev { text-align: right; margin-left: .25em; }
 
 // Medium screens
 @media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
@@ -489,6 +508,29 @@ b, strong { font-weight: 600; } // The default bold is too heavy w/open sans
 		z-index: 98;
 		}
 		
+}
+
+// Large Screens
+@media #{$large-up} {
+  .intro-statement {
+		padding: 2em 14em 0;
+		margin-left: auto;
+		margin-right: auto;
+		z-index: 98;
+		}
+
+  .orbit-container .orbit-prev, 
+  .orbit-container .orbit-next {
+    & > span { font-size: 4em; }
+    }
+  
+  .orbit-container .orbit-prev {
+    left: 1em;
+  }
+  
+  .orbit-container .orbit-next {
+    right: 2em;
+  }
 }
 /*------- Let's Connect -----------*/
 
@@ -539,7 +581,7 @@ b, strong { font-weight: 600; } // The default bold is too heavy w/open sans
 }
 
 .newsletter-note {
-	font-family: Dakota, "Dakota Regular";
+	font-family: $handwriting-fontstack;
 	font-style: normal;
 	color: $secondary-blue;
 	float: right;
@@ -571,11 +613,16 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 }
 
 // Medium screens
-@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+@media #{$medium-up} {
 	.pricing-table .cta-button a { width: auto !important; padding: 8px 13px 7px !important; }
 	
 	.newsletter p { float: none !important; text-align: center; }
 	.newsletter .inline-form { float: none !important; display: block; margin: .5em auto 0; }
+}
+
+// Large Screens
+@media #{$large-up} {
+  .lets-connect { right: 7em; }
 }
 
 /*------- Our People --------*/
@@ -647,7 +694,7 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 		}
 		
 	&.your-mug p {
-		font-family: Dakota, "Dakota Regular";
+		font-family: $handwriting-fontstack;
 		font-style: normal;
 		color: $secondary-blue;
 		text-align: center;
@@ -656,7 +703,7 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 }
 
 .handwritten {
-	font-family: Dakota, "Dakota Regular";
+	font-family: $handwriting-fontstack;
 	font-style: normal;
 	color: $secondary-blue;
 	}
