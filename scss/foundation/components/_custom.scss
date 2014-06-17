@@ -1090,14 +1090,18 @@ dd+dt { margin-top: 1.5em; }
 		color: #7E7971;
 		}
 	
-	.post-date {
+	.post-meta {
 		font-family: $open-sans-fontstack;
 		font-size: rem-calc(16);
-		font-weight: 600;
-		letter-spacing: -0.05em;
-		color: #8B8A85;
+		font-weight: 300;
+		//letter-spacing: -0.05em;
+		color: #999;
 		margin-bottom: 1.25em;
 		}
+	
+	.post-date {
+  	font-style: italic;
+	}
 	
 	.post-subhead {
 		font-size: rem-calc(29);
@@ -1139,7 +1143,8 @@ dd+dt { margin-top: 1.5em; }
 	// Small screens only
 	@media #{$small-only} {
 		.post-title { font-size: rem-calc(24); line-height: 1.2; }
-		.post-date { font-size: rem-calc(13); }
+		.post-meta { font-size: rem-calc(13); }
+		.post-author { margin-bottom: 0.5em; }
 		.post-subhead { font-size: rem-calc(22); }
 		
 		

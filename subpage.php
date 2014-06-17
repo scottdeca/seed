@@ -37,7 +37,10 @@
 			
 			<div class="small-12 medium-9 columns">
 				<h1 class="post-title">Meet the folks who put “unity” in the community.</h1>
-				<h4 class="post-date">March 21, 2013</h4>
+        <div class="post-meta">
+          <span class="post-author show-for-small-only">Posted by:&nbsp;<a href="#">Bob Sacamano</a></span>
+          <span class="post-date">March 21, 2013</span>
+        </div>
 				
 				<p>Excerpt blah. Lorem ipsum dolor sit amet do equis. Zipsum dolor siet do equis. Seed Coworking is more than desks, chairs and wifi (although those are all pretty nice). It’s a true community of like-minded folks who prefer the company of others while working, planning, learning and playing. Stop in, we’d love to meet you.Seed Coworking is more than desks, chairs and wifi (although those are all pretty nice). It’s a true community of like-minded folks who prefer the company of others while working, planning, learning and playing. Stop in, we’d love to meet you.</p>
 				<p>Seed Coworking is more than desks, chairs and wifi (although those are all pretty nice). It’s a true community of like-minded folks who prefer the company of others while working, planning, learning and playing. Stop in, we’d love to meet you.Seed Coworking is more than desks, chairs and wifi (although those are all pretty nice). It’s a true community of like-minded folks who prefer the company of others while working, planning, learning and playing. Stop in, we’d love to meet you.</p>

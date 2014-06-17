@@ -6524,13 +6524,14 @@ dd + dt {
   font-style: normal;
   line-height: 1.1;
   color: #7E7971; }
-#blog-single .post-date {
+#blog-single .post-meta {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: -0.05em;
-  color: #8B8A85;
+  font-weight: 300;
+  color: #999;
   margin-bottom: 1.25em; }
+#blog-single .post-date {
+  font-style: italic; }
 #blog-single .post-subhead {
   font-size: 1.8125rem;
   font-weight: 700;
@@ -6564,8 +6565,10 @@ dd + dt {
   #blog-single .post-title {
     font-size: 1.5rem;
     line-height: 1.2; }
-  #blog-single .post-date {
+  #blog-single .post-meta {
     font-size: 0.8125rem; }
+  #blog-single .post-author {
+    margin-bottom: 0.5em; }
   #blog-single .post-subhead {
     font-size: 1.375rem; }
   #blog-single #pagination > a {
