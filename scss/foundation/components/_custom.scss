@@ -765,7 +765,10 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 
 /*------- Events --------*/
 
-#mobile-only #events section+section { margin-top: 3em; }
+// Medium screens only
+@media #{$small-only} {
+  #events section+section { margin-top: 3em; }
+}
 
 #events {
 	
