@@ -56,8 +56,8 @@
       }
 
       if (settings.navigation_arrows) {
-        container.append($('<a href="#"><span></span></a>').addClass(settings.prev_class));
-        container.append($('<a href="#"><span></span></a>').addClass(settings.next_class));
+        container.append($('<a href="#"><span>a</span></a>').addClass(settings.prev_class));
+        container.append($('<a href="#"><span>b</span></a>').addClass(settings.next_class));
       }
 
       if (settings.timer) {
