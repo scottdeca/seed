@@ -36,6 +36,8 @@
 
 ul.primary-nav > li {
 	border-bottom: 1px solid #637F2F;
+	
+	&:last-child { border-bottom-color: #757575; }
 }
 
 ul.primary-nav li > a {
@@ -66,10 +68,14 @@ ul.primary-nav li > a {
 	width: auto;
 	}
 
+#intro { z-index: -1; } // Topnav dropshadow fix
+
 // Medium screens and up
 @media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
 	
 	body { margin-top: $topbar-height !important; }
+	
+	#intro { z-index: 1; }
 	
 	.top-bar-container {
 		width: 100%;
