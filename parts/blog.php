@@ -6,19 +6,19 @@
 	<ul class="newsfeed">
 		<li>
 			<img src="http://placehold.it/111x111" alt="Happy Headline" />
-			<h4>Big happy headline.</h4>
+			<h4><a href="#">Big happy headline.</a></h4>
 			<p><b>March 21, 2013</b>&nbsp;|&nbsp;Excerpt blah. Lorem ipsum dolor sit amet do equis. Zipsum dolor siet do equis.</p>
 			<a href="#">Click to continue</a>
 		</li>
 		<li>
 			<img src="http://placehold.it/111x111" alt="Happy Headline" />
-			<h4>Big happy headline.</h4>
+			<h4><a href="#">Big happy headline.</a></h4>
 			<p><b>March 21, 2013</b>&nbsp;|&nbsp;Excerpt blah. Lorem ipsum dolor sit amet do equis. Zipsum dolor siet do equis.</p>
 			<a href="#">Click to continue</a>
 		</li>
 		<li>
 			<img src="http://placehold.it/111x111" alt="Happy Headline" />
-			<h4>Big happy headline.</h4>
+			<h4><a href="#">Big happy headline.</a></h4>
 			<p><b>March 21, 2013</b>&nbsp;|&nbsp;Excerpt blah. Lorem ipsum dolor sit amet do equis. Zipsum dolor siet do equis.</p>
 			<a href="#">Click to continue</a>
 		</li>

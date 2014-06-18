@@ -49,5 +49,22 @@
   "foundation/components/type",
   "foundation/components/offcanvas",
   "foundation/components/visibility",
-  "foundation/components/triangle",
-  "foundation/components/custom";
+  "foundation/components/triangle";
+//  "foundation/components/custom";
+
+// Lastly, all custom styling for Seed
+@import
+  "foundation/custom/mixins",
+  "foundation/custom/blog-newsfeed",
+  "foundation/custom/blog",
+  "foundation/custom/contact-us",
+  "foundation/custom/events",
+  "foundation/custom/faqs",
+  "foundation/custom/footer",
+  "foundation/custom/intro",
+  "foundation/custom/join-us",
+  "foundation/custom/layout",
+  "foundation/custom/lets-connect",
+  "foundation/custom/our-people",
+  "foundation/custom/top-bar-nav",
+  "foundation/custom/typography";

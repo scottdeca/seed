@@ -1,0 +1,86 @@
+/*------------------------------------*\
+
+    OUR PEOPLE
+    
+\*------------------------------------*/
+
+.member-cards {
+	background-color: #fff;
+	border: 1px solid rgb(239,237,223);
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	font-size: rem-calc(13);
+	padding: .5em;
+	margin-bottom: 1em;
+	font-family: "open-sans",sans-serif;
+	font-style: italic;
+	font-weight: 400;
+	color: $secondary-gray;
+	height: auto;
+	overflow: auto;
+	
+	.avatar {
+		@include grid-column(5);
+		overflow: hidden;
+		padding-left: 0;
+		}
+	
+	img { 
+		height: auto;
+		max-width: 100%;
+		}
+		
+	.member-info {
+		@include grid-column(7);
+		text-align: left;
+		margin-left: -1.3em;
+		}
+	
+	.member-info > span {
+		display: block;
+		}
+	
+	.name {
+		font-weight: 600;
+		color: $primary-color;
+		font-style: normal;
+		}
+	
+	.seed-position,
+	.twitter { text-indent: 24px; position: relative; }
+	
+	.seed-position::before,
+	.twitter::before {
+		content: '';
+		background-repeat: no-repeat;
+		width: 17px;
+		height: 14px;
+		position: absolute;
+		left: 0;
+		top: 1px;
+		}
+	
+	.seed-position::before { background-image: url(../../../images/icon_seed-position.png); }
+		
+	.twitter::before { background-image: url(../../../images/icon_seed-twitter.png); top: 3px; }
+	
+	
+	&.your-mug { 
+		border: none;
+		background: none;
+		}
+		
+	&.your-mug p {
+		font-family: $handwriting-fontstack;
+		font-style: normal;
+		color: $secondary-blue;
+		text-align: center;
+		margin-top: (8.5em / 3.5);
+		}
+}
+
+.handwritten {
+	font-family: $handwriting-fontstack;
+	font-style: normal;
+	color: $secondary-blue;
+	}

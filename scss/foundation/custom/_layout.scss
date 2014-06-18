@@ -1,0 +1,89 @@
+/*------------------------------------*\
+
+    LAYOUT
+    
+\*------------------------------------*/
+
+.three-column-split { 
+	margin-top: 3em;
+	
+	&:after {
+		clear: both;
+		}
+	&:before, &:after {
+		content: " ";
+		display: table;
+		}
+	
+	&+.sub-section { margin-top: 2em; }
+	
+	}
+
+// Medium screens only
+@media #{$medium-only} {
+	section.row,
+	footer > .row { padding: 0 2em; }
+}
+
+
+
+
+/*------------------------------------*\
+
+    SUB SECTIONS
+    
+\*------------------------------------*/
+
+.sub-section {
+	position: relative;
+	margin-top: 5em;
+	
+	&::before {
+		content: '';
+		background-image: url(../../../images/mobile_divider.png);
+		background-repeat: no-repeat;
+		background-position-x: center;
+		background-position-y: center;
+		
+		width: 100%;
+		height: 8px;
+		position: absolute;
+		top: -28px;
+		left: 0;
+		z-index: -1;
+		}
+	
+		// Medium screens
+		@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+			&::before { background-image: url(../../../images/desktop_divider.png); }
+		}
+}
+
+.follow-us {
+	
+	.facebook, .twitter, .meetup {
+		padding: 1px 8px;
+		position: relative;
+		top: 2px;
+		color: #fff
+	}
+	
+	.facebook { background-color: #305891; &:hover { background-color: scale-color(#305891, $lightness: -25%) } }
+	.twitter { background-color: #2CA8D2; &:hover { background-color: scale-color(#2CA8D2, $lightness: -25%) } }
+	.meetup { background-color: #CC121E; &:hover { background-color: scale-color(#CC121E, $lightness: -25%) } }
+	
+}
+
+.follow-us.mobile {
+	
+	p { line-height: 1.2; font-size: rem-calc(15); margin-bottom: 1em; }
+	
+	.facebook, .twitter, .meetup {
+		display: block;
+		width: 100%;
+		padding: 12px 8px;
+		margin: 4px auto;
+		border-radius: 4px;
+	}
+	
+}

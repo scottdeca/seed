@@ -1,0 +1,45 @@
+/*------------------------------------*\
+
+    FOOTER
+    
+\*------------------------------------*/
+
+footer {
+	min-height: rem-calc(208);
+	border-top: $gray-rule;
+	margin-top: -1.1em;
+	padding: 1em 0;
+	color: $footer-text-color;
+	background-color: #fff;
+	
+	.inline-form {
+		margin-top: 0;
+		margin-bottom: .75em;
+		clear: left;
+		}
+		
+	// Medium screens and up
+	@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+		margin-top: 3em;
+		margin-bottom: .5em;
+		min-height: intrinsic;
+		
+		p { margin-bottom: .5em; }
+		
+		.inline-form {
+			width: 40%;
+			//margin-left: 1.5em;
+			margin-left: 0;
+			float: left !important;
+			clear: none;
+			}
+		}
+		
+	// Small screens only
+	@media #{$small-only} {
+		text-align: left;
+		}
+		
+	}
+
+.copyright { font-size: rem-calc(13); }

@@ -1,0 +1,39 @@
+/*------------------------------------*\
+
+    BLOG
+    
+\*------------------------------------*/
+
+.newsfeed {
+	list-style: none;
+	margin-left: 0; padding-left: 0;
+	
+	li {
+		margin-bottom: 1em;
+		border-bottom: 1px solid #e8e8e8;
+		padding-bottom: 1.7em;
+		}
+	
+	li:last-child { border: none; }
+	
+	img { margin-bottom: rem-calc(16); }
+	
+	h4 {
+		font-size: rem-calc(29);
+		font-weight: 700;
+		color: $primary-color;
+		line-height: 1.3;
+		padding-top: rem-calc(4);
+		margin-bottom: rem-calc(12);
+		}
+	
+	p { margin-bottom: 0; }
+	
+	b, a { font-weight: 600; }
+	
+	// Medium screens and up
+	@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+		img { margin-bottom: rem-calc(16); float: left; margin-right: 1em; }
+	}
+	
+}

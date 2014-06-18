@@ -1,0 +1,50 @@
+/*------------------------------------*\
+
+    EVENTS
+    
+\*------------------------------------*/
+
+// Medium screens only
+@media #{$small-only} {
+  #events section+section { margin-top: 3em; }
+}
+
+#events {
+	
+	h4 {
+		color: $primary-color;
+		font-size: rem-calc(18);
+		font-weight: 700;
+		text-align: center;
+		}
+		
+	img+h4 { margin-top: 0.75em; }
+	
+	img+dl { margin-top: 1.5em; }
+	
+	dt {
+		color: $secondary-dark-gray;
+		font-size: rem-calc(14);
+		font-weight: 600;
+		}
+	
+	dd {
+		color: $secondary-gray;
+		font-size: rem-calc(14);
+		font-weight: 300;
+		}
+	
+	span { display: block; }
+	
+	.registration-required { 
+		font-style: italic; 
+		
+		& a { font-style: normal; }
+	}
+	
+}
+
+// Medium screens only
+@media #{$medium-only} {
+	#events h4 { font-size: rem-calc(14); }
+}

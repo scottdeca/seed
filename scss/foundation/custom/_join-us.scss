@@ -1,0 +1,77 @@
+/*------------------------------------*\
+
+    JOIN US / PRICING TABLE
+    
+\*------------------------------------*/
+
+//.membership-options { @include block-grid(3); }
+
+.pricing-table {
+	
+	border-radius: 4px;
+	margin-top: .5em;
+	padding-bottom: 12px;
+	
+	.title {
+		background-image: url(../../../images/pattern_grain.texture.png);
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		margin-bottom: .75em;
+		}
+		
+	.price::before {
+		content: '$';
+		font-size: rem-calc(32);
+		position: relative;
+		bottom: rem-calc(8);
+		}
+	
+	.monthly {
+		font-size: rem-calc(13);
+		color: $secondary-gray;
+		font-weight: 300;
+		}
+	
+	.cta-button {
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		
+		& a {
+			border-radius: 4px;
+			box-shadow: inset 0px 1px 1px rgba(0,0,0,0.3);
+			text-shadow: 0px -1px 0px rgba(0,0,0,0.3);
+			text-transform: uppercase;
+			letter-spacing: .05em;
+			font-size: rem-calc(13);
+			width: 90%;
+			padding: 8px 0 7px;
+			margin: 0;
+			} 
+		}
+	
+	&.badge { position: relative; }
+	
+	&.badge::before {
+		content: '';
+		background-image: url(../../../images/badge_most.popular.png);
+		width: 90px;
+		height: 90px;
+		position: absolute;
+		top: -40px;
+		right: -18px;
+		z-index: 9;
+	}
+	
+	&.badge.spots-left::before { background-image: url(../../../images/badge_seats.left.png); }
+	&.badge.most-popular::before { background-image: url(../../../images/badge_most.popular.png); }
+
+}
+
+// Small screens only
+@media #{$small-only} {
+	.faq dl { margin-top: 0; margin-bottom: 0; }
+	}
+
+@media #{$medium-only} {
+	.faq dl { margin-top: 0; margin-bottom: 0; }
+	}

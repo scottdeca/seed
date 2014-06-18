@@ -1,0 +1,17 @@
+/*------------------------------------*\
+
+    FAQS
+    
+\*------------------------------------*/
+
+dl { margin-top: 2em; }
+
+dt {
+	color: $secondary-dark-gray;
+	}
+
+dd {
+	color: $secondary-gray;
+	}
+
+dd+dt { margin-top: 1.5em; }
