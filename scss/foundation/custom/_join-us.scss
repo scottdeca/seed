@@ -62,9 +62,20 @@
 		z-index: 9;
 	}
 	
-	&.badge.spots-left::before { background-image: url(../../../images/badge_seats.left.png); }
+	&.badge.spots-left::before { background-image: url(../../../images/badge_seats.left_blank.png); }
 	&.badge.most-popular::before { background-image: url(../../../images/badge_most.popular.png); }
-
+  
+  &.badge.spots-left::after {
+    content: '2';
+    font-size: rem-calc(32);
+    font-weight: 700;
+    color: white;
+    @include emboss(0.4);
+    position: absolute;
+    top: -34px;
+    right: 16px;
+    z-index: 10;
+  }
 }
 
 // Small screens only

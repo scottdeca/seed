@@ -6103,9 +6103,19 @@ footer {
     right: -18px;
     z-index: 9; }
   .pricing-table.badge.spots-left::before {
-    background-image: url(../../../images/badge_seats.left.png); }
+    background-image: url(../../../images/badge_seats.left_blank.png); }
   .pricing-table.badge.most-popular::before {
     background-image: url(../../../images/badge_most.popular.png); }
+  .pricing-table.badge.spots-left::after {
+    content: '2';
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: -34px;
+    right: 16px;
+    z-index: 10; }
 
 @media only screen and (max-width: 44.375em) {
   .faq dl {
