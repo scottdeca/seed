@@ -10,8 +10,8 @@
 		color: $primary-color;
 		font-size: rem-calc(18);
 		font-weight: 700;
-		text-align: center;
-		}
+		text-align: center; 
+    }
 		
 	img+h4 { margin-top: 0.75em; }
 	
@@ -20,8 +20,8 @@
 	dt {
 		color: $secondary-dark-gray;
 		font-size: rem-calc(14);
-		font-weight: 600;
-		}
+		font-weight: 600; 
+    }
 	
 	dd {
 		color: $secondary-gray;
@@ -32,8 +32,7 @@
 	span { display: block; }
 	
 	.registration-required { 
-		font-style: italic; 
-		
+		font-style: italic;
 		& a { font-style: normal; }
 	}
 	

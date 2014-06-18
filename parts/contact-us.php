@@ -1,4 +1,4 @@
-<section id="contact-us" class="last-child row" data-magellan-destination="contact-us">
+<section id="contact-us" class="last-child" data-magellan-destination="contact-us">
 	<h3 class="header-swash">Contact us</h3>
 	<h2 class="section-subhead">Call, visit, email or barnstorm. We’d love to hear from you!</h2>
 	

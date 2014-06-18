@@ -13,7 +13,8 @@
 	
   </head>
   <body>
-    <div data-role="page" id="home">
+  
+    <div data-role="page" id="home"> <!-- jQuery Mobile suggested page wrapper -->
       
       <?php include("parts/topbar.php"); ?>
     
@@ -50,5 +51,6 @@
     <script src="js/foundation.min.js"></script>
     <script src="js/vendor/jquery.mobile.custom.min.js"></script>
     <script>$(document).foundation();</script>
+    
   </body>
 </html>

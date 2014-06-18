@@ -6106,6 +6106,19 @@ footer {
     LAYOUT
     
 \*------------------------------------*/
+section {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem; }
+  section:before, section:after {
+    content: " ";
+    display: table; }
+  section:after {
+    clear: both; }
+
 .three-column-split {
   margin-top: 3em; }
   .three-column-split:after {
@@ -6120,11 +6133,6 @@ footer {
   section.row,
   footer > .row {
     padding: 0 2em; } }
-/*------------------------------------*\
-
-    SUB SECTIONS
-    
-\*------------------------------------*/
 .sub-section {
   position: relative;
   margin-top: 5em; }

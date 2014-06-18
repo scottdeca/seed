@@ -1,4 +1,4 @@
-<section id="events" class="row" data-magellan-destination="events">
+<section id="events" data-magellan-destination="events">
 					
 		<h3 class="header-swash">Events</h3>
 		<h2 class="section-subhead">Feed your head (and sometimes your stomach).</h2>
