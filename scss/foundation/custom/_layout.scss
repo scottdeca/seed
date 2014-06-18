@@ -31,9 +31,14 @@ section { @include grid-row(); }  // Make all section elements rows
 	
 	}
 
+
+//
+//  Extra Side margins
+//
+
 // Medium screens only
 @media #{$medium-only} {
-	section.row,
+	section,
 	footer > .row { padding: 0 2em; }
 }
 

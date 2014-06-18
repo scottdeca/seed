@@ -6154,7 +6154,7 @@ section {
     margin-top: 2em; }
 
 @media only screen and (min-width: 44.438em) and (max-width: 58.75em) {
-  section.row,
+  section,
   footer > .row {
     padding: 0 2em; } }
 .sub-section {
