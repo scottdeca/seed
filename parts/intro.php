@@ -7,27 +7,12 @@
 	<ul class="intro-slider hide-for-small-only" data-orbit>
 	  <li>
 	    <img src="http://placehold.it/1400x650" alt="slide 1" />
-	    <ul class="orbit-caption">
-	    	<li class="name">Name</li>
-	    	<li class="job">Job</li>
-	    	<li class="membership">Member since</li>
-	    </ul>
 	  </li>
 	  <li>
 	    <img src="http://placehold.it/1400x650" alt="slide 2" />
-	    <ul class="orbit-caption">
-	    	<li class="name">Name</li>
-	    	<li class="job">Job</li>
-	    	<li class="membership">Member since</li>
-	    </ul>
 	  </li>
 	  <li>
 	    <img src="http://placehold.it/1400x650" alt="slide 3" />
-	    <ul class="orbit-caption">
-	    	<li class="name">Name</li>
-	    	<li class="job">Job</li>
-	    	<li class="membership">Member since</li>
-	    </ul>
 	  </li>
 	</ul>
 	

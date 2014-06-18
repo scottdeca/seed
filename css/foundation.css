@@ -5620,7 +5620,16 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
-/*----------- Top Bar Nav -----------------*/
+/*------------------------------------*\
+
+    CUSTOM MIXINS
+    
+\*------------------------------------*/
+/*------------------------------------*\
+
+    TOP-BAR NAV
+    
+\*------------------------------------*/
 .top-bar-container {
   box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3); }
@@ -5673,8 +5682,7 @@ ul.primary-nav li > a {
 #intro {
   z-index: -1; }
 
-@media only screen and (min-width: 40.063em) {
-  /* min-width 641px, medium screens */
+@media only screen and (min-width: 44.438em) {
   body {
     margin-top: 8.125rem !important; }
 
@@ -5829,7 +5837,6 @@ ul.primary-nav li > a {
     top: -7px;
     margin-top: 0;
     margin-left: 0; } }
-/* ------- Mobile Top Bar -------------*/
 .right-off-canvas-top-bar {
   height: 5.625rem;
   background-color: #F7F7F7;
@@ -5907,12 +5914,15 @@ ul.primary-nav li > a {
   color: #8b8a85;
   line-height: 1.1; }
 
-/*------- Mobile Side Menu ---------*/
 .mobile-page .ui-content {
   background: #FCFCFC;
   margin-top: 5.625rem; }
 
-/*------- Typography --------*/
+/*------------------------------------*\
+
+    TYPOGRAPHY
+    
+\*------------------------------------*/
 .mobile-page {
   text-align: center; }
 
@@ -5978,7 +5988,11 @@ a.email {
 b, strong {
   font-weight: 600; }
 
-/*--------- Layout -----------*/
+/*------------------------------------*\
+
+    LAYOUT
+    
+\*------------------------------------*/
 .three-column-split {
   margin-top: 3em; }
   .three-column-split:after {
@@ -5993,7 +6007,11 @@ b, strong {
   section.row,
   footer > .row {
     padding: 0 2em; } }
-/*---------- Intro -----------*/
+/*------------------------------------*\
+
+    INTRO
+    
+\*------------------------------------*/
 #intro {
   position: relative; }
   #intro .orbit-caption,
@@ -6068,7 +6086,11 @@ b, strong {
 @media only screen and (min-width: 90.063em) {
   .intro-statement {
     padding: 2em 14em 0; } }
-/*------- Let's Connect -----------*/
+/*------------------------------------*\
+
+    LET'S CONNECT
+    
+\*------------------------------------*/
 .green-cta {
   background: #95be49;
   border: solid 1px #fff;
@@ -6190,7 +6212,11 @@ b, strong {
 @media only screen and (min-width: 58.813em) {
   .lets-connect {
     right: 7em; } }
-/*------- Our People --------*/
+/*------------------------------------*\
+
+    OUR PEOPLE
+    
+\*------------------------------------*/
 .member-cards {
   background-color: #fff;
   border: 1px solid #efeddf;
@@ -6261,7 +6287,11 @@ b, strong {
   font-style: normal;
   color: #58b1df; }
 
-/*------- Events --------*/
+/*------------------------------------*\
+
+    EVENTS
+    
+\*------------------------------------*/
 @media only screen and (max-width: 44.375em) {
   #events section + section {
     margin-top: 3em; } }
@@ -6292,7 +6322,11 @@ b, strong {
 @media only screen and (min-width: 44.438em) and (max-width: 58.75em) {
   #events h4 {
     font-size: 0.875rem; } }
-/*---------- FAQs -------------------*/
+/*------------------------------------*\
+
+    FAQS
+    
+\*------------------------------------*/
 dl {
   margin-top: 2em; }
 
@@ -6305,7 +6339,11 @@ dd {
 dd + dt {
   margin-top: 1.5em; }
 
-/*-------- Blog ---------------------*/
+/*------------------------------------*\
+
+    BLOG
+    
+\*------------------------------------*/
 .newsfeed {
   list-style: none;
   margin-left: 0;
@@ -6337,7 +6375,11 @@ dd + dt {
         float: left;
         margin-right: 1em; } }
 
-/*-------- Contact Us -----------*/
+/*------------------------------------*\
+
+    CONTACT US
+    
+\*------------------------------------*/
 #contact-us h5 {
   font-size: 1rem;
   color: #7e7971;
@@ -6386,7 +6428,11 @@ dd + dt {
     #contact-us .meetup-icon {
       margin-right: 4px; } }
 
-/*-------- Join Us / Pricing Table ---------*/
+/*------------------------------------*\
+
+    JOIN US / PRICING TABLE
+    
+\*------------------------------------*/
 .pricing-table {
   border-radius: 4px;
   margin-top: .5em;
@@ -6442,7 +6488,11 @@ dd + dt {
   .faq dl {
     margin-top: 0;
     margin-bottom: 0; } }
-/*-------- Sub-sections ------------*/
+/*------------------------------------*\
+
+    SUB SECTIONS
+    
+\*------------------------------------*/
 .sub-section {
   position: relative;
   margin-top: 5em; }
@@ -6493,7 +6543,11 @@ dd + dt {
   margin: 4px auto;
   border-radius: 4px; }
 
-/*-------- Blog ---------*/
+/*------------------------------------*\
+
+    BLOG
+    
+\*------------------------------------*/
 /*------- Single Post -------*/
 .featured-image {
   margin-bottom: 2em; }
@@ -6584,7 +6638,11 @@ dd + dt {
   #blog-single .next {
     left: auto; } }
 
-/*-------- Footer -------*/
+/*------------------------------------*\
+
+    FOOTER
+    
+\*------------------------------------*/
 footer {
   min-height: 13rem;
   border-top: 1px solid #dddddd;

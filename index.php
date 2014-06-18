@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seed | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
-    <!-- <link rel="stylesheet" href="css/jquery.mobile-1.4.2.css" /> -->
     <link rel="stylesheet" href="css/jquery.mobile.custom.structure.css" />
     <script src="js/vendor/modernizr.js"></script>
     
@@ -14,44 +13,42 @@
 	
   </head>
   <body>
-	<div data-role="page" id="home">
-	    
-	    <?php include("parts/topbar.php"); ?>
-		
-		<a name="about"></a>
-		<?php include("parts/intro.php"); ?>
-		
-		<div id="desktop-only" class="hide-for-small-only">
-			
-			<a name="our-people"></a>
-			<?php include("parts/our-people.php"); ?>
-			
-			<a name="events"></a>
-			<?php include("parts/events.php"); ?>
-			
-			<a name="join-us"></a>
-			<?php include("parts/join-us.php"); ?>
-			
-			<a name="blog"></a>
-			<?php include("parts/blog.php"); ?>
-			
-			<a name="contact-us"></a>
-			<?php include("parts/contact-us.php"); ?>
-			
-		</div> <!-- #desktop-only ends -->
-		
-		<?php include("parts/mobile-nav.php"); ?>
-		
-		<?php include("parts/footer.php"); ?>
-		
-		</div> <!-- data-role="page" ends -->
+    <div data-role="page" id="home">
+      
+      <?php include("parts/topbar.php"); ?>
+    
+    	<a name="about"></a>
+    	<?php include("parts/intro.php"); ?>
+    	
+    	<div id="desktop-only" class="hide-for-small-only">
+    		
+    		<a name="our-people"></a>
+    		<?php include("parts/our-people.php"); ?>
+    		
+    		<a name="events"></a>
+    		<?php include("parts/events.php"); ?>
+    		
+    		<a name="join-us"></a>
+    		<?php include("parts/join-us.php"); ?>
+    		
+    		<a name="blog"></a>
+    		<?php include("parts/blog.php"); ?>
+    		
+    		<a name="contact-us"></a>
+    		<?php include("parts/contact-us.php"); ?>
+    		
+    	</div> <!-- #desktop-only ends -->
+    	
+    	<?php include("parts/mobile-nav.php"); ?>
+    	
+    	<?php include("parts/footer.php"); ?>
+    
+    </div> <!-- data-role="page" ends -->
+    
+    <!-- Scripts -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
-    <!-- <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script> -->
     <script src="js/vendor/jquery.mobile.custom.min.js"></script>
-    <script src="js/vendor/jquery-center-vertical.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+    <script>$(document).foundation();</script>
   </body>
 </html>

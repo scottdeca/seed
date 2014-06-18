@@ -1,5 +1,5 @@
-<!-- <div class="contain-to-grid top-bar-container"> -->
 <div data-magellan-expedition="fixed" class="contain-to-grid top-bar-container hide-for-small-only">
+
 	<nav class="top-bar" data-topbar>
 		<section class="top-bar-section">
 			<ul class="left primary-nav">
@@ -15,14 +15,12 @@
 		
 		<ul class="title-area">
 			<li class="name">
-			  <!-- <h1><a href="#">My Site</a></h1> -->
 			  <a href="http://dev.seed/"><img class="left logo" src="images/logo.png" alt='Seed Coworking' /></a>
 			</li>
 			<li class="toggle-topbar menu-icon"><a href="#"></a></li>
 		</ul>
 	</nav>
 </div>
-
 
 <!-- Extra copy for a non-sticky mobile nav -->
 <div class="show-for-small-only">
@@ -48,4 +46,5 @@
 			</ul>
 		</nav>
 	</div>
+	
 </div>

@@ -1,4 +1,5 @@
 <div id="mobile-only" class="show-for-small-only">
+
 	<ul class="mobile-nav no-bullet">
 		<li class="our-people">
 			<a href="pages/our-people.php" data-transition="slide" data-prefetch="true">
@@ -32,4 +33,4 @@
 		</li>
 	</ul>
 		
-</div> <!-- mobile-only -->
+</div> <!-- #mobile-only -->

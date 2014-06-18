@@ -1,3 +1,9 @@
+/*------------------------------------*\
+
+    CUSTOM MIXINS
+    
+\*------------------------------------*/
+
 @mixin box-emboss($opacity, $opacity2){
     box-shadow:rgba(255,255,255,$opacity) 0 1px 0, inset rgba(0,0,0,$opacity2) 0 1px 0;
 }
@@ -10,14 +16,18 @@
     text-shadow:0 -1px 0 rgba(0, 0, 0, $opacity);
 }
 
-/*----------- Top Bar Nav -----------------*/
+/*------------------------------------*\
+
+    TOP-BAR NAV
+    
+\*------------------------------------*/
 
 .top-bar-container {
 	box-shadow:0px -1px 4px rgba(0,0,0,0.3);
 	box-shadow:0px 1px 4px rgba(0,0,0,0.3);
 	}
 
-[data-magellan-expedition-clone] { display: none !important; } // Temporary(?) fix for magellan clone (the clone doubled the drop-shadow and active tab chevron, as well as slowed things down a touch
+[data-magellan-expedition-clone] { display: none !important; } // Fix for magellan clone (the clone doubled the drop-shadow and active tab chevron, as well as slowed things down a touch
 
 .primary-nav, .top-bar-section ul li > a {
 	//line-height: 8.125;
@@ -70,10 +80,11 @@ ul.primary-nav li > a {
 	width: auto;
 	}
 
-#intro { z-index: -1; } // Topnav dropshadow fix
+#intro { z-index: -1; } // Topnav dropshadow fix on mobile
+
 
 // Medium screens and up
-@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+@media #{$medium-up} {
 	
 	body { margin-top: $topbar-height !important; }
 	
@@ -191,7 +202,9 @@ ul.primary-nav li > a {
 	
 }
 
-// Medium screens only - for a more compact nav
+
+// Medium screens only
+// for a more compact nav / no tab effect
 @media #{$medium-only} {
 	
 	.logo {
@@ -245,7 +258,9 @@ ul.primary-nav li > a {
 		}
 }
 
-/* ------- Mobile Top Bar -------------*/
+//
+// Mobile Top Bar
+//
 
 .right-off-canvas-top-bar {
 	height: $topbar-height;
@@ -344,25 +359,31 @@ ul.primary-nav li > a {
 	}
 }
 
-/*------- Mobile Side Menu ---------*/
+//
+// Mobile Side Menu
+//
 
 .mobile-page .ui-content {
 	background: #FCFCFC;
 	margin-top: $topbar-height;
 }
 
-/*------- Typography --------*/
+
+
+/*------------------------------------*\
+
+    TYPOGRAPHY
+    
+\*------------------------------------*/
 
 .mobile-page { text-align: center; }
 
 h3.header-swash { 
-	
 	font-family: $meta-serif-fontstack;
 	text-transform: uppercase;
 	font-size: rem-calc(17);
 	color: $primary-color;
 	letter-spacing: .05em;
-	//@include emboss(.3);
 	margin-top: 2em;
 	text-align: center;
 	
@@ -383,7 +404,7 @@ h3.header-swash {
 			left: 0;
 			z-index: 0;
 			}
-			
+  
 	// Medium screens
 	@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
 		&::before {	background-image: url(../../../images/section_header_desktop.png); top: -65px; }
@@ -427,7 +448,14 @@ a.email { font-weight: 600; }
 b, strong { font-weight: 600; } // The default bold is too heavy w/open sans
 
 
-/*--------- Layout -----------*/
+
+
+
+/*------------------------------------*\
+
+    LAYOUT
+    
+\*------------------------------------*/
 
 .three-column-split { 
 	margin-top: 3em;
@@ -450,7 +478,14 @@ b, strong { font-weight: 600; } // The default bold is too heavy w/open sans
 	footer > .row { padding: 0 2em; }
 }
 
-/*---------- Intro -----------*/
+
+
+
+/*------------------------------------*\
+
+    INTRO
+    
+\*------------------------------------*/
 
 #intro { 
 	position: relative;
@@ -547,7 +582,11 @@ b, strong { font-weight: 600; } // The default bold is too heavy w/open sans
 }
 
 
-/*------- Let's Connect -----------*/
+/*------------------------------------*\
+
+    LET'S CONNECT
+    
+\*------------------------------------*/
 
 .green-cta {
 	background: rgb(149,190,73);
@@ -675,7 +714,14 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
   .lets-connect { right: 7em; }
 }
 
-/*------- Our People --------*/
+
+
+
+/*------------------------------------*\
+
+    OUR PEOPLE
+    
+\*------------------------------------*/
 
 .member-cards {
 	background-color: #fff;
@@ -758,12 +804,16 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 	color: $secondary-blue;
 	}
 
-// Medium screens only
-@media #{$medium-only} {
-	
-}
 
-/*------- Events --------*/
+
+
+
+
+/*------------------------------------*\
+
+    EVENTS
+    
+\*------------------------------------*/
 
 // Medium screens only
 @media #{$small-only} {
@@ -810,7 +860,14 @@ $inset-button-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(9));
 	#events h4 { font-size: rem-calc(14); }
 }
 
-/*---------- FAQs -------------------*/
+
+
+
+/*------------------------------------*\
+
+    FAQS
+    
+\*------------------------------------*/
 
 dl { margin-top: 2em; }
 
@@ -825,7 +882,14 @@ dd {
 dd+dt { margin-top: 1.5em; }
 
 
-/*-------- Blog ---------------------*/
+
+
+
+/*------------------------------------*\
+
+    BLOG
+    
+\*------------------------------------*/
 
 .newsfeed {
 	list-style: none;
@@ -861,7 +925,14 @@ dd+dt { margin-top: 1.5em; }
 	
 }
 
-/*-------- Contact Us -----------*/
+
+
+
+/*------------------------------------*\
+
+    CONTACT US
+    
+\*------------------------------------*/
 
 #contact-us {
 	
@@ -921,7 +992,15 @@ dd+dt { margin-top: 1.5em; }
 	}
 }
 
-/*-------- Join Us / Pricing Table ---------*/
+
+
+
+
+/*------------------------------------*\
+
+    JOIN US / PRICING TABLE
+    
+\*------------------------------------*/
 
 //.membership-options { @include block-grid(3); }
 
@@ -996,7 +1075,13 @@ dd+dt { margin-top: 1.5em; }
 	}
 
 
-/*-------- Sub-sections ------------*/
+
+
+/*------------------------------------*\
+
+    SUB SECTIONS
+    
+\*------------------------------------*/
 
 .sub-section {
 	position: relative;
@@ -1052,7 +1137,15 @@ dd+dt { margin-top: 1.5em; }
 	
 }
 
-/*-------- Blog ---------*/
+
+
+
+
+/*------------------------------------*\
+
+    BLOG
+    
+\*------------------------------------*/
 
 /*------- Single Post -------*/
 .featured-image {
@@ -1150,8 +1243,6 @@ dd+dt { margin-top: 1.5em; }
 		.post-author { margin-bottom: 0.5em; }
 		.post-subhead { font-size: rem-calc(22); }
 		
-		
-		//#pagination { overflow: auto; } // clear floats fix
 		#pagination > a { height: 2.2em; &:last-child { margin-bottom: 2.3em; } }
 		
 		.next, .back, .prev {
@@ -1167,7 +1258,14 @@ dd+dt { margin-top: 1.5em; }
 		}
 }
 
-/*-------- Footer -------*/
+
+
+
+/*------------------------------------*\
+
+    FOOTER
+    
+\*------------------------------------*/
 
 footer {
 	min-height: rem-calc(208);
