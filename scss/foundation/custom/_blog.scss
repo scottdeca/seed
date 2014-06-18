@@ -4,7 +4,25 @@
     
 \*------------------------------------*/
 
-/*------- Single Post -------*/
+
+//
+//  Overview Page
+//
+
+#blog-overview {
+  #blog { margin-top: 2em; }
+  .pagination { margin-top: .75em; margin-bottom: 6.5em; }
+  
+  @media #{medium-up} {
+    .pagination { margin-top: 1.5em; margin-bottom: 4em; }
+  }
+}
+
+
+//
+//  Single Post
+//
+
 .featured-image {
 	margin-bottom: 2em;
 	}
@@ -21,9 +39,6 @@
 			@include grid-column(12);
 			padding: 0;
 			margin-bottom: 1em;
-			}
-			
-		img { 
 			}
 		
 		.member-info { 
@@ -67,7 +82,13 @@
 	
 	p { line-height: 1.8; }
 	
-	#pagination.sub-section::before { background-image: url('../../../images/sub-section_desktop.png'); }
+	.pagination.sub-section {
+  	margin-top: 3em;
+  	margin-bottom: 6em;
+  	
+  	&:before { background-image: url('../../../images/sub-section_desktop.png'); }
+	}
+	
 	
 	.prev i, .next i {
 		content: '';
@@ -100,7 +121,7 @@
 		.post-author { margin-bottom: 0.5em; }
 		.post-subhead { font-size: rem-calc(22); }
 		
-		#pagination > a { height: 2.2em; &:last-child { margin-bottom: 2.3em; } }
+		.pagination > a { height: 2.2em; &:last-child { margin-bottom: 2.3em; } }
 		
 		.next, .back, .prev {
 			margin-bottom: 1em;

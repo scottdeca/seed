@@ -15,13 +15,13 @@
   <body>
 	<div data-role="page" id="blog-single">
 	    
-	    <?php include("parts/topbar.php"); ?>
+    <?php include("parts/topbar-subpage.php"); ?>
 		
-		<section class="row featured-image">
+		<section class="featured-image">
 			<img class="small-12 columns" src="http://placehold.it/960x275" />
 		</section>
 		
-		<section class="row">
+		<section>
 			<div class="hide-for-small-only medium-3 columns">
 				<div class="member-cards">
 					<div class="avatar"><img src="http://placehold.it/200x200" alt="The Don" /></div>
@@ -50,14 +50,7 @@
 			</div>
 		</section>
 		
-		<section class="row">
-			<div id="pagination" class="small-12 medium-9 medium-offset-3 end sub-section">
-				<a href="#" class="back small-12 medium-4 columns show-for-small-only">Back to all posts</a>
-				<a href="#" class="prev small-12 medium-4 columns"><i class="arrow-left"></i>Seed's new website</a>
-				<a href="#" class="back small-12 medium-4 columns hide-for-small-only">Back to all posts</a> 
-				<a href="#" class="next small-12 medium-4 columns">That newer article<i class="arrow-right"></i></a>
-			</div>
-		</section>
+		<?php include("parts/pagination.php"); ?>
 		
 		<?php include("parts/footer.php"); ?>
 		

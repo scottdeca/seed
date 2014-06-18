@@ -5,6 +5,7 @@
 \*------------------------------------*/
 
 .newsfeed {
+  text-align: center;
 	list-style: none;
 	margin-left: 0; padding-left: 0;
 	
@@ -33,6 +34,7 @@
 	
 	// Medium screens and up
 	@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+	  text-align: left;
 		img { margin-bottom: rem-calc(16); float: left; margin-right: 1em; }
 	}
 	
