@@ -4,11 +4,6 @@
     
 \*------------------------------------*/
 
-// Medium screens only
-@media #{$small-only} {
-  #events section+section { margin-top: 3em; }
-}
-
 #events {
 	
 	h4 {
@@ -47,4 +42,9 @@
 // Medium screens only
 @media #{$medium-only} {
 	#events h4 { font-size: rem-calc(14); }
+}
+
+// Mobile event vertical spacing fix
+@media #{$small-only} {
+  #events section+section { margin-top: 3em; }
 }
