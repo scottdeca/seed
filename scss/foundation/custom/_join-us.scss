@@ -4,7 +4,13 @@
     
 \*------------------------------------*/
 
-//.membership-options { @include block-grid(3); }
+// small-block-grid-1 medium-block-grid-2 large-block-grid-3
+.membership-options,
+.faq {
+  @include block-grid(1);
+  @media #{$medium-up} { @include block-grid(2); }
+  @media #{$large-up} { @include block-grid(3); }
+}
 
 .pricing-table {
 	

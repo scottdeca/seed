@@ -6,6 +6,25 @@
 
 #contact-us {
 	
+	  //  small-12 medium-6 large-4
+	  .call-us, .map {
+  	  @include grid-column(12);
+      @media #{$medium-up} { @include grid-column(6); }
+      @media #{$large-up} { @include grid-column(4); }
+	  }
+	  
+	  .map {
+  	  @media #{$small-only} { margin-top: 3em; }
+	  }
+	  
+	  //  small-12 medium-12 large-4
+    .parking {
+  	  @include grid-column(12);
+  	  @media #{$small-only} { margin-top: 1.5em; }
+      @media #{$medium-up} { @include grid-column(12); }
+      @media #{$large-up} { @include grid-column(4); }
+	  }
+	  
 	h5 {
 		font-size: rem-calc(16);
 		color: $secondary-dark-gray;
