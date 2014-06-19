@@ -12,34 +12,42 @@ footer {
 	color: $footer-text-color;
 	background-color: #fff;
 	
+	
+	//  left medium-12 large-7 columns
+	.stay-connected {
+  	float: left;
+    @media #{$medium-up} { @include grid-column(12); }
+    @media #{$large-up} { width: auto; }
+  }
+	
+	//medium-12 large-5 columns
 	.inline-form {
 		margin-top: 0;
 		margin-bottom: .75em;
-		clear: left;
+		
+		@media #{$medium-up} { 
+		  @include grid-column(5);
+			margin-left: 0;
+		  }
+		  
+    @media #{$large-up} { 
+      //@include grid-column(4);
+      }
 		}
 		
-	// Medium screens and up
-	@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+	@media #{$medium-up} {
 		margin-top: 3em;
 		margin-bottom: .5em;
 		min-height: intrinsic;
 		
 		p { margin-bottom: .5em; }
-		
-		.inline-form {
-			width: 40%;
-			//margin-left: 1.5em;
-			margin-left: 0;
-			float: left !important;
-			clear: none;
-			}
 		}
 		
-	// Small screens only
+	// Small screens only - overrides all text being centered on mobile
 	@media #{$small-only} {
 		text-align: left;
 		}
 		
 	}
 
-.copyright { font-size: rem-calc(13); }
+.copyright { @include grid-column(12); font-size: rem-calc(13); }

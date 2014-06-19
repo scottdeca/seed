@@ -1,8 +1,8 @@
 <footer>
 	
 	<div class="row">
-		<p class="left medium-12 large-7 columns"><b>Stay connected.</b><br class="show-for-small-only" /> Sign up for our newsletter, <b><i>Dripfeed</i></b>™</p>
-		<form class="inline-form medium-12 large-5 columns">
+		<p class="stay-connected"><b>Stay connected.</b><br class="show-for-small-only" /> Sign up for our newsletter, <b><i>Dripfeed</i></b>™</p>
+		<form class="inline-form">
 			<div class="inset-button">
 					<div class="form-input">
 						<input type="email" placeholder="Your email address" name="email" />
@@ -15,7 +15,7 @@
 	</div>
 	
 	<div class="row">
-		<p class="copyright small-12 columns">Copyright ® Seed Coworking LLC. <br class="show-for-small-only" /><a href="#">Privacy & Terms.</a></p>
+		<p class="copyright">Copyright ® Seed Coworking LLC. <br class="show-for-small-only" /><a href="#">Privacy & Terms.</a></p>
 	</div>
 	
 </footer>

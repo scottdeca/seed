@@ -6020,28 +6020,43 @@ footer {
   padding: 1em 0;
   color: #8b8a85;
   background-color: #fff; }
+  footer .stay-connected {
+    float: left; }
+    @media only screen and (min-width: 44.438em) {
+      footer .stay-connected {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+        width: 100%;
+        float: left; } }
+    @media only screen and (min-width: 58.813em) {
+      footer .stay-connected {
+        width: auto; } }
   footer .inline-form {
     margin-top: 0;
-    margin-bottom: .75em;
-    clear: left; }
-  @media only screen and (min-width: 40.063em) {
+    margin-bottom: .75em; }
+    @media only screen and (min-width: 44.438em) {
+      footer .inline-form {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+        width: 41.66667%;
+        float: left;
+        margin-left: 0; } }
+  @media only screen and (min-width: 44.438em) {
     footer {
-      /* min-width 641px, medium screens */
       margin-top: 3em;
       margin-bottom: .5em;
       min-height: intrinsic; }
       footer p {
-        margin-bottom: .5em; }
-      footer .inline-form {
-        width: 40%;
-        margin-left: 0;
-        float: left !important;
-        clear: none; } }
+        margin-bottom: .5em; } }
   @media only screen and (max-width: 44.375em) {
     footer {
       text-align: left; } }
 
 .copyright {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left;
   font-size: 0.8125rem; }
 
 /*------------------------------------*\
