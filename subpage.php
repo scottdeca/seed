@@ -18,12 +18,12 @@
     <?php include("parts/topbar-subpage.php"); ?>
 		
 		<section class="featured-image">
-			<img class="small-12 columns" src="http://placehold.it/960x275" />
+			<img src="http://placehold.it/960x275" />
 		</section>
 		
 		<section>
-			<div class="hide-for-small-only medium-3 columns">
-				<div class="member-cards">
+			<div class="post-author-card">
+				<div class="member-card">
 					<div class="avatar"><img src="http://placehold.it/200x200" alt="The Don" /></div>
 					<div class="member-info">
 						<span class="name">Bob Sacamano</span>
@@ -34,7 +34,7 @@
 				</div>
 			</div>
 			
-			<div class="small-12 medium-9 columns">
+			<div class="post">
 				<h1 class="post-title">Meet the folks who put “unity” in the community.</h1>
         <div class="post-meta">
           <span class="post-author show-for-small-only">Posted by:&nbsp;<a href="#">Bob Sacamano</a></span>

@@ -1,0 +1,68 @@
+/*------------------------------------*\
+
+    PAGINATION
+    
+\*------------------------------------*/
+
+//  small-12 medium-9 medium-offset-3 end
+.pagination {
+  @include grid-column(12);
+  margin-bottom: -0.5em;
+  
+  @media #{$medium-up} { 
+    @include grid-column($columns:9, $offset:3, $last-column:true); 
+    margin-bottom: 6em;
+    }
+}
+
+.pagination.sub-section {
+  	margin-top: 3em;
+  	
+  	&:before { background-image: url('../../../images/sub-section_desktop.png'); }
+	}
+	
+	
+	.prev i, .next i {
+		content: '';
+		display: inline-block;
+		width: 12px;
+		height: 19px;
+		position: relative;
+		top: 3px;
+	}
+	
+	.prev {
+		i { background-image: url('../../../images/icon_arrow.back.png'); margin-right: 2px; }
+		}
+		
+	.next { 
+		text-align: right;
+		
+		i { background-image: url('../../../images/icon_arrow.next.png'); margin-left: 2px; }
+		}
+		
+	.back {
+		text-align: center;
+		color: #8B8A85;
+		}
+		
+// Small screens only
+@media #{$small-only} {
+	.post-title { font-size: rem-calc(24); line-height: 1.2; }
+	.post-meta { font-size: rem-calc(13); }
+	.post-author { margin-bottom: 0.5em; }
+	.post-subhead { font-size: rem-calc(22); }
+	
+	.pagination > a { height: 2.2em; &:last-child { margin-bottom: 2.3em; } }
+	
+	.next, .back, .prev {
+		margin-bottom: 1em;
+		
+		i { display: none; }
+		}
+	
+	.next, .back { text-align: left; }
+	
+	.next { left: auto; }
+	
+	}
