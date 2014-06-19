@@ -21,12 +21,12 @@
 		<p><b>Let’s connect!</b></p>
 		
 		<form>
-			<div class="row collapse inset-button">
-				<div class="small-12 columns">
+			<div class="inset-button">
+				<div class="form-input">
 					<input type="email" placeholder="Your email address" name="email" />
 				</div>
-				<div class="small-5 cta-button columns">
-					<a href="#" class="postfix radius">Contact Me</a>
+				<div class="form-button">
+					<a href="#">Contact Me</a>
 				</div>
 			</div>
 		</form>

@@ -5661,17 +5661,39 @@ th.hide-for-touch {
     color: #fff; }
 
 .inset-button {
+  width: auto;
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: none;
   position: relative; }
-  .inset-button input[type="text"], .inset-button input[type="password"], .inset-button input[type="date"], .inset-button input[type="datetime"], .inset-button input[type="datetime-local"], .inset-button input[type="month"], .inset-button input[type="week"], .inset-button input[type="email"], .inset-button input[type="number"], .inset-button input[type="search"], .inset-button input[type="tel"], .inset-button input[type="time"], .inset-button input[type="url"], .inset-button textarea {
+  .inset-button:before, .inset-button:after {
+    content: " ";
+    display: table; }
+  .inset-button:after {
+    clear: both; }
+  .inset-button input[type="text"], .inset-button input[type="password"], .inset-button input[type="date"],
+  .inset-button input[type="datetime"], .inset-button input[type="datetime-local"], .inset-button input[type="month"],
+  .inset-button input[type="week"], .inset-button input[type="email"], .inset-button input[type="number"],
+  .inset-button input[type="search"], .inset-button input[type="tel"], .inset-button input[type="time"],
+  .inset-button input[type="url"], .inset-button textarea {
     margin-bottom: 0;
     border-radius: 6px; }
-  .inset-button .cta-button {
+  .inset-button .form-input {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left; }
+  .inset-button .form-button {
+    min-width: 20%; }
+  .inset-button .form-button {
     position: absolute;
-    right: 4px;
-    padding: 4px; }
-  .inset-button .postfix {
-    height: 1.8125rem;
-    line-height: 1.8125rem;
+    right: 1.25rem; }
+  .inset-button .form-button a {
+    padding: 4px 13px;
+    height: 2.3125rem;
+    line-height: 2.3125rem;
     font-size: 0.875rem;
     text-transform: uppercase;
     box-shadow: white 0 1px 0, inset rgba(0, 0, 0, 0.15) 0 1px 0;
@@ -5683,7 +5705,7 @@ th.hide-for-touch {
     background-image: radial-gradient(99px at 50% -73%, #b0ce77 0%, #95be49 100%);
     border-radius: 4px;
     transition: all 300ms ease-in-out; }
-    .inset-button .postfix:hover {
+    .inset-button .form-button a:hover {
       background-image: -moz-radial-gradient(50% -73%, circle farthest-corner, #a4c25f 0%, #82a63e 100%);
       background-image: -webkit-gradient(radial, 50% -73%, 0, 50% -73%, 99, color-stop(0, #a4c25f), color-stop(1, #82a63e));
       background-image: -webkit-radial-gradient(50% -73%, circle farthest-corner, #a4c25f 0%, #82a63e 100%);
@@ -5920,6 +5942,12 @@ th.hide-for-touch {
 @media only screen and (min-width: 44.438em) and (max-width: 58.75em) {
   #events h4 {
     font-size: 0.875rem; } }
+@media only screen and (min-width: 44.438em) {
+  .event-type {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 33.33333%;
+    float: left; } }
 @media only screen and (max-width: 44.375em) {
   #events section + section {
     margin-top: 3em; } }

@@ -6,10 +6,10 @@
 		<p class="section-description">From Monday Hackathons to monthly Lunch ’n’ Learns and everything in between. If you’re looking to get educated, inspired and (sometimes) fed, then you’ve come to the right place.</p>
 	
 	<div class="row types-of-events three-column-split">
-	<section class="events-free medium-4 columns">
-		<h4 class="hide-for-small-only">Free and open to the public.</h4>
+	<section class="events-free event-type">
+		<h4 class="hide-for-small-only">Free and open to the public.</h4> <!-- Quick fix for switching the order on mobile -->
 		<img src="http://placehold.it/303x124" alt="Free!" />
-		<h4 class="show-for-small-only">Free and open to the public.</h4>
+		<h4 class="show-for-small-only">Free and open to the public.</h4> <!-- Quick fix for switching the order on mobile -->
 		<dl>
 			<dt>Event Name</dt>
 			<dd><span class="event-time">Wednesday, March 20, 7:30PM</span></dd>
@@ -24,7 +24,7 @@
 			<dd><span class="event-time">Wednesday, March 20, 7:30PM</span></dd>
 		</dl>
 	</section>
-	<section class="events-members medium-4 columns">
+	<section class="events-members event-type ">
 		<h4 class="hide-for-small-only">For members only.</h4>
 		<img src="http://placehold.it/303x124" alt="Members only" />
 		<h4 class="show-for-small-only">For members only.</h4>
@@ -42,7 +42,7 @@
 			<dd><span class="event-time">Wednesday, March 20, 7:30PM</span></dd>
 		</dl>
 	</section>
-	<section class="events-elsewhere medium-4 columns">
+	<section class="events-elsewhere event-type">
 		<h4 class="hide-for-small-only">Elsewhere. Nearby.</h4>
 		<img src="http://placehold.it/303x124" alt="Elsewhere" />
 		<h4 class="show-for-small-only">Elsewhere. Nearby.</h4>
@@ -77,12 +77,12 @@
 		<div class="centered">
 			<p class="left"><strong>Signing up for our newsletter</strong> is also a great way to stay in the know:</p>
 			<form class="left inline-form">
-				<div class="row collapse inset-button">
-					<div class="small-12 columns">
+				<div class="inset-button">
+					<div class="form-input">
 						<input type="email" placeholder="Your email address" name="email" />
 					</div>
-					<div class="small-5 cta-button columns">
-						<a href="#" class="postfix radius">Sign Me Up</a>
+					<div class="form-button">
+						<a href="#">Sign Me Up</a>
 					</div>
 				</div>
 			</form>

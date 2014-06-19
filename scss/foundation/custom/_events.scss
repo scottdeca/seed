@@ -38,9 +38,12 @@
 	
 }
 
-// Medium screens only
 @media #{$medium-only} {
 	#events h4 { font-size: rem-calc(14); }
+}
+
+@media #{$medium-up} {
+  .event-type { @include grid-column(4); }
 }
 
 // Mobile event vertical spacing fix

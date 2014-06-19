@@ -3,14 +3,14 @@
 	<div class="row">
 		<p class="left medium-12 large-7 columns"><b>Stay connected.</b><br class="show-for-small-only" /> Sign up for our newsletter, <b><i>Dripfeed</i></b>™</p>
 		<form class="inline-form medium-12 large-5 columns">
-			<div class="row collapse inset-button">
-				<div class="small-12 columns">
-					<input type="email" placeholder="Your email address" name="email" />
+			<div class="inset-button">
+					<div class="form-input">
+						<input type="email" placeholder="Your email address" name="email" />
+					</div>
+					<div class="form-button">
+						<a href="#">Sign Me Up</a>
+					</div>
 				</div>
-				<div class="small-5 cta-button columns">
-					<a href="#" class="postfix radius">Sign Me Up</a>
-				</div>
-			</div>
 		</form>
 	</div>
 	
