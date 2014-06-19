@@ -57,6 +57,10 @@
 	
 	&.badge { position: relative; }
 	
+	
+	//  Might've gone a little overboard with psuedo elements here
+	//  Might need to change these to real elements for CMS purposes
+	
 	&.badge::before {
 		content: '';
 		background-image: url(../../../images/badge_most.popular.png);
@@ -72,7 +76,7 @@
 	&.badge.most-popular::before { background-image: url(../../../images/badge_most.popular.png); }
   
   &.badge.spots-left::after {
-    content: '2';
+    content: '2'; // Set the # of seats left here
     font-size: rem-calc(32);
     font-weight: 700;
     color: white;
