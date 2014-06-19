@@ -57,8 +57,8 @@
     </section>
 		
 		<section>
-			<div class="pagination small-12 text-center sub-section">
-				<a href="#" class="small-12 columns">More Posts</a>
+			<div class="pagination text-center sub-section">
+				<a href="#">More Posts</a>
 			</div>
 		</section>
 		

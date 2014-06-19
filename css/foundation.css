@@ -6284,6 +6284,75 @@ section {
     
 \*------------------------------------*/
 .member-cards {
+  display: block;
+  padding: 0;
+  margin: 0 -0.625rem; }
+  .member-cards:before, .member-cards:after {
+    content: " ";
+    display: table; }
+  .member-cards:after {
+    clear: both; }
+  .member-cards > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 0.625rem 1.25rem; }
+  .member-cards > li {
+    width: 100%;
+    padding: 0 0.625rem 1.25rem;
+    list-style: none; }
+    .member-cards > li:nth-of-type(n) {
+      clear: none; }
+    .member-cards > li:nth-of-type(1n+1) {
+      clear: both; }
+  @media only screen and (min-width: 44.438em) {
+    .member-cards {
+      display: block;
+      padding: 0;
+      margin: 0 -0.625rem; }
+      .member-cards:before, .member-cards:after {
+        content: " ";
+        display: table; }
+      .member-cards:after {
+        clear: both; }
+      .member-cards > li {
+        display: block;
+        height: auto;
+        float: left;
+        padding: 0 0.625rem 1.25rem; }
+      .member-cards > li {
+        width: 50%;
+        padding: 0 0.625rem 1.25rem;
+        list-style: none; }
+        .member-cards > li:nth-of-type(n) {
+          clear: none; }
+        .member-cards > li:nth-of-type(2n+1) {
+          clear: both; } }
+  @media only screen and (min-width: 58.813em) {
+    .member-cards {
+      display: block;
+      padding: 0;
+      margin: 0 -0.625rem; }
+      .member-cards:before, .member-cards:after {
+        content: " ";
+        display: table; }
+      .member-cards:after {
+        clear: both; }
+      .member-cards > li {
+        display: block;
+        height: auto;
+        float: left;
+        padding: 0 0.625rem 1.25rem; }
+      .member-cards > li {
+        width: 33.33333%;
+        padding: 0 0.625rem 1.25rem;
+        list-style: none; }
+        .member-cards > li:nth-of-type(n) {
+          clear: none; }
+        .member-cards > li:nth-of-type(3n+1) {
+          clear: both; } }
+
+.member-card {
   background-color: #fff;
   border: 1px solid #efeddf;
   -webkit-border-radius: 8px;
@@ -6297,35 +6366,35 @@ section {
   color: #8b8a85;
   height: auto;
   overflow: auto; }
-  .member-cards .avatar {
+  .member-card .avatar {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 41.66667%;
     float: left;
     overflow: hidden;
     padding-left: 0; }
-  .member-cards img {
+  .member-card img {
     height: auto;
     max-width: 100%; }
-  .member-cards .member-info {
+  .member-card .member-info {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 58.33333%;
     float: left;
     text-align: left;
     margin-left: -1.3em; }
-  .member-cards .member-info > span {
+  .member-card .member-info > span {
     display: block; }
-  .member-cards .name {
+  .member-card .name {
     font-weight: 600;
     color: #95be49;
     font-style: normal; }
-  .member-cards .seed-position,
-  .member-cards .twitter {
+  .member-card .seed-position,
+  .member-card .twitter {
     text-indent: 24px;
     position: relative; }
-  .member-cards .seed-position::before,
-  .member-cards .twitter::before {
+  .member-card .seed-position::before,
+  .member-card .twitter::before {
     content: '';
     background-repeat: no-repeat;
     width: 17px;
@@ -6333,15 +6402,15 @@ section {
     position: absolute;
     left: 0;
     top: 1px; }
-  .member-cards .seed-position::before {
+  .member-card .seed-position::before {
     background-image: url(../../../images/icon_seed-position.png); }
-  .member-cards .twitter::before {
+  .member-card .twitter::before {
     background-image: url(../../../images/icon_seed-twitter.png);
     top: 3px; }
-  .member-cards.your-mug {
+  .member-card.your-mug {
     border: none;
     background: none; }
-  .member-cards.your-mug p {
+  .member-card.your-mug p {
     font-family: "dakotaregular", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
     font-style: normal;
     color: #58b1df;
@@ -6400,6 +6469,14 @@ ul.primary-nav li > a {
 .top-bar-section ul li.active > a {
   background: #fff;
   color: #95be49; }
+
+.title-area {
+  z-index: 9; }
+
+.name a {
+  width: 100%;
+  height: 100%;
+  display: block; }
 
 .logo {
   margin-top: 1.2em;

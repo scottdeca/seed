@@ -4,7 +4,15 @@
     
 \*------------------------------------*/
 
+// small-block-grid-1 medium-block-grid-2 large-block-grid-3
 .member-cards {
+  @include block-grid(1);
+  
+  @media #{$medium-up} { @include block-grid(2); }
+  @media #{$large-up} { @include block-grid(3); }
+}
+
+.member-card {
 	background-color: #fff;
 	border: 1px solid rgb(239,237,223);
 	-webkit-border-radius:8px;
