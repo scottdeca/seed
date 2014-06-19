@@ -6290,8 +6290,8 @@ section {
 @media only screen and (min-width: 44.438em) {
   .pricing-table .cta-button a {
     width: auto !important;
-    padding: 8px 13px 7px !important; }
-
+    padding: 8px 13px 7px !important; } }
+@media only screen and (min-width: 44.438em) and (max-width: 58.75em) {
   .newsletter p {
     float: none !important;
     text-align: center; }

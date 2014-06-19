@@ -55,8 +55,10 @@
 // Medium screens
 @media #{$medium-up} {
 	.pricing-table .cta-button a { width: auto !important; padding: 8px 13px 7px !important; }
-	
-	.newsletter p { float: none !important; text-align: center; }
+}
+
+@media #{$medium-only} {
+  .newsletter p { float: none !important; text-align: center; }
 	.newsletter .inline-form { float: none !important; display: block; margin: .5em auto 0; }
 	.lets-connect form { margin-top: -0.8em; }
 }
